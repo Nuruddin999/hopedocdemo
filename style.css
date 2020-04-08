@@ -1,0 +1,3177 @@
+/*
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url('fonts/ProximaNova-Regular.eot');
+  src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+    url('fonts/ProximaNova-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "TT Norms";
+    font-style: normal;
+    src: url("./fonts/TTNorms-Regular.ttf");
+}
+
+@font-face {
+    font-family: "TT Norms-Regular";
+    font-style: normal;
+    src: url("./fonts/TTNorms-Regular.ttf");
+}
+
+@font-face {
+    font-family: "TT Norms-Bold";
+    font-style: bold;
+    src: url("./fonts/TTNorms-Bold.ttf");
+}
+
+@font-face {
+    font-family: "RT Mono";
+    font-style: normal;
+    src: url("./fonts/PTMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: "PT Mono-Bold";
+    font-style: normal;
+    src: url("./fonts/PTM75F.ttf");
+}
+
+@font-face {
+    font-family: "ProximaNova-Bold";
+    src: url("./fonts/ProximaNova-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "ProximaNova-Regular";
+    src: url("./fonts/ProximaNova-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "ProximaNova-Light";
+    src: url("./fonts/ProximaNova-Light.ttf") format("truetype");
+}
+
+/*
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+
+}
+*/
+
+a {
+    text-decoration: none;
+}
+
+.bg_main {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: white;
+    width: 100%;
+}
+
+main {
+    margin-top: 84px;
+}
+
+.wantHelpButton {
+    position: relative;
+    margin: 40px auto;
+    width: 310px;
+    height: 56px;
+    background: #367bf5;
+    border-radius: 6px;
+    color: white;
+    font-family: "PT Mono";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 134%;
+}
+
+.triangle {
+    border-bottom: solid 6px #fca80e;
+    border-right: solid 6px #fca80e;
+    border-left: solid 6px transparent;
+    border-top: solid 6px transparent;
+    border-radius: 0 0 3px 0;
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+}
+
+.tellAboutUS {
+    display: block;
+    margin-top: 31px;
+    font-family: TT Norms-Bold;
+    font-size: 18px;
+    line-height: 118%;
+}
+
+.navSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    position: relative;
+}
+
+.navdrawr {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    transform: translateX(-100%);
+    transition: transform 2s;
+    z-index: 2;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 138%;
+    /* or 30px */
+    letter-spacing: 0.005em;
+    /* Темно темно синий */
+    color: #242F65;
+    overflow: hidden;
+}
+
+.drawerlinks {
+    margin: 40px 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: start;
+}
+
+.drawerlinks a {
+    color: #242F65;
+    margin-top: 20px;
+}
+
+.drawerlinks a:first-child {
+    color: #242F65;
+    margin-top: unset;
+}
+
+.navdrawheader {
+    background: #ffffff;
+    border-bottom: 1px solid rgba(0, 64, 148, 0.3);
+}
+
+.navdrawheader span {
+    display: block;
+    padding: 22px 0 22px 24px;
+    font-family: TT Norms-Bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    /* Темно синий */
+    color: #004094;
+}
+
+.navdrawheader img {
+    position: fixed;
+    top: 26px;
+    right: 22px;
+}
+
+.drawerlinks>div {
+    display: table;
+    font-family: PT Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 134%;
+    color: #FFFFFF;
+    background: #367BF5;
+    border-radius: 4px;
+    margin-top: 18px;
+}
+
+.drawerlinks>div span {
+    display: table;
+    margin: 11px;
+}
+
+.drwrSocIcons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.drwrSocIcons {
+    position: fixed;
+    width: 100%;
+    bottom: 37px;
+    font: 500 18px TT Norms;
+    color: rgba(35, 44, 87, 0.95);
+}
+
+.drwrSocIcons span {
+    display: block;
+    text-align: center;
+}
+
+.icns {
+    margin: 26px 28px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navSection ul {
+    margin-left: 131px;
+}
+
+.navSection .hamburger {
+    display: none;
+}
+
+.navSection .logoSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+
+.navSection .logoSection span {
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: normal;
+    color: #004094;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 114%;
+    letter-spacing: 0.03em;
+    margin-left: 15px;
+}
+
+.navSection ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: wrap;
+    -ms-flex: wrap;
+    flex: wrap;
+}
+
+.navSection ul .menuLinks li {
+    list-style: none;
+    display: inline;
+}
+
+.navSection ul .menuLinks li a {
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 136%;
+    color: #304b93;
+    text-decoration: none;
+    margin-left: 24px;
+}
+
+.navSection .menuButtons {
+    list-style: none;
+    display: inline;
+    background: #d6e5ff;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.navSection .menuButtons a {
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 136%;
+    color: #304b93;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.underNavBlock {
+    background: #f5f8fa;
+    -webkit-box-shadow: 0px 8px 14px rgba(0, 64, 148, 0.08);
+    box-shadow: 0px 8px 14px rgba(0, 64, 148, 0.08);
+    max-width: 1300px;
+    border-radius: 20px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.underNavBlock .title {
+    font-family: "TT Norms-Bold";
+    font-style: bold;
+    font-size: 70px;
+    line-height: 124%;
+    color: #242f65;
+    position: absolute;
+    top: 72px;
+    left: 54px;
+}
+
+.underNavBlock .mobileDescr {
+    margin-top: 16px;
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 118%;
+    color: #242f65;
+    display: none;
+}
+
+.underNavBlock .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    width: 100%;
+    display: flex;
+}
+
+.underNavBlock .row .underTitle {
+    margin-left: 54px;
+    margin-top: 194px;
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 134%;
+    color: #0b1635;
+}
+
+.underNavBlock .wantHelpButton {
+    width: 270px;
+    height: 64px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 42px;
+}
+
+.underNavBlock .row iframe {
+    margin: 72px 54px 88px 127px;
+    width: 580px;
+    height: 360px;
+    border-radius: 12px;
+}
+
+.underNavBlock *, .underNavBlock *:before, .underNavBlock *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.underHelpButton {
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 134%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #304b93;
+    margin-top: 12px;
+}
+
+.howWeHelpTitle {
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 124%;
+    /* identical to box height, or 60px */
+    /* Light Blue */
+    color: #367bf5;
+    display: block;
+    text-align: center;
+    margin-top: 64px;
+}
+
+.underHowWeTitle {
+    font-family: "TT Norms";
+    font-style: normal;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 136%;
+    color: #0b1635;
+    display: block;
+    margin-top: 20px;
+}
+
+.howWeHelp {
+    margin-top: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.howWeHelp .howWeHelpList li {
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 118%;
+    /* or 24px */
+    letter-spacing: 0.01em;
+    padding-bottom: 32px;
+    color: #f9b53b;
+}
+
+.howWeHelp .howWeHelpList li span {
+    /* Black */
+    color: #0b1635;
+}
+
+.years {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.undernumsblock {
+    display: none;
+}
+
+.years div {
+    margin: 40px;
+}
+
+.years div img {
+    -webkit-box-shadow: 0px 8px 14px rgba(0, 64, 148, 0.08);
+    box-shadow: 0px 8px 14px rgba(0, 64, 148, 0.08);
+    border-radius: 12px;
+}
+
+.patientsHistory {
+    background: #f5f8fa;
+    overflow: hidden;
+}
+
+.patientsHistoryBlocksContainer {
+    margin: 40px 165px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.historyBlock {
+    flex: 1;
+    margin-left: 48px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #ffffff;
+    box-shadow: -2px 0px 10px rgba(67, 125, 228, 0.14), 4px 0px 12px rgba(67, 125, 228, 0.08);
+    border-radius: 12px;
+}
+
+.historyBlock iframe {
+    width: 100%;
+    height: 205px;
+    border-radius: 12px 12px 0px 0px;
+    background-color: #000000;
+}
+
+.historyBlock span {
+    background: #ffffff;
+    display: block;
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+    letter-spacing: 0.005em;
+    /* Темно синий */
+    color: #004094;
+}
+
+.historyBlock p {
+    display: block;
+    width: 65%;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    margin: 15px 0 0 16px;
+}
+
+.avaAndName {
+    margin: 15px 0 0 16px;
+    padding-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.avaAndName .name {
+    margin-left: 12px;
+}
+
+.avaAndName img {
+    border-radius: 50%;
+}
+
+.whyHelpBlock {
+    max-width: 1300px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.whyHelpBlock .title {
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 106%;
+    /* or 47px */
+    /* Light Blue */
+    color: #367bf5;
+    position: absolute;
+    top: 72px;
+    left: 34px;
+}
+
+.mobWhyHelpTitle {
+    font-size: 34px;
+    display: none;
+}
+
+.whyHelpBlock .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.whyHelpBlock .title {
+    left: 0px;
+}
+
+.whyHelpBlock .underTitle {
+    display: table;
+    margin-top: 194px;
+    margin-right: 105px;
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 136%;
+    color: #0b1635;
+}
+
+.btnHelpCont {
+    position: relative;
+    display: table;
+}
+
+.whyHelpBlock .wantHelpButton {
+    width: 289px;
+    height: 56px;
+    font-size: 18px;
+}
+
+.whyHelpImg {
+    margin-top: 80px;
+}
+
+.whyHelpBlock *, .whyHelpBlock *:before, .whyHelpBlock *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.whyHelpBlock .underHelpButton {
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 134%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #304b93;
+    margin-top: 12px;
+}
+
+.firstHalfYear {
+    display: block;
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 108%;
+    /* or 28px */
+    /* Light Blue */
+    margin-top: 54px;
+    color: #367bf5;
+}
+
+.firstHalfYear span {
+    display: none;
+}
+
+/* Секция затрат */
+
+.spendsGenWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.spendsWrapper {
+    display: table;
+    margin: 0 auto;
+    background: #f5f8fa;
+    overflow: auto;
+    border-bottom: 2px solid rgba(47, 73, 140, 0.12);
+}
+
+.spendsContainer {
+    display: flex;
+    justify-content: center;
+    margin: 32px 0 20px 39px;
+}
+
+.spendImage {
+    display: table;
+    position: relative;
+}
+
+.yellowPoint {
+    width: 3.5px;
+    height: 3.5px;
+    background: #f9b53b;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.spendsText {
+    margin-left: 24px;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 124%;
+    color: #0b1635;
+    opacity: 0.9;
+}
+
+.spendsTitle {
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 124%;
+    color: #0b1635;
+    opacity: 0.9;
+}
+
+.spendsDescr {
+    display: block;
+    margin-top: 12px;
+    font-weight: normal;
+}
+
+.spendsDescr br {
+    display: none;
+}
+
+.spendsMoney {
+    display: table;
+    border-left: 2px solid rgba(47, 73, 140, 0.17);
+    margin-top: -5px;
+    margin-left: 140px;
+    padding: 20px 20px 20px 52px;
+}
+
+.amountAndLogo {
+    display: flex;
+    align-items: center;
+}
+
+.amountAndLogo span {
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 140%;
+    color: #242f65;
+    opacity: 0.9;
+}
+
+.amountAndLogo img {
+    margin-left: 4px;
+}
+
+.totalSpends {
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 134%;
+    /* identical to box height, or 54px */
+    color: #304b93;
+}
+
+.totalSpends div span {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 134%;
+    color: #367bf5;
+}
+
+.totalSpends div span:first-child {
+    letter-spacing: 6px;
+    margin-left: 13px;
+}
+
+.totalSpendsDate {
+    display: none;
+}
+
+.totalSpends div svg {
+    margin-left: 8px;
+}
+
+.spendsGenWrap .wantHelpButton {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Секция затрат -конец*/
+
+/*Помогите нам работать*/
+
+.helpToWork {
+    overflow: hidden;
+    background-image: url("./img/Rect.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 43px;
+}
+
+.rowToWork {
+    display: flex;
+    align-items: center;
+}
+
+.descrToWork {
+    display: block;
+    margin-top: 40px;
+    margin-left: 120px;
+    margin-right: 118px;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 128%;
+    /* or 31px */
+    /* white */
+    color: #ffffff;
+}
+
+.helpTohelp {
+    margin-top: 20px;
+    display: block;
+    font-family: PT Mono-Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 134%;
+    /* or 56px */
+    /* white */
+    color: #ffffff;
+}
+
+.socialIcons {
+    margin-top: 18px;
+    padding-bottom: 42px;
+    display: flex;
+}
+
+.socialIcons div {
+    margin-left: 24px;
+}
+
+.socialIcons div:first-child {
+    margin: 0;
+}
+
+.whatsapp {
+    width: 36px;
+    height: 36px;
+    background: #0dc143;
+    border-radius: 24px;
+    display: flex;
+}
+
+.whatsapp img {
+    margin: auto;
+}
+
+.telegram {
+    width: 36px;
+    height: 36px;
+    background: #419fd9;
+    border-radius: 24px;
+    display: flex;
+}
+
+.telegram img {
+    margin: auto;
+}
+
+.facebook {
+    width: 40px;
+    height: 40px;
+    background: #4267b2;
+    border-radius: 24px;
+    display: flex;
+}
+
+.facebook img {
+    margin: auto;
+}
+
+.tellAboutUS {
+    display: block;
+    margin-top: 31px;
+    font-family: TT Norms-Bold;
+    font-size: 18px;
+    line-height: 118%;
+}
+
+.underHelpBoard {
+    display: none;
+}
+
+.helpboard {
+    margin: 47px 120px 47px 0;
+    background: white;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.005em;
+    line-height: 138%;
+}
+
+.hlpbrdTitle {
+    padding-top: 26px;
+    letter-spacing: 0.005em;
+    color: #304b93;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 138%;
+}
+
+.boardRow {
+    margin-top: 20px;
+    padding: 0 33px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.numberCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.numbCol {
+    font-size: 18px;
+    display: table;
+    padding: 4px 11px;
+    background: #f5f8fa;
+    border-radius: 50%;
+    color: #304b93;
+}
+
+.amountCol {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #304b93;
+}
+
+.boardGap {
+    width: 48px;
+    height: 2px;
+    margin-top: 20px;
+    background: #304b93;
+}
+
+.periodblock {
+    display: flex;
+    justify-content: center;
+    margin: 0 40px 0;
+}
+
+.periodblock button {
+    width: 138px;
+    background: #367bf5;
+    border: 2px solid #367bf5;
+    border-radius: 2px;
+    padding: 17px;
+    color: #ffffff;
+    margin-top: 26px;
+    cursor: pointer;
+    font: 500 13px Inter;
+}
+
+.periodblock button:last-child {
+    background: white;
+    text-align: center;
+    color: #367bf5;
+}
+
+.sumblock {
+    margin: 26px 40px;
+}
+
+.sumRow {
+    border: 1px solid rgba(111, 133, 152, 0.4);
+    border-radius: 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex: 0 0 calc(33.33333% - 1px);
+    height: 50px;
+    border-bottom: 1px solid rgba(111, 133, 152, 0.5);
+    cursor: pointer;
+    border-right: 1px solid rgba(111, 133, 152, 0.5);
+    display: flex;
+}
+
+.item:last-child {
+    flex: 2;
+    border-bottom: unset;
+    border-right: unset;
+}
+
+.item:nth-child(7) {
+    border-bottom: unset;
+}
+
+.item:nth-child(3n) {
+    border-right: unset;
+}
+
+.item .amountAndLogo {
+    margin: auto;
+}
+
+.sumRow .amountAndLogo span {
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    line-height: 138%;
+    text-transform: uppercase;
+    color: #0b1635;
+}
+
+.item .amountAndLogo img {
+    width: 8px;
+    height: 10px;
+    opacity: 0.85;
+}
+
+.item input {
+    border: unset;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    letter-spacing: 0.005em;
+    font: unset;
+    font-size: 15px;
+    color: #6f8598;
+    opacity: 0.5;
+}
+
+.anothersum {
+    display: flex;
+}
+
+.item:last-child span {
+    display: block;
+    margin: auto;
+}
+
+.continuepay {
+    display: flex;
+    margin: 20px 15px;
+    padding-bottom: 32px;
+    justify-content: center;
+}
+
+.continuepay button {
+    padding: 18px 87.5px;
+    background: #367bf5;
+    color: white;
+    line-height: 138%;
+    font: 500 13px Inter;
+    letter-spacing: 0.005em;
+    border: unset;
+    cursor: pointer;
+}
+
+/* */
+
+/* партнеры*/
+
+.partnersBlockGr {
+    display: block;
+    margin: 0 20%;
+}
+
+.partnersWrappeGr {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 32px;
+    justify-content: center;
+}
+
+.partnersItemGr {
+    display: flex;
+    background: #f5f8fa;
+    border-radius: 8px;
+    padding: 75px;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 124%;
+    color: #304b93;
+}
+
+.partnersItemGr span {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.anyQstnsBlock {
+    background: #367bf5;
+    overflow: hidden;
+    display: block;
+    margin: 44px auto 0;
+    text-align: center;
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 124%;
+    /* or 60px */
+    color: #f5f7fa;
+}
+
+.anyqstnformblock {
+    display: table;
+    margin: 27px auto 41px;
+    overflow: hidden;
+    background: #f5f7fa;
+    border-radius: 12px;
+}
+
+/* form fromw3schools*/
+
+.form-inline {
+    width: unset;
+    margin: 49px 40px 19px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.formfields {
+    display: flex;
+}
+
+.checkAgreement {
+    padding: 32px 0 0 18px;
+    display: flex;
+    align-items: center;
+    color: #0b1635;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 136%;
+    font-family: TT Norms;
+}
+
+.checkAgreement span:last-child {
+    margin-left: 4px;
+    color: #367bf5;
+}
+
+.formfields input {
+    margin-left: 18px;
+    padding: 9px 20px;
+    border: 1px solid rgba(0, 64, 148, 0.5);
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.formfields .wantHelpButton {
+    margin: 0;
+    margin-left: 14px;
+    width: unset;
+    border: 1px;
+    padding: 0 30px;
+    background: #367bf5;
+}
+
+.wantHelpButtonText2 {
+    display: none;
+}
+
+.form-inline button:hover {
+    background-color: royalblue;
+}
+
+/**/
+
+.anyqstnTitle {
+    display: block;
+    margin: 40px auto 0;
+    text-align: center;
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 124%;
+    /* or 60px */
+    color: #f5f7fa;
+}
+
+.anyqstnunder {
+    display: block;
+    margin: 16px auto 0;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 136%;
+    /* identical to box height, or 27px */
+    color: #f5f7fa;
+}
+
+.anyqstnform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-right .formhint {
+    width: 50%;
+    float: left;
+}
+
+.input-right input[type="checkbox"] {
+    float: left;
+    width: 10%;
+}
+
+footer .tellAboutUS {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 24px;
+    color: #304b93;
+}
+
+footer .socialIcons {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.botNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* center items horizontally, in this case */
+    align-items: center;
+}
+
+.botNav .logoSection {
+    display: flex;
+    margin: 0 0 52px 119px;
+    align-items: center;
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 114%;
+    /* or 27px */
+    letter-spacing: 0.03em;
+    /* Темно синий */
+    color: #004094;
+}
+
+.rightbotNav {
+    margin: 0 120px 32px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.upbtns {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botNav .logoSection span {
+    margin-left: 9px;
+}
+
+.botNav .menuLinks {
+    margin: 16px 0 20px 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.botNav .menuButtons {
+    list-style: none;
+    display: inline;
+    background: #d6e5ff;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 10px 0 10px 18px;
+}
+
+.botNav .menuButtons span {
+    padding: 10px 12px;
+    margin: 0;
+}
+
+.botNav .menuButtons a {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.botNav a {
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 136%;
+    color: #304b93;
+    text-decoration: none;
+    margin-left: 24px;
+}
+
+.botNav ul {
+    margin: 0;
+}
+
+.botNav li {
+    list-style: none;
+    display: inline;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#main section>h1 {
+    text-transform: uppercase;
+    background-color: #fff;
+    text-align: center;
+    padding: 0.4em;
+    font-size: 50px;
+}
+
+.select2 {
+    width: 65% !important;
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+.select2-selection__arrow {
+    float: left;
+    left: -5%;
+    top: 15% !important;
+}
+
+.select2-dropdown {
+    /*margin-top: 174px; */
+}
+
+.button {
+    border-style: none;
+    border-radius: 1em;
+    padding: 0.5em 2em;
+    font-size: 0.78em;
+    margin: 0 10px;
+    cursor: pointer;
+    box-shadow: 2px 3px 5px #808080ad !important;
+}
+
+.bg-yellow {
+    background-color: #eaff00;
+    color: #212121;
+}
+
+.bg-red {
+    background-color: #e60606;
+    color: #fff;
+}
+
+.button-shadow {
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.block-banner {
+    margin: 0 auto;
+    margin-top: 0;
+    font-size: 17px;
+}
+
+.block-aboutus {
+    margin-top: 5.5em;
+}
+
+.section-content-header {
+    margin: 0 auto;
+    font-family: "ProximaNova-Light";
+    text-align: center;
+}
+
+.aboutvideo {
+    font-weight: bold;
+    width: 27%;
+    font-size: 30px;
+}
+
+.aboutphone {
+    width: 45%;
+    font-size: 25px;
+    font-family: "ProximaNova-Regular";
+}
+
+.video {
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    background-color: #000000;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.big-video {
+    width: 65%;
+    height: 500px;
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.video img {
+    display: flex;
+    margin: 0 auto;
+    height: 40%;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.callmeform {
+    /* display: flex; */
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 85%;
+    text-align: center;
+}
+
+.callme {
+    border-radius: 16px;
+    height: 50px;
+    width: 11em;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-right: 0.5em;
+    font-family: "ProximaNova-light";
+    padding: 0 2em;
+}
+
+.field {
+    background-color: #e2f2ff;
+    border: 3px solid white;
+    font-size: 18px;
+    color: #939797;
+}
+
+.field, .modal input, select {
+    background-color: #e2f2ff;
+    border: 3px solid white;
+    font-size: 18px;
+    color: #000;
+}
+
+option {
+    background-color: #fff;
+}
+
+.submit {
+    font-size: 24px;
+    height: 55px;
+    padding: 0 2em;
+}
+
+.modal .submit {
+    font-size: 17px;
+    width: auto;
+    height: auto;
+    padding: 0.5em 2em;
+    margin-bottom: 1em;
+}
+
+.formhint {
+    display: block;
+    font-size: 14px;
+    margin: 0 auto;
+    font-family: "ProximaNova-Light";
+    color: #8e9091;
+}
+
+.w-container {
+    width: 100%;
+    background-size: 105%;
+    background-position-y: -210px;
+    height: 510px;
+    background-image: url(../img/BG1.png);
+}
+
+.work {
+    margin: 0 auto;
+    /* margin-right: 9%; */
+    width: 20%;
+    height: 164px;
+    float: left;
+    background-color: #e2f2ff;
+}
+
+.stats {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.work>h1 {
+    font-family: "ProximaNova-Bold";
+    /*font-style: bold; */
+    font-size: 45px;
+    margin-top: 10px;
+}
+
+.work>img {
+    margin-top: -36px;
+    width: 30px;
+    margin-left: 15px;
+    background: #e2f2ff;
+    padding: 0 20px;
+}
+
+.work>p {
+    font-family: "ProximaNova-Regular";
+    color: #6c6f70;
+}
+
+.work:last-child>img {
+    width: 42px;
+}
+
+.h-container {
+    width: 60%;
+    margin: 0 auto;
+    height: 900px;
+}
+
+.h-container>p {}
+
+.helpeds {
+    width: 50%;
+    float: right;
+}
+
+.h-fix {
+    margin-bottom: 45%;
+}
+
+.helped {
+    width: 45%;
+    margin: 0 auto;
+    border: 2px solid #9a9b9b;
+    border-radius: 25px;
+    margin-bottom: 8em;
+    text-align: center;
+    padding: 30px 80px;
+}
+
+.redline {
+    background: #e31a1a;
+    border: none;
+    height: 1px;
+    border-color: #e31a1a;
+}
+
+.narrow {
+    width: 40%;
+}
+
+.medium {
+    width: 60%;
+}
+
+.wide {
+    width: 80%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.helped img {
+    height: 9em;
+    display: block;
+    margin-left: -19%;
+    margin-top: -35%;
+    background: #e2f2ff;
+    padding: 0 55px;
+    border-radius: 50%;
+}
+
+.helped h1 {
+    font-family: "ProximaNova-Regular";
+    font-size: 19px;
+}
+
+.helped p {
+    font-family: "ProximaNova-Regular";
+}
+
+.h-head {
+    margin-bottom: 60px;
+    float: left;
+    width: 100%;
+    margin-top: 120px;
+    font-size: 24px;
+    font-family: "ProximaNova-Regular";
+    font-weight: bold;
+}
+
+.leftbanner {
+    background-image: url(../img/helpedbg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 50%;
+    float: left;
+    background-size: initial;
+    background-position: center;
+    position: relative;
+    margin-top: 15%;
+}
+
+.leftbanner p {
+    position: absolute;
+    top: 90%;
+    font-family: "ProximaNova-Regular";
+    font-size: 20px;
+    text-shadow: white 0px 0px 2px;
+    text-align: center;
+}
+
+.answer-container {
+    text-align: center;
+}
+
+.answer {
+    width: 25%;
+    font-family: "ProximaNova-Regular";
+}
+
+.container::-webkit-scrollbar {
+    width: 0px;
+    background-color: #f5f5f5;
+}
+
+.answer h3 {
+    color: #e32424;
+    font-family: "ProximaNova-Bold";
+    font-size: 24px;
+    height: 3em;
+}
+
+.limiter {
+    width: 100%;
+    height: 20px;
+    background-color: #effbfe;
+    margin: 70px 0;
+}
+
+.block-doctors {
+    background-color: #effbfe;
+    width: 98%;
+    border-radius: 40px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    height: 500px;
+}
+
+.block-doctors>h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: "ProximaNova-Bold";
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.carousel-item {
+    width: 95%;
+    height: 400px;
+    margin-right: auto;
+    font-family: "ProximaNova-Bold";
+    font-size: 14px;
+    text-align: center;
+}
+
+.carousel-item p {
+    font-family: "ProximaNova-Regular";
+}
+
+.owl-item img {
+    width: unset !important;
+}
+
+.carousel-item-content {
+    width: 100%;
+    height: 200px;
+}
+
+.arrow {
+    position: absolute;
+    height: 25%;
+    width: 2%;
+    margin-top: 4em;
+}
+
+.arrow-left {
+    left: 30px;
+}
+
+.arrow-right {
+    right: 30px;
+}
+
+.phoneheader {
+    font-family: "ProximaNova-Bold";
+    font-size: 27px;
+}
+
+.phoneheader span {
+    color: #e31a1a;
+}
+
+.qa {
+    display: block !important;
+    font-family: "ProximaNova-Bold";
+    margin-top: 7em;
+}
+
+.qa h1 {
+    margin-bottom: 1em;
+    font-size: 40px;
+}
+
+.question {
+    margin-bottom: 3em;
+    margin-left: 2em;
+}
+
+.question img {
+    float: left;
+    margin-right: 1em;
+}
+
+.question h2 {
+    font-size: 20px;
+}
+
+.question p {
+    font-family: "ProximaNova-Regular";
+    font-size: 16px;
+    margin-left: 50px;
+}
+
+.contacts {
+    background-color: #effbfe;
+    height: 450px;
+    width: 98%;
+    border-radius: 40px;
+    margin: 0 auto;
+}
+
+.contacts .container>h1 {
+    text-align: center;
+    padding: 1em 1em 0.5em;
+    font-family: "ProximaNova-Bold";
+    font-size: 38px;
+    text-transform: uppercase;
+}
+
+.contacts .container {
+    display: block;
+}
+
+.contact-list {
+    width: 50%;
+}
+
+.contact-item {
+    display: flex;
+    font-family: "ProximaNova-Regular";
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+.contact-item>div {
+    display: flex;
+    vertical-align: middle;
+    /* width: 184px; */
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.contact-item img {
+    vertical-align: middle;
+    margin-right: 1em;
+}
+
+.maps {
+    width: 40%;
+    float: left;
+    margin-left: 50%;
+    margin-right: 50%;
+    height: 250px;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    margin-top: -240px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    /* Firefox */
+    -khtml-border-radius: 15px;
+    /* KHTML */
+    border-radius: 15px;
+    /* CSS3 */
+    overflow: hidden;
+    position: relative;
+}
+
+.social {
+    margin-left: 4em;
+}
+
+.social img {
+    margin-right: 1em;
+}
+
+.modal {
+    /*display: none;
+  z-index: 999;
+  position: fixed;
+  overflow-x: hidden;
+  height: 90%;
+  top: 5%;
+  background-color: #e2f2ff;
+  margin: 0 25%;
+  width: 50%;
+  overflow-y: scroll;
+  box-shadow: 15px 15px 15px #18151573;
+    border-radius: 10px;
+    opacity: 1;*/
+    display: none;
+    z-index: 999;
+    position: fixed;
+    background-color: #e2f2ff;
+    margin: 0 25%;
+    height: 90%;
+    width: 50%;
+    top: 5%;
+    overflow-y: visible;
+    box-shadow: 15px 15px 15px #18151573;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.modal input {
+    margin: 0;
+}
+
+.stats {
+    margin-top: 10px;
+}
+
+#modal_close, #doctor_modal_close, #donate_modal_close, #signin_modal_close, #signup_modal_close, #nko_modal_close {
+    position: absolute;
+    top: -19px;
+    right: -19px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.modal>h1 {
+    text-align: center;
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.modal label {
+    display: -webkit-inline-flex;
+}
+
+span.required {
+    color: red;
+    display: block;
+    font-size: 30px;
+    /* height: 25px; */
+    padding: 0;
+}
+
+.inputblock {
+    margin: 2em 10px;
+    font-family: "ProximaNova-Regular";
+    font-size: 17px;
+}
+
+.input-right input, .input-right select {
+    width: 70%;
+    float: right;
+    font-size: inherit;
+}
+
+.input-bottom input, .input-bottom textarea {
+    width: 100%;
+    font-size: inherit;
+}
+
+.file-uploader {
+    position: relative;
+    min-height: 3em;
+    padding: 1em 0em;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    border: 2px solid #000000;
+    margin-top: 2em;
+    margin-bottom: 30px;
+}
+
+fieldset, .file-uploader, textarea {
+    border-radius: 8px;
+    border: 3px solid #fff;
+}
+
+#fakefile {
+    width: 150px;
+    height: 35px;
+    font-size: 13px;
+    position: absolute;
+    left: 1em;
+}
+
+.btn-tertiary {
+    color: #555;
+    padding: 0;
+    line-height: 40px;
+    width: 300px;
+    margin: auto;
+    display: block;
+    border: 2px solid #555;
+}
+
+.btn-tertiary:hover, .example-2 .btn-tertiary:focus {
+    color: #888;
+    border-color: #888;
+}
+
+.input-file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.input-file+.js-labelFile {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.input-file+.js-labelFile .icon:before {
+    content: "\f093";
+}
+
+.input-file+.js-labelFile.has-file .icon:before {
+    content: "\f00c";
+    color: #5aac7b;
+}
+
+.file-uploader input[type="file"] {
+    display: flex;
+    vertical-align: middle;
+    height: 2em;
+    z-index: 1;
+    opacity: 0;
+    width: 150px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#request_uploaded_files {
+    display: block;
+    max-width: 65%;
+}
+
+.uploaded-file {
+    background: white;
+    border-radius: 20px;
+    align-items: center;
+    display: block;
+    position: relative;
+    padding: 0.5em 1em;
+    font-size: 13px;
+    float: left;
+    margin-top: 1em;
+    min-width: 35%;
+    height: 2em;
+    overflow: hidden;
+    margin-right: 1em;
+}
+
+.uploaded-file img {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    top: 30%;
+    right: 5%;
+    cursor: pointer;
+}
+
+.uploaded-file p {
+    max-width: 10em;
+    position: relative;
+    display: block;
+    overflow-x: hidden;
+    font-family: "ProximaNova-Regular";
+    height: 1em;
+    display: flex;
+    line-height: 100%;
+    align-items: stretch;
+    margin-top: 0.4em;
+    padding: 0 1em;
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+}
+
+#bg_layer {
+    display: none;
+    opacity: 0.8;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 16px;
+    background-color: rgba(1, 1, 1, 0.8);
+    z-index: 100;
+    overflow: auto;
+}
+
+#bg_main {
+    background-color: #4e6d86;
+}
+
+.menu__icon {
+    display: none;
+    width: 45px;
+    height: 35px;
+    position: relative;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.menu__icon span {
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: #333333;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+    background-color: black;
+    z-index: 3;
+}
+
+.menu__icon span:nth-child(1) {
+    top: 0px;
+}
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+    top: 13px;
+}
+
+.menu__icon span:nth-child(4) {
+    top: 26px;
+}
+
+/* большие экраны*/
+
+@media screen and (min-width: 1836px) {
+    .partnersItem {
+        flex-basis: 11%;
+    }
+}
+
+/* Ноутбуки HDPI*/
+
+@media screen and (max-width: 1440px) {
+    main {
+        margin-top: 108px;
+    }
+    .navSection ul {
+        padding: 0;
+    }
+    .navSection .logoSection {
+        margin-left: 62px;
+    }
+    .underNavBlock {
+        margin: 48px auto 0;
+    }
+    .underNavBlock .row .underTitle {
+        margin-top: 174px;
+    }
+    .underNavBlock .row .underTitle p {
+        display: block;
+        margin: 16px 0 0 0;
+    }
+    .underNavBlock .wantHelpButton {
+        margin: 62px 0 0 0;
+    }
+    .howWeHelpBlock {
+        margin: 0 163px;
+    }
+    .howWeHelp {
+        flex-wrap: nowrap;
+    }
+    .howHelp .underHowWeTitle {
+        margin: 8px 0 0 0;
+    }
+    .howWeHelpList {
+        margin-top: 22px;
+    }
+    .howWeHelpList li:last-child {
+        padding-bottom: unset;
+    }
+    .howWeHelpList li span {
+        display: block;
+        margin-left: 12px;
+    }
+    .numbs .howWeHelpTitle {
+        margin-top: 72px;
+    }
+    .yearsBlock {
+        margin: 32px 148px 84px;
+    }
+    .years {
+        flex-wrap: nowrap;
+        justify-content: unset;
+    }
+    .years div {
+        width: 250px;
+        height: 368px;
+        margin: 0;
+        margin-left: 48px;
+    }
+    /* .years div:last-child {
+    width: 250px;
+    height: 368px;
+    margin: 0;
+    margin-left: 28px;
+  }*/
+    .years img {
+        width: 100%;
+        height: 368px;
+    }
+    .patientsHistory .howWeHelpTitle {
+        margin-top: 48px;
+    }
+    .patientsHistory .underHowWeTitle {
+        margin-top: 14px;
+    }
+    .patientsHistoryBlocksContainer {
+        margin: 40px 142px;
+    }
+    .patientsHistoryBlocksContainer .historyBlock {
+        margin-left: 38px;
+    }
+    .patientsHistoryBlocksContainer .historyBlock:first-child {
+        margin-left: unset;
+    }
+    .whyHelpBlock {
+        margin: 0 224px;
+        position: relative;
+    }
+    .whyHelpBlock .title {
+        top: 80px;
+        font: bold 44px TT Norms-Bold;
+    }
+    .whyHelpBlock .underTitle {
+        margin-top: 202px;
+    }
+    .whyHelpBlock .underTitle span span {
+        font: 500 18px TT Norms;
+        letter-spacing: 0.005em;
+        color: #304B93;
+        opacity: 0.9;
+        margin-top: 202px;
+    }
+    .whyHelpBlock .underTitle span p {
+        font: mormal 18px TT Norms;
+        margin: 12px 0 0 0;
+        color: #0B1635;
+    }
+    .firstHalfYear {
+        margin: 0;
+    }
+    .spendsGenWrap {
+        margin-top: 32px;
+    }
+    .spendsWrapper {
+        display: table;
+        margin: 0 224px;
+        background: #f5f8fa;
+        overflow: auto;
+        border-bottom: 2px solid rgba(47, 73, 140, 0.12);
+    }
+    .rowToWork {
+        align-items: unset;
+    }
+    .hlpbrdTitle {
+        padding-top: 26px;
+        letter-spacing: 0.005em;
+        color: #304b93;
+        display: block;
+        text-align: center;
+        line-height: 138%;
+        font: 600 18px Inter;
+    }
+    .partnersBlockGr {
+        display: block;
+        margin: 0 132px;
+    }
+    .partnersBlockGr .howWeHelpTitle {
+        margin-top: 70px;
+    }
+    footer .socialIcons {
+        margin-top: 22px;
+    }
+}
+
+/*ноутбуки */
+
+@media screen and (max-width: 1280px) {
+    .navSection ul {
+        margin-left: unset;
+    }
+    .navSection .logoSection {
+        margin-left: unset;
+    }
+    .underNavBlock .title {
+        font-size: 65px;
+    }
+    .howWeHelpBlock {
+        margin: 0;
+    }
+    .underNavBlock {
+        background: #f5f8fa;
+        -webkit-box-shadow: 0px 8px 14px rgba(0, 64, 148, 0.08);
+        box-shadow: 0px 8px 14px rgba(0, 64, 148, 0.08);
+        max-width: 1200px;
+        border-radius: 20px;
+        margin: 30px auto;
+        position: relative;
+    }
+    .underNavBlock .wantHelpButton {
+        margin-top: 18px;
+    }
+    .underHelpButton {
+        display: block;
+        margin-top: 0px;
+    }
+    .howWeHelp {
+        margin: 48px 80px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: nowrap;
+    }
+    .years {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    .years div {
+        margin: 0 20px;
+    }
+    .whyHelpBlock {
+        max-width: 1000px;
+        margin: 30px auto;
+        position: relative;
+    }
+    .firstHalfYear {
+        margin: 0;
+    }
+    .spendsWrapper {
+        margin: 0 124px;
+    }
+    .partnersBlockGr {
+        display: block;
+        margin: 0 50px;
+    }
+}
+
+/* телефоны */
+
+/*@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {} */
+
+@media only screen and (max-width: 320px) {
+    .partnersItem {
+        padding: 20% 6.6%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        margin-top: 64px;
+    }
+    .lp-header {
+        width: 100%;
+    }
+    .navSection {
+        padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+        justify-content: unset;
+        -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+        height: 64px;
+    }
+    .navSection .hamburger {
+        display: block;
+        margin: 5px 20px;
+    }
+    .navSection .hamburger .div1 {
+        width: 22px;
+        height: 2px;
+        background: #173c85;
+    }
+    .navSection .hamburger .div2 {
+        width: 12px;
+        height: 2px;
+        margin-top: 4px;
+        background: #173c85;
+    }
+    .navSection .hamburger .div3 {
+        width: 17px;
+        margin-top: 4px;
+        height: 2px;
+        background: #173c85;
+    }
+    .navSection .logoSection {
+        margin: 0;
+        margin-left: 2px;
+    }
+    .navSection .logoSection img {
+        width: 26px;
+        height: 20px;
+    }
+    .navSection .logoSection span {
+        display: none;
+    }
+    .navSection ul {
+        position: absolute;
+        right: 16px;
+        margin: 0;
+    }
+    .navSection .menuLinks {
+        position: absolute;
+        left: 0;
+        margin: 0;
+        display: none;
+    }
+    .navSection ul .menuButtons {
+        border-radius: unset;
+        background: unset;
+        margin: 0 5px;
+    }
+    .navSection ul .menuButtons a {
+        margin: 0;
+    }
+    .underNavBlock {
+        width: 100%;
+        margin-top: unset;
+        border-radius: unset;
+        background: unset;
+        box-shadow: none;
+    }
+    .underNavBlock .title {
+        font-size: 23px;
+        line-height: 27px;
+        letter-spacing: 0.02em;
+        position: static;
+        display: block;
+        text-align: center;
+        color: #004094;
+        padding-top: 31px;
+    }
+    .underNavBlock .mobileDescr {
+        display: block;
+        text-align: center;
+        margin-top: 17px;
+        margin-bottom: 12px;
+    }
+    .underNavBlock .row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .underNavBlock .row .underTitle {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        margin-top: 18px;
+        margin-left: 20px;
+        margin-right: 16px;
+        font: 600 16px TT Norms;
+    }
+    .underNavBlock .row .underTitle br {
+        display: none;
+    }
+    .underNavBlock .row .underTitle p {
+        color: #242f65;
+        margin: 8px 0 0;
+        font: normal 16px TT Norms;
+    }
+    .underNavBlock .row .underTitle .wantHelpButton {
+        margin-top: 30px;
+        margin-bottom: 0;
+        width: 186px;
+        height: 48px;
+        font-size: 18px;
+        text-transform: none;
+    }
+    .underNavBlock .row .underTitle .triangle {
+        width: 4px;
+        height: 2px;
+        border-bottom: solid 4px #fca80e;
+        border-right: solid 4px #fca80e;
+        border-left: solid 4px transparent;
+        border-top: solid 4px transparent;
+        border-radius: 0 0 2px 0;
+        position: absolute;
+        bottom: 6px;
+        right: 6px;
+    }
+    .underNavBlock .row .underTitle .underHelpButton {
+        display: none;
+    }
+    .underNavBlock .row iframe {
+        width: 100%;
+        height: 196px;
+        margin: 0;
+    }
+    .howWeHelp {
+        margin: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .workInNum .howWeHelpTitle {
+        font-size: 28px;
+    }
+    .howHelp .howWeHelpTitle {
+        font-size: 34px;
+        line-height: 118%;
+        margin-top: 54px;
+    }
+    .howHelp .underHowWeTitle {
+        display: none;
+    }
+    .underHowWeTitle {
+        font-size: 16px;
+        margin-top: 14px;
+    }
+    .howWeHelp {
+        width: 100%;
+        margin-top: 28px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .howWeHelp .howWeHelpImg {
+        width: 100%;
+    }
+    .howWeHelp .howWeHelpList {
+        width: 100%;
+    }
+    .howWeHelp .howWeHelpList ol {
+        padding-left: 25px;
+        margin-top: 58px;
+    }
+    .howWeHelp .howWeHelpList li:last-child {
+        padding-bottom: 0;
+    }
+    .howWeHelp .howWeHelpList li {
+        font-size: 18px;
+        line-height: 128%;
+        /* or 24px */
+        letter-spacing: 0.01em;
+        padding-bottom: 25px;
+    }
+    .howWeHelp .howWeHelpList li span {
+        /* Black */
+        color: #0b1635;
+        display: block;
+        margin-left: 13px;
+    }
+    .numbs {
+        margin-top: 33px;
+    }
+    .numbs img {
+        width: 100%;
+        margin: 0 13px 0;
+    }
+    .undernumslide {
+        display: flex;
+        align-items: flex-start;
+    }
+    .undernumslide span {
+        display: block;
+        width: 75%;
+        margin-left: 16px;
+        font: 500 20px TT Norms;
+        color: #242F65;
+    }
+    .redstar {
+        display: flex;
+        width: 16px;
+        height: 16px;
+        background-image: url(./img/redstar.png);
+        background-attachment: cover;
+        margin-left: 16px;
+    }
+    .redpoint {
+        width: 4px;
+        height: 4px;
+        background: #ffffff;
+        margin: auto;
+    }
+    .undernumsblock .undernumslide:last-child {
+        padding: unset;
+    }
+    .undernumslide {
+        padding-bottom: 16px;
+    }
+    .undernumsblock {
+        margin-top: 28px;
+    }
+    .workInNum .howWeHelpTitle {
+        margin-top: 0;
+    }
+    .yearsBlock {
+        margin: 33px auto;
+        display: none;
+    }
+    .years {
+        justify-content: unset;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+    .years div {
+        flex: 0 0 auto;
+    }
+    .years div img {
+        -webkit-box-shadow: 0px 8px 14px rgba(0, 64, 148, 0.08);
+        box-shadow: 0px 8px 14px rgba(0, 64, 148, 0.08);
+        border-radius: 11px;
+    }
+    .swiper-container {
+        display: block;
+    }
+    .undernumsblock {
+        display: block;
+    }
+    .numbs .swiper-slide {
+        margin-bottom: 40px;
+    }
+    .patientsHistory .howWeHelpTitle {
+        margin-top: 56px;
+        font-size: 34px;
+        line-height: 118%;
+    }
+    .patientsHistory .underHowWeTitle {
+        display: none;
+    }
+    .patientsHistoryBlocksContainer {
+        margin: 24px auto;
+        justify-content: unset;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        display: none;
+    }
+    .patientsHistory {
+        background: unset;
+    }
+    .historyBlock {
+        margin: 24px 8px 40px;
+    }
+    .historyBlock span {
+        display: block;
+        text-align: start;
+        margin: 8px 0 0 0;
+    }
+    .historyBlock iframe {
+        height: 205px;
+        border-radius: 12px 12px 0px 0px;
+        background-color: #000000;
+    }
+    .historyBlock p {
+        display: block;
+        width: 90%;
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 140%;
+        text-align: start;
+        margin: 8px 0 0 0;
+    }
+    .avaAndName .name {
+        display: flex;
+        margin-left: 14px;
+    }
+    .avaAndName .name span {
+        margin: auto;
+    }
+    .whyHelpBlock {
+        width: 100%;
+        margin: 0px;
+        margin-top: 52px;
+        border-radius: unset;
+    }
+    .whyHelpBlock .title {
+        display: none;
+    }
+    .mobWhyHelpTitle {
+        margin: 0 5px;
+        font: bold 34px TT Norms-Bold;
+        line-height: 118%;
+        /* or 40px */
+        text-align: center;
+        /* Light Blue */
+        color: #367bf5;
+        display: block;
+    }
+    .whyHelpBlock .row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .whyHelpBlock .row .underTitle {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        margin: auto 16px;
+        font-weight: 500;
+        padding-bottom: 20px;
+        font-size: 16px;
+    }
+    .whyHelpBlock .row span span {
+        font: 500 16px TT Norms;
+        line-height: 138%;
+        letter-spacing: 0.005em;
+        color: #304B93;
+        opacity: 0.9;
+    }
+    .whyHelpBlock .row span span p {
+        font: normal 16px TT Norms;
+        line-height: 138%;
+        letter-spacing: 0.005em;
+        color: #0B1635;
+    }
+    .whyHelpBlock .row .underTitle br {
+        display: none;
+    }
+    .whyHelpBlock .row .underTitle p {
+        color: #242f65;
+        margin: 14px 0 0 0;
+    }
+    .whyHelpImg {
+        margin: 0;
+    }
+    .btnHelpCont {
+        position: relative;
+        display: table;
+        margin: 0 auto;
+    }
+    .whyHelpBlock .wantHelpButton {
+        display: block;
+        width: 290px;
+        height: 56px;
+        font-size: 18px;
+        margin: 40px auto 0;
+        text-transform: none;
+    }
+    .whyHelpBlock .row .underTitle .triangle {
+        width: 4px;
+        height: 2px;
+        border-bottom: solid 4px #fca80e;
+        border-right: solid 4px #fca80e;
+        border-left: solid 4px transparent;
+        border-top: solid 4px transparent;
+        border-radius: 0 0 2px 0;
+        position: absolute;
+        bottom: 6px;
+        right: 6px;
+    }
+    .whyHelpBlock .row .underTitle .underHelpButton {
+        display: none;
+    }
+    .whyHelpBlock .row img {
+        width: 100%;
+        margin: 10px auto;
+    }
+    .firstHalfYear {
+        display: block;
+        font: bold 22px TT Norms-Bold;
+        line-height: 124%;
+        margin: 42px 30px 0;
+        text-align: center;
+        color: #367bf5;
+    }
+    .firstHalfYear br {
+        display: none;
+    }
+    .firstHalfYear span {
+        display: inline;
+    }
+    .spendsTables {
+        order: 1;
+    }
+    .spendsWrapper {
+        margin: 24px 12px 24px 16px;
+        background: unset;
+        border-bottom: unset;
+    }
+    .spendsTitle {
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .spendsContainer {
+        flex-wrap: nowrap;
+        justify-content: unset;
+        margin: 0;
+    }
+    .spendImage {
+        width: 16px;
+        height: 16px;
+    }
+    .spendsText {
+        margin-left: 10px;
+    }
+    .spendsDescr {
+        display: inline-block;
+        margin-top: 8px;
+        font-size: 16px;
+    }
+    .spendsMoney {
+        order: 1;
+        border-left: unset;
+        margin-left: 24px;
+        padding: 0;
+    }
+    .totalSpends {
+        margin: 24px 0 0 0;
+        order: 0;
+        flex-direction: column;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+    }
+    .totalSpendsDate {
+        display: inline;
+    }
+    .totalSpends .amountAndLogo {
+        order: 0;
+        display: inline;
+    }
+    .amountAndLogo span {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        color: #242f65;
+        opacity: 0.9;
+    }
+    .totalSpends .amountAndLogo span {
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 108%;
+        color: #242f65;
+        opacity: 0.9;
+    }
+    .totalSpends .amountAndLogo svg {
+        width: 23px;
+        height: 34px;
+        color: #242f65;
+    }
+    .totalSpends .amountAndLogo svg path {
+        fill: #242f65;
+    }
+    .amountAndLogo img {
+        width: 10px;
+        height: 15px;
+    }
+    .totalSpends span {
+        order: 1;
+        margin-top: 10px;
+    }
+    .spendsGenWrap .wantHelpButton {
+        width: unset;
+        order: 2;
+        margin: 24px 35px 0;
+    }
+    .spendsGenWrap .wantHelpButton .wantHelpButtonText {
+        padding: 18px 20px 14px;
+    }
+    .helpToWork {
+        margin-top: 48px;
+        position: relative;
+        background-image: url("./img/backgrmob.jpg");
+        width: 100%;
+    }
+    .rightSide {
+        width: 100%;
+    }
+    .rowToWork {
+        flex-wrap: wrap;
+    }
+    .descrToWork {
+        overflow: hidden;
+        font: 500 16px TT Norms;
+        margin: 24px 11px 0px 11px;
+        line-height: 138%;
+    }
+    .helpTohelp {
+        font-size: 34px;
+        margin-top: 16px;
+    }
+    .howWeHelpTitle {
+        display: block;
+    }
+    .helpboard {
+        margin: 42px 8px;
+        display: flex;
+        flex-direction: column;
+        /* margin: 0; */
+        /* margin-bottom: 200px; */
+        /* margin-left: 5%; */
+        padding: 0;
+    }
+    .periodblock {
+        margin: 0 34px 0;
+    }
+    .hlpbrdTitle {
+        padding-top: 16px;
+    }
+    .item {
+        flex-basis: 32.9%;
+    }
+    .sumblock {
+        margin: 26px 40px 18px;
+    }
+    .continuepay {
+        display: flex;
+        margin: 0 15px;
+        padding-bottom: 22px;
+        justify-content: center;
+    }
+    .socialIconsBlock {
+        position: absolute;
+        margin: 0 48px;
+        left: 0;
+        right: 0;
+        bottom: 41px;
+    }
+    .socialIcons {
+        justify-content: center;
+        padding: 0;
+    }
+    .tellAboutUS {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 108px;
+        text-align: center;
+    }
+    .partnersWrapper {
+        margin-top: 24px;
+    }
+    .partnersItem {
+        display: flex;
+        background: #b6c1c9;
+        border-radius: unset;
+        margin: 4px;
+        padding: 55px 24px;
+        font-size: unset;
+        flex-basis: 34%;
+    }
+    .underHelpBoard {
+        display: block;
+        margin: 30px 35px 150px;
+        font-family: TT Norms-Bold;
+        font-size: 18px;
+        line-height: 118%;
+        text-align: center;
+        color: #ffffff;
+    }
+    .partnersBlockGr {
+        margin: 0;
+    }
+    .partnersBlockGr .howWeHelpTitle {
+        font-size: 34px;
+        margin: 52px 20px 0;
+    }
+    .partnersWrappeGr {
+        margin-top: 24px;
+        grid-template-columns: 49% 49%;
+        gap: 4px;
+    }
+    .partnersItemGr {
+        display: flex;
+        background: #b6c1c9;
+        border-radius: unset;
+        margin: 4px;
+        padding: 55px 24px;
+        font-size: unset;
+        flex-basis: 34%;
+    }
+    .anyQstnsBlock {
+        margin-top: 64px;
+    }
+    .anyqstnTitle {
+        font-size: 34px;
+        margin: 32px auto 0;
+    }
+    .anyqstnunder {
+        margin: 18px auto 0;
+        font-size: 18px;
+        line-height: 124%;
+    }
+    .anyqstnformblock {
+        display: block;
+        margin: 22px 12px 32px;
+        border-radius: 6px;
+    }
+    .form-inline {
+        width: unset;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .formfields {
+        flex-direction: column;
+    }
+    .formfields input {
+        padding: 20px;
+        margin: 18px 28px 0;
+        border: 1px solid rgba(0, 64, 148, 0.5);
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+    .formfields input:first-child {
+        margin: 28px 28px 0;
+    }
+    .formfields .wantHelpButton {
+        margin: 32px 28px 0;
+        background: #004094;
+        width: unset;
+        border: 1px;
+        padding: 0 30px;
+    }
+    .formfields .wantHelpButtonText {
+        display: none;
+    }
+    .formfields .wantHelpButtonText2 {
+        display: block;
+        background: #004094;
+    }
+    .checkAgreement {
+        padding: 10px 28px 24px;
+        display: flex;
+        flex-wrap: wrap;
+        /* align-items: center; */
+        color: #0b1635;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 136%;
+        font-family: TT Norms;
+    }
+    footer .tellAboutUS {
+        position: unset;
+        font-size: 24px;
+        color: #304b93;
+        margin: 56px 75px 0;
+    }
+    footer .socialIcons {
+        margin-top: 30px;
+    }
+    .botNav {
+        flex-direction: column;
+    }
+    .botNav .logoSection {
+        margin: 45px 0 0 0;
+        display: flex;
+        align-items: center;
+    }
+    .botNav .logoSection img {
+        width: 41.5px;
+        height: 30px;
+    }
+    .botNav .logoSection br {
+        display: none;
+    }
+    .upbtns {
+        margin: 32px 0 0 50px;
+        order: 1;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .botNav .menuLinks {
+        margin: 19px 0 0 0;
+        flex-direction: column;
+    }
+    .botNav .menuLinks li {
+        margin-top: 24px;
+    }
+    .botNav .menuButtons {
+        list-style: none;
+        display: inline;
+        background: #d6e5ff;
+        border-radius: 4px;
+        padding: 5px;
+        margin: 10px 12px 10px 10px;
+    }
+    .botNav .menuButtons:last-child {
+        margin: 10px 10px 10px 12px;
+    }
+    .botNav .menuButtons span {
+        padding: 10px 12px;
+        margin: 0;
+    }
+    .botNav .menuButtons a {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+#preloader {
+    width: min-content;
+    height: 320px;
+}
+
+#preloader img {
+    display: block;
+    margin: 0 auto;
+}
+
+#preloader h1 {
+    width: 25em;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.tabs>input {
+    display: none;
+}
+
+.tabs>div {
+    display: none;
+    padding: 12px;
+}
+
+.tabs>label {
+    display: inline-block;
+    padding: 7px;
+    margin: 0 -5px -1px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tabs>input+label {
+    background-color: #ffffff;
+}
+
+.tabs>input:checked+label {
+    color: #000000;
+    background-color: #e2f2ff;
+    border: 2px solid white;
+    border-bottom: none;
+    /*  background: #FFFFFF; */
+}
+
+#tab_1:checked~#txt_1, #tab_2:checked~#txt_2 {
+    display: block;
+}
+
+label[for="tab_1"], label[for="tab_2"] {
+    width: 38.53%;
+    /* border: 1px solid; */
+    border-bottom: none;
+}
+
+label[for="tab_1"] {
+    margin-left: 10%;
+}
+
+#txt_1, #txt_2 {
+    padding-top: 0;
+}
+
+#doctor_modal .container {
+    border: 2px solid white;
+    padding: 0 10.9%;
+    padding-bottom: 30px;
+}
