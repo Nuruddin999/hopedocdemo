@@ -828,11 +828,14 @@
         btn.addEventListener('click', () => {
             document.body.addEventListener('touchstart', function (e) { e.preventDefault(); });
             document.body.style.overflow = 'hidden';
+            document.body.style.position = 'relative';
+
             document.querySelector("body > div.navdrawr").style.transform = "translateX(0)";
         })
 
         $('.navdrawheader, img').click(function () {
-            $('html, body').css('overflowY', 'auto');
+            document.body.style.position = 'unset';
+            $('html, body').css('overflow', 'auto');
             $('.navdrawr').css('transform', 'translateX(-100%)');
         });
     </script>
