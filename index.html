@@ -826,6 +826,7 @@
         })
         var btn = document.querySelector(".hamburger")
         btn.addEventListener('click', () => {
+            document.body.addEventListener('touchstart', function (e) { e.preventDefault(); });
             document.body.style.overflow = 'hidden';
             document.querySelector("body > div.navdrawr").style.transform = "translateX(0)";
         })
