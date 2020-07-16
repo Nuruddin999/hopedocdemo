@@ -1,0 +1,116 @@
+@import "./fonts.sass";
+@import "./common.scss";
+main {
+      margin-top: 156px;
+      .offer-help {
+            display: flex;
+            section {
+                  margin-left: 120px;
+                  margin-right: 109px;
+                  h1 {
+                        @include font(TT Norms-Bold, normal, normal, 52px, 124%, null);
+                        @include fontcolor;
+                  }
+                  span {
+                        display: block;
+                        width: 90%;
+                        @include font(TT Norms, normal, 500, 20px, 134%, null);
+                        color: #304b93;
+                        margin-top: 22px;
+                        margin-right: 22px;
+                        .free {
+                              display: inline;
+                              color: #f23b53;
+                              margin-right: 0;
+                        }
+                  }
+                  span:first-child {
+                        margin-top: 0;
+                  }
+                  button {
+                        @include buttonInNKO();
+                  }
+            }
+            img {
+                  margin-right: 78px;
+            }
+      }
+      .who-we-are {
+            display: block;
+            width: 100%;
+            h1 {
+                  @include font(TT Norms-Bold, normal, normal, 52px, 124%, null);
+                  @include fontcolor;
+                  text-align: center;
+                  margin-top: 122px;
+            }
+            .container {
+                  display: flex;
+                  padding-top: 6px;
+                  margin-left: 120px;
+                  margin-right: 205px;
+                  section {
+                        margin-right: 103px;
+                        span {
+                              .doctors {
+                                    display: inline;
+                              }
+                              display: block;
+                              margin-top: 48px;
+                              @include font(TT Norms, normal, normal, 24px, 158%, null);
+                              color: #202642;
+                        }
+                        span:first-child {
+                              margin-top: 0;
+                        }
+                        button {
+                              @include buttonInNKO();
+                              margin-top: 48px;
+                        }
+                  }
+                  .right {
+                        display: flex;
+                        flex-direction: column;
+                        span {
+                              text-align: center;
+                              @include font(TT Norms-Bold, normal, normal, 20px, 114%, null);
+                              @include fontcolor;
+                        }
+                        .row {
+                              display: flex;
+                              flex: 1;
+                              .card {
+                                    flex: 1;
+                                    margin-left: 67px;
+                                    margin-top: 32px;
+                                    .img {
+                                          border-radius: 12px;
+                                    }
+                                    span {
+                                          display: table;
+                                    }
+                                    .name {
+                                          @include font(Inter, normal, 500, 16px, 132%, 0.005em);
+                                          color: #0b1635;
+                                          margin-top: 12px;
+                                    }
+                                    .position {
+                                          @include font(Inter, normal, normal, 15px, 138%, 0.005em);
+                                          color: #f23b53;
+                                          margin-top: 4px;
+                                    }
+                              }
+                              .card:nth-child(odd) {
+                                    margin-left: 0;
+                              }
+                        }
+                  }
+            }
+      }
+}
+@media screen and(min-width:1600px) {
+      body {
+            width: calc(1440px + 10%);
+            margin: 0 auto 0;
+      }
+}

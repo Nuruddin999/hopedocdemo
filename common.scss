@@ -1,0 +1,164 @@
+@mixin font($font, $fontstyle, $fontweight, $fontsize, $lineheight, $letterspacing) {
+      font-family: $font;
+      font-style: $fontstyle;
+      font-weight: $fontweight;
+      font-size: $fontsize;
+      line-height: $lineheight;
+      letter-spacing: $letterspacing;
+}
+@mixin fontcolor {
+      color: #367bf5;
+}
+%button {
+      background: #367bf5;
+      color: white;
+      border: unset;
+      border-radius: 6px;
+}
+@mixin button {
+      background: #367bf5;
+      color: white;
+      border: unset;
+      border-radius: 6px;
+}
+@mixin btn {
+      position: relative;
+      padding: 16px 20px;
+      @include font(RT Mono, normal, bold, 18px, 134%, null);
+      margin-top: 32px;
+      @include button;
+}
+@mixin triangle {
+      position: absolute;
+      bottom: 4px;
+      right: 4px;
+      width: 0;
+      height: 0;
+      border-top: 4px solid transparent;
+      border-right: 4px solid #f9b53b;
+      border-bottom: 4px solid #f9b53b;
+      border-left: 4px solid transparent;
+      border-radius: 0px 0px 4px 0px;
+}
+@mixin redpoint {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #ffffff;
+      margin: auto;
+}
+@mixin redstar {
+      display: flex;
+      flex: 0 0 16px;
+      height: 16px;
+      background-image: url(./img/redstar.png);
+      background-size: auto;
+      background-attachment: cover;
+      margin: 4px 0 0 16px;
+      .redpoint {
+            @include redpoint();
+      }
+}
+@mixin descr {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+      .helptitle {
+            @include font(Inter, normal, 500, 20px, 138%, 0.005em);
+      }
+      .helpdescr {
+            @include font(TT Norms, normal, 500, 16px, 134%, 0.005em);
+            margin-top: 6px;
+      }
+}
+@mixin undernumslide {
+      display: flex;
+      align-items: flex-start;
+      .redstar {
+            @include redstar();
+      }
+      .descr {
+            @include descr();
+      }
+}
+@mixin description {
+      margin: unset;
+      li {
+            list-style: none;
+            margin-top: 20px;
+      }
+      li:first-child {
+            margin-top: unset;
+      }
+      .undernumslide {
+            @include undernumslide();
+      }
+}
+@mixin buttons($val) {
+      top: unset;
+      bottom: 25px;
+      left: $val;
+      background: #004094;
+      border-radius: 50%;
+      padding: 0 9px;
+}
+@mixin undertitle {
+      display: block;
+      text-align: center;
+      @include font(TT Norms, normal, normal, 26px, 128%, 0.01em);
+      margin-top: 18px;
+
+      color: #202642;
+}
+@mixin title($top) {
+      display: block;
+      text-align: center;
+      @include font(TT Norms-Bold, normal, normal, 48px, 124%, null);
+      @include fontcolor;
+      margin-top: $top;
+}
+@mixin nko-worker($left) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: $left;
+      iframe {
+            border-radius: 12px;
+      }
+      .nko-worker-name {
+            @include font(TT Norms-Bold, normal, bold, 24px, 124%, 0.005em);
+            color: #324883;
+            text-align: center;
+            margin-top: 28px;
+            color: #324883;
+      }
+      .nko-worker-description {
+            @include font(TT Norms, normal, normal, 16px, 134%, 0.005em);
+            color: #324883;
+            text-align: center;
+            margin-top: 28px;
+      }
+}
+@mixin buttonInNKO {
+      @include btn;
+      margin-top: 44px;
+      padding: 15px 57px 15px 40px;
+      span {
+            display: inline;
+            @include font(RT Mono, normal, bold, 20px, 134%, null);
+            color: white;
+            margin-right: 0;
+      }
+      .tri {
+            @include triangle;
+            bottom: 8px;
+            right: 8px;
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-right: 8px solid #f9b53b;
+            border-bottom: 8px solid #f9b53b;
+            border-left: 8px solid transparent;
+            border-radius: 0px 0px 4px 0px;
+      }
+}

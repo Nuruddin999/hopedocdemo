@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
+@font-face {
+  font-family: "TT Norms";
+  font-style: normal;
+  src: url("./fonts/TTNorms-Regular.ttf");
+}
+
+@font-face {
+  font-family: "TT Norms-Regular";
+  font-style: normal;
+  src: url("./fonts/TTNorms-Regular.ttf");
+}
+
+@font-face {
+  font-family: "TT Norms-Bold";
+  font-style: bold;
+  src: url("./fonts/TTNorms-Bold.ttf");
+}
+
+@font-face {
+  font-family: "RT Mono";
+  font-style: normal;
+  src: url("./fonts/PTMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "PT Mono-Bold";
+  font-style: normal;
+  src: url("./fonts/PTM75F.ttf");
+}
+
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url("./fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("./fonts/ProximaNova-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova-Light";
+  src: url("./fonts/ProximaNova-Light.ttf") format("truetype");
+}
+
+main {
+  margin-top: 156px;
+}
+
+main .offer-help {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .offer-help section {
+  margin-left: 120px;
+  margin-right: 109px;
+}
+
+main .offer-help section h1 {
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 124%;
+  color: #367bf5;
+}
+
+main .offer-help section span {
+  display: block;
+  width: 90%;
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 134%;
+  color: #304b93;
+  margin-top: 22px;
+  margin-right: 22px;
+}
+
+main .offer-help section span .free {
+  display: inline;
+  color: #f23b53;
+  margin-right: 0;
+}
+
+main .offer-help section span:first-child {
+  margin-top: 0;
+}
+
+main .offer-help section button {
+  position: relative;
+  padding: 16px 20px;
+  font-family: RT Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 134%;
+  margin-top: 32px;
+  background: #367bf5;
+  color: white;
+  border: unset;
+  border-radius: 6px;
+  margin-top: 44px;
+  padding: 15px 57px 15px 40px;
+}
+
+main .offer-help section button span {
+  display: inline;
+  font-family: RT Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 134%;
+  color: white;
+  margin-right: 0;
+}
+
+main .offer-help section button .tri {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-right: 4px solid #f9b53b;
+  border-bottom: 4px solid #f9b53b;
+  border-left: 4px solid transparent;
+  border-radius: 0px 0px 4px 0px;
+  bottom: 8px;
+  right: 8px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #f9b53b;
+  border-bottom: 8px solid #f9b53b;
+  border-left: 8px solid transparent;
+  border-radius: 0px 0px 4px 0px;
+}
+
+main .offer-help img {
+  margin-right: 78px;
+}
+
+main .who-we-are {
+  display: block;
+  width: 100%;
+}
+
+main .who-we-are h1 {
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 124%;
+  color: #367bf5;
+  text-align: center;
+  margin-top: 122px;
+}
+
+main .who-we-are .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 6px;
+  margin-left: 120px;
+  margin-right: 205px;
+}
+
+main .who-we-are .container section {
+  margin-right: 103px;
+}
+
+main .who-we-are .container section span {
+  display: block;
+  margin-top: 48px;
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 158%;
+  color: #202642;
+}
+
+main .who-we-are .container section span .doctors {
+  display: inline;
+}
+
+main .who-we-are .container section span:first-child {
+  margin-top: 0;
+}
+
+main .who-we-are .container section button {
+  position: relative;
+  padding: 16px 20px;
+  font-family: RT Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 134%;
+  margin-top: 32px;
+  background: #367bf5;
+  color: white;
+  border: unset;
+  border-radius: 6px;
+  margin-top: 44px;
+  padding: 15px 57px 15px 40px;
+  margin-top: 48px;
+}
+
+main .who-we-are .container section button span {
+  display: inline;
+  font-family: RT Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 134%;
+  color: white;
+  margin-right: 0;
+}
+
+main .who-we-are .container section button .tri {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-right: 4px solid #f9b53b;
+  border-bottom: 4px solid #f9b53b;
+  border-left: 4px solid transparent;
+  border-radius: 0px 0px 4px 0px;
+  bottom: 8px;
+  right: 8px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #f9b53b;
+  border-bottom: 8px solid #f9b53b;
+  border-left: 8px solid transparent;
+  border-radius: 0px 0px 4px 0px;
+}
+
+main .who-we-are .container .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .who-we-are .container .right span {
+  text-align: center;
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 114%;
+  color: #367bf5;
+}
+
+main .who-we-are .container .right .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main .who-we-are .container .right .row .card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 67px;
+  margin-top: 32px;
+}
+
+main .who-we-are .container .right .row .card .img {
+  border-radius: 12px;
+}
+
+main .who-we-are .container .right .row .card span {
+  display: table;
+}
+
+main .who-we-are .container .right .row .card .name {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 132%;
+  letter-spacing: 0.005em;
+  color: #0b1635;
+  margin-top: 12px;
+}
+
+main .who-we-are .container .right .row .card .position {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 138%;
+  letter-spacing: 0.005em;
+  color: #f23b53;
+  margin-top: 4px;
+}
+
+main .who-we-are .container .right .row .card:nth-child(odd) {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 1600px) {
+  body {
+    width: calc(1440px + 10%);
+    margin: 0 auto 0;
+  }
+}
+/*# sourceMappingURL=nkostyles.css.map */
