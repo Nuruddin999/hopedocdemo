@@ -387,6 +387,18 @@ main .how-we-work .howhelp .video button .tri {
   border-radius: 0px 0px 4px 0px;
 }
 
+main .how-we-work .howhelp .video .undervideo {
+  display: block;
+  font: normal normal   18px/134%  Inter;
+  color: #304B93;
+  width: 516px;
+  margin-top: 30px;
+}
+
+main .how-we-work .howhelp .video .undervideo .free {
+  color: #367bf5;
+}
+
 main .how-we-work .howhelp .right-list h4 {
   font: normal 500   24px/138%  Inter;
   margin: 0 0 24px 56px;
@@ -467,9 +479,537 @@ main .how-we-work .howhelp .right-list .description .undernumslide .descr .helpd
   margin-top: 6px;
 }
 
+main .results {
+  background: #F5F8FA;
+}
+
+main .results h1 {
+  display: block;
+  text-align: center;
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 124%;
+  color: #367bf5;
+  margin-top: 0;
+  padding-top: 80px;
+  margin-bottom: 20px;
+}
+
+main .results .undertitle {
+  font: normal normal 18px/166% TT Norms;
+  display: block;
+  text-align: center;
+  margin: 0 323px 0;
+}
+
+main .results .years {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 38px 120px 0;
+}
+
+main .results .years div {
+  margin-left: 64px;
+}
+
+main .results .years div:first-child {
+  margin-left: unset;
+}
+
+main .offer-sec {
+  background: #F5F8FA;
+  padding-bottom: 48px;
+}
+
+main .offer-sec h1 {
+  display: block;
+  text-align: center;
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 124%;
+  color: #367bf5;
+  margin-top: 0;
+  padding-top: 112px;
+  margin-bottom: 20px;
+}
+
+main .offer-sec .undertitle {
+  font: normal normal 18px/166% TT Norms;
+  display: block;
+  text-align: center;
+  margin: 0 366px 0;
+}
+
+main .offer-sec .benefits {
+  display: block;
+  font: normal bold 24px/146% TT Norms-Bold;
+  color: #367BF5;
+  text-align: center;
+  margin-top: 40px;
+}
+
+main .offer-sec .offer-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 130px 0;
+}
+
+main .offer-sec .offer-row .item-offer {
+  width: 580px;
+  height: 112px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 64, 148, 0.25);
+  border-radius: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .offer-sec .offer-row .item-offer span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 12px 0 26px;
+  font: normal normal 18px/136% TT Norms;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .offer-sec .offer-row .item-offer:last-child {
+  margin-left: 20px;
+}
+
+main .offer-sec button {
+  position: relative;
+  padding: 16px 20px;
+  font-family: RT Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 134%;
+  margin-top: 32px;
+  background: #367bf5;
+  color: white;
+  border: unset;
+  border-radius: 6px;
+  margin-top: 44px;
+  padding: 15px 57px 15px 40px;
+  display: block;
+  margin: 48px  auto 0;
+}
+
+main .offer-sec button span {
+  display: inline;
+  font-family: RT Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 134%;
+  color: white;
+  margin-right: 0;
+}
+
+main .offer-sec button .tri {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-right: 4px solid #f9b53b;
+  border-bottom: 4px solid #f9b53b;
+  border-left: 4px solid transparent;
+  border-radius: 0px 0px 4px 0px;
+  bottom: 8px;
+  right: 8px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #f9b53b;
+  border-bottom: 8px solid #f9b53b;
+  border-left: 8px solid transparent;
+  border-radius: 0px 0px 4px 0px;
+}
+
+main .partners-title h1 {
+  display: block;
+  text-align: center;
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 124%;
+  color: #367bf5;
+  margin-top: 0;
+  padding-top: 48px;
+  margin: 0 184px  48px;
+}
+
+main .partnersWrappeGr {
+  margin: 48px 132px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  gap: 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .partnersWrappeGr .partnersItemGr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #f5f8fa;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 8px;
+  padding: 75px;
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 124%;
+  color: #304b93;
+}
+
+main .nko-title {
+  display: block;
+  text-align: center;
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 124%;
+  color: #367bf5;
+  margin-top: 0;
+  padding-top: 32px;
+  margin: 0 361px  48px;
+}
+
+main .nko {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 48px 140px 0;
+}
+
+main .nko .nko-worker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 40;
+}
+
+main .nko .nko-worker iframe {
+  border-radius: 12px;
+}
+
+main .nko .nko-worker .nko-worker-name {
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 124%;
+  letter-spacing: 0.005em;
+  color: #324883;
+  text-align: center;
+  margin-top: 28px;
+  color: #324883;
+}
+
+main .nko .nko-worker .nko-worker-description {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 134%;
+  letter-spacing: 0.005em;
+  color: #324883;
+  text-align: center;
+  margin-top: 28px;
+}
+
+main .nko .nko-worker:first-child {
+  margin-left: unset;
+}
+
+main .how-become-title {
+  display: block;
+  text-align: center;
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 124%;
+  color: #367bf5;
+  margin-top: 0;
+  margin: 74px 399px  20px;
+}
+
+main .under-become {
+  font: normal normal 22px/124% TT Norms;
+  color: #202642;
+  display: block;
+  text-align: center;
+}
+
+main .become-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px 105px 0 223px;
+  overflow: hidden;
+}
+
+main .become-container .form-container {
+  background: #F5F8FA;
+  border-radius: 8px;
+  padding: 0 0 0 28px;
+  margin-left: 64px;
+  height: 352px;
+}
+
+main .become-container .form-container .form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+main .become-container .form-container .form-row input {
+  display: block;
+  padding: 14px 0 14px 18px;
+  background: #F5F8FA;
+  border: 1px solid rgba(0, 64, 148, 0.3);
+  border-radius: 8px;
+}
+
+main .become-container .form-container .form-row ::-webkit-input-placeholder {
+  color: #004094;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.005em;
+}
+
+main .become-container .form-container .form-row :-ms-input-placeholder {
+  color: #004094;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.005em;
+}
+
+main .become-container .form-container .form-row ::-ms-input-placeholder {
+  color: #004094;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.005em;
+}
+
+main .become-container .form-container .form-row ::placeholder {
+  color: #004094;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.005em;
+}
+
+main .become-container .form-container .form-row input:last-child {
+  margin-left: 20px;
+}
+
+main .become-container .form-container .form-row:first-child {
+  margin-top: 48px;
+}
+
+main .become-container .form-container .agreement {
+  display: block;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+main .become-container .form-container .agreement .agreement-text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 136%;
+  color: #0b1635;
+  margin-left: 7px;
+}
+
+main .become-container .form-container .agreement .agreement-text span {
+  color: #004094;
+}
+
+main .become-container .form-container button {
+  display: block;
+  position: relative;
+  padding: 16px 20px;
+  font-family: RT Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 134%;
+  margin-top: 32px;
+  background: #367bf5;
+  color: white;
+  border: unset;
+  border-radius: 6px;
+  background: #304b93;
+  border-radius: 6px;
+  margin: 40px 0 0 0;
+  padding: 12px 40px;
+}
+
+main .become-container .form-container button .tri {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-right: 4px solid #f9b53b;
+  border-bottom: 4px solid #f9b53b;
+  border-left: 4px solid transparent;
+  border-radius: 0px 0px 4px 0px;
+}
+
+main .all-answers {
+  display: block;
+  background: #f5f8fa;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-top: 60px;
+}
+
+main .all-answers .title {
+  display: block;
+  text-align: center;
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 124%;
+  color: #367bf5;
+  margin-top: 48;
+}
+
+main .all-answers .answers {
+  margin: 32px 0 48px;
+}
+
+main .all-answers .answers .answers-list {
+  margin: 0 297px 0;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+main .all-answers .answers .answers-list .qa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .all-answers .answers .answers-list .qa .question {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 124%;
+  color: #367bf5;
+  margin-left: 20px;
+  padding: 18px 0;
+}
+
+main .all-answers .answers .answers-list .qa .plus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #304b93;
+  border-radius: 50%;
+  padding: 9px;
+  color: #304b93;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+main .all-answers .answers .answers-list .answer-block {
+  margin: 0 8px 8px;
+  background: #f5f8fa;
+  overflow: hidden;
+}
+
+main .all-answers .answers .answers-list .answer-block span {
+  display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 154%;
+  letter-spacing: 0.005em;
+  color: #0b1635;
+  margin: 16px 80px 12px 10px;
+}
+
 @media screen and (min-width: 1500px) {
   body {
-    width: calc(1440px + 10%);
+    width: 1440px;
     margin: 0 auto 0;
   }
 }

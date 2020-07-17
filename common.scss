@@ -162,3 +162,85 @@
             border-radius: 0px 0px 4px 0px;
       }
 }
+@mixin partners {
+      margin: 48px 132px;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      gap: 32px;
+      justify-content: center;
+      .partnersItemGr {
+            display: flex;
+            background: #f5f8fa;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            padding: 75px;
+            font-family: TT Norms;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 124%;
+            color: #304b93;
+      }
+}
+@mixin nko {
+      display: flex;
+      margin: 48px 140px 0;
+      .nko-worker {
+            @include nko-worker(40);
+      }
+      .nko-worker:first-child {
+            margin-left: unset;
+      }
+}
+@mixin allanswers {
+      display: block;
+      background: #f5f8fa;
+      overflow: hidden;
+      margin-top: 50px;
+      .title {
+            @include title(48);
+      }
+      .answers {
+            margin: 32px 0 48px;
+            .answers-list {
+                  margin: 0 297px 0;
+                  background: #ffffff;
+                  overflow: hidden;
+                  .qa {
+                        display: flex;
+                        align-items: center;
+
+                        justify-content: space-between;
+                        .question {
+                              @include font(TT Norms, normal, 500, 18px, 124%, null);
+                              color: #367bf5;
+                              margin-left: 20px;
+                              padding: 18px 0;
+                        }
+                        .plus {
+                              display: flex;
+                              border: 1px solid #304b93;
+                              border-radius: 50%;
+                              padding: 9px;
+                              color: #304b93;
+                              justify-content: center;
+                              align-items: center;
+                              margin-right: 20px;
+                              cursor: pointer;
+                        }
+                  }
+                  .answer-block {
+                        margin: 0 8px 8px;
+                        background: #f5f8fa;
+                        overflow: hidden;
+                        span {
+                              display: block;
+                              @include font(Inter, normal, normal, 14px, 154%, 0.005em);
+                              color: #0b1635;
+                              margin: 16px 80px 12px 10px;
+                        }
+                  }
+            }
+      }
+}

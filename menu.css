@@ -52,13 +52,13 @@ a {
       display: flex;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center;
+      justify-content: space-between;
+      align-items: unset;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      padding-top: 20px;
+      padding-top: 22px;
       position: relative;
 }
 
@@ -125,7 +125,7 @@ a {
       right: 22px;
 }
 
-.drawerlinks > div {
+.drawerlinks>div {
       display: table;
       font-family: PT Mono;
       font-style: normal;
@@ -138,7 +138,7 @@ a {
       margin-top: 18px;
 }
 
-.drawerlinks > div span {
+.drawerlinks>div span {
       display: table;
       margin: 11px;
 }
@@ -182,6 +182,8 @@ a {
       display: -ms-flexbox;
       display: flex;
       align-items: center;
+      padding-bottom: 27px;
+      margin-left: 120px;
 }
 
 .navSection .logoSection span {
@@ -203,6 +205,8 @@ a {
       -webkit-box-flex: wrap;
       -ms-flex: wrap;
       flex: wrap;
+      margin: 22px 86px 0 0;
+      padding: 0;
 }
 
 .navSection ul .menuLinks li {
