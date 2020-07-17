@@ -316,7 +316,158 @@ main .who-we-are .container .right .row .card:nth-child(odd) {
   margin-left: 0;
 }
 
-@media screen and (min-width: 1600px) {
+main .how-we-work {
+  background: #F5F8FA;
+  margin-top: 48px;
+}
+
+main .how-we-work h1 {
+  display: block;
+  text-align: center;
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 124%;
+  color: #367bf5;
+  margin-top: 0;
+  padding-top: 72px;
+  margin-bottom: 20px;
+}
+
+main .how-we-work .undertitle {
+  font: normal normal 18px/166% TT Norms;
+  display: block;
+  text-align: center;
+  margin: 0 323px 0;
+}
+
+main .how-we-work .howhelp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 36px 182px 0;
+}
+
+main .how-we-work .howhelp .video iframe {
+  border-radius: 4px;
+  border: unset;
+}
+
+main .how-we-work .howhelp .video button {
+  display: block;
+  position: relative;
+  padding: 16px 20px;
+  font-family: RT Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 134%;
+  margin-top: 32px;
+  background: #367bf5;
+  color: white;
+  border: unset;
+  border-radius: 6px;
+  margin-top: 40px;
+}
+
+main .how-we-work .howhelp .video button .tri {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-right: 4px solid #f9b53b;
+  border-bottom: 4px solid #f9b53b;
+  border-left: 4px solid transparent;
+  border-radius: 0px 0px 4px 0px;
+}
+
+main .how-we-work .howhelp .right-list h4 {
+  font: normal 500   24px/138%  Inter;
+  margin: 0 0 24px 56px;
+  width: 60%;
+}
+
+main .how-we-work .howhelp .right-list .description {
+  margin: unset;
+}
+
+main .how-we-work .howhelp .right-list .description li {
+  list-style: none;
+  margin-top: 20px;
+}
+
+main .how-we-work .howhelp .right-list .description li:first-child {
+  margin-top: unset;
+}
+
+main .how-we-work .howhelp .right-list .description .undernumslide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main .how-we-work .howhelp .right-list .description .undernumslide .redstar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16px;
+          flex: 0 0 16px;
+  height: 16px;
+  background-image: url(./img/redstar.png);
+  background-size: auto;
+  background-attachment: cover;
+  margin: 4px 0 0 16px;
+}
+
+main .how-we-work .howhelp .right-list .description .undernumslide .redstar .redpoint {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin: auto;
+}
+
+main .how-we-work .howhelp .right-list .description .undernumslide .descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+}
+
+main .how-we-work .howhelp .right-list .description .undernumslide .descr .helptitle {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 138%;
+  letter-spacing: 0.005em;
+}
+
+main .how-we-work .howhelp .right-list .description .undernumslide .descr .helpdescr {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 134%;
+  letter-spacing: 0.005em;
+  margin-top: 6px;
+}
+
+@media screen and (min-width: 1500px) {
   body {
     width: calc(1440px + 10%);
     margin: 0 auto 0;

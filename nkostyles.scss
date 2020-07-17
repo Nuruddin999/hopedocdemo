@@ -107,8 +107,54 @@ main {
                   }
             }
       }
+      .how-we-work {
+            background: #F5F8FA;
+            margin-top: 48px;
+            h1 {
+                  @include title(0);
+                  padding-top:72px;
+                  margin-bottom: 20px;
+            }
+            .undertitle {
+                  font: normal normal 18px/166% TT Norms;
+                  display: block;
+                  text-align: center;
+                  margin: 0 323px 0;
+                  
+            }
+      .howhelp {
+            display: flex;
+            justify-content: center;
+            margin: 36px 182px 0;
+            .video {
+                  iframe {
+                        border-radius: 4px;
+                        border: unset;
+                  }
+                  button {
+                        display: block;
+                        @include btn();
+                        margin-top: 40px;
+                        .tri {
+                              @include triangle;
+                        }
+                  }
+            }
+        .right-list {
+              h4 {
+                    font:normal 500   24px/138%  Inter;
+                    margin: 0 0 24px 56px;
+                    width:60%;
+                    
+              }  
+               .description {
+                  @include description();
+            }
+      }
+      }
 }
-@media screen and(min-width:1600px) {
+}
+@media screen and(min-width:1500px) {
       body {
             width: calc(1440px + 10%);
             margin: 0 auto 0;
