@@ -110,7 +110,8 @@
                         </span>
                     </div>
                     <div style="position:relative; display: table;">
-                        <button class="wantHelpButton">
+                        <button class="wantHelpButton"
+                            onclick="$('html, body').animate({scrollTop: $(`.helpToWork`).offset().top-100}, 500);">
                             <span class="wantHelpButtonText">Я хочу помочь!</span>
                             <div class="triangle"></div>
                         </button>
@@ -426,7 +427,8 @@
                             </span>
                         </div>
 
-                        <button class="wantHelpButton">
+                        <button class="wantHelpButton"
+                            onclick="$('html, body').animate({scrollTop: $(`.helpToWork`).offset().top-100}, 500);">
                             <span class="wantHelpButtonText">Помочь «Врачам надежды»</span>
                             <div class="triangle"></div>
                         </button>
@@ -535,7 +537,8 @@
                     </div>
                 </div>
 
-                <button class="wantHelpButton">
+                <button class="wantHelpButton"
+                    onclick="$('html, body').animate({scrollTop: $(`.helpToWork`).offset().top-100}, 500);">
                     <span class="wantHelpButtonText">Помочь «Врачам надежды»»</span>
                     <div class="triangle"></div>
                 </button>
@@ -567,86 +570,88 @@
                     <div class="rightSide">
                         <div class="helpboard">
                             <span class="hlpbrdTitle">Сделать пожертвование</span>
-                            <div class="boardRow">
-                                <div class="numberCol">
-                                    <span class="numbCol">1</span>
-                                    <span class="amountCol">СУММА</span>
+                            <div class="board">
+                                <div class="boardRow">
+                                    <div class="numberCol">
+                                        <span class="numbCol">1</span>
+                                        <span class="amountCol">СУММА</span>
+                                    </div>
+                                    <div class="boardGap"></div>
+                                    <div class="numberCol">
+                                        <span class="numbCol">2</span>
+                                        <span class="amountCol">КОНТАКТЫ</span>
+                                    </div>
+                                    <div class="boardGap"></div>
+                                    <div class="numberCol">
+                                        <span class="numbCol">3</span>
+                                        <span class="amountCol">ОПЛАТА</span>
+                                    </div>
                                 </div>
-                                <div class="boardGap"></div>
-                                <div class="numberCol">
-                                    <span class="numbCol">2</span>
-                                    <span class="amountCol">КОНТАКТЫ</span>
+                                <div class="periodblock">
+                                    <button id="monthly">ЕЖЕМЕСЯНОЕ</button>
+                                    <button id="onetime">РАЗОВОЕ</button>
                                 </div>
-                                <div class="boardGap"></div>
-                                <div class="numberCol">
-                                    <span class="numbCol">3</span>
-                                    <span class="amountCol">ОПЛАТА</span>
+                                <div class="sumblock">
+                                    <div class="sumRow">
+                                        <div class="item">
+
+                                            <div class="amountAndLogo"> <span> 100</span>
+                                                <img src="./img/RubleIcon.png" width=14px heigth=21px />
+
+                                            </div>
+                                        </div>
+                                        <div class="item">
+
+                                            <div class="amountAndLogo"> <span> 200</span>
+                                                <img src="./img/RubleIcon.png" width=14px heigth=21px />
+
+                                            </div>
+                                        </div>
+                                        <div class="item">
+
+                                            <div class="amountAndLogo"> <span> 500</span>
+                                                <img src="./img/RubleIcon.png" width=14px heigth=21px />
+
+                                            </div>
+                                        </div>
+                                        <div class="item">
+
+                                            <div class="amountAndLogo"> <span> 1500</span>
+                                                <img src="./img/RubleIcon.png" width=14px heigth=21px />
+
+                                            </div>
+                                        </div>
+                                        <div class="item">
+
+                                            <div class="amountAndLogo"> <span> 2000</span>
+                                                <img src="./img/RubleIcon.png" width=14px heigth=21px />
+
+                                            </div>
+                                        </div>
+                                        <div class="item">
+
+                                            <div class="amountAndLogo"> <span> 10000</span>
+                                                <img src="./img/RubleIcon.png" width=14px heigth=21px />
+
+                                            </div>
+                                        </div>
+                                        <div class="item">
+
+                                            <div class="amountAndLogo"> <span> 150000</span>
+                                                <img src="./img/RubleIcon.png" width=14px heigth=21px />
+
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <input type="text" id="anothersumm" placeholder="Другая сумма"
+                                                name="anothersumm">
+
+                                        </div>
+                                    </div>
                                 </div>
+                                <div class="continuepay"> <button>ПРОДОЛЖИТЬ</button></div>
                             </div>
-                            <div class="periodblock">
-                                <button>ЕЖЕМЕСЯНОЕ</button>
-                                <button>РАЗОВОЕ</button>
-                            </div>
-                            <div class="sumblock">
-                                <div class="sumRow">
-                                    <div class=item>
-
-                                        <div class="amountAndLogo"> <span> 100</span>
-                                            <img src="./img/RubleIcon.png" width=14px heigth=21px />
-
-                                        </div>
-                                    </div>
-                                    <div class=item>
-
-                                        <div class="amountAndLogo"> <span> 200</span>
-                                            <img src="./img/RubleIcon.png" width=14px heigth=21px />
-
-                                        </div>
-                                    </div>
-                                    <div class=item>
-
-                                        <div class="amountAndLogo"> <span> 500</span>
-                                            <img src="./img/RubleIcon.png" width=14px heigth=21px />
-
-                                        </div>
-                                    </div>
-                                    <div class=item>
-
-                                        <div class="amountAndLogo"> <span> 1500</span>
-                                            <img src="./img/RubleIcon.png" width=14px heigth=21px />
-
-                                        </div>
-                                    </div>
-                                    <div class=item>
-
-                                        <div class="amountAndLogo"> <span> 2000</span>
-                                            <img src="./img/RubleIcon.png" width=14px heigth=21px />
-
-                                        </div>
-                                    </div>
-                                    <div class=item>
-
-                                        <div class="amountAndLogo"> <span> 10000</span>
-                                            <img src="./img/RubleIcon.png" width=14px heigth=21px />
-
-                                        </div>
-                                    </div>
-                                    <div class=item>
-
-                                        <div class="amountAndLogo"> <span> 150000</span>
-                                            <img src="./img/RubleIcon.png" width=14px heigth=21px />
-
-                                        </div>
-                                    </div>
-
-                                    <div class=item>
-                                        <input type="text" id="anothersumm" placeholder="Другая сумма"
-                                            name="anothersumm">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="continuepay"> <button>ПРОДОЛЖИТЬ</button></div>
                         </div>
                         <span class="underHelpBoard">Информационаая поддержка тоже очень важна!</span>
                     </div>
@@ -655,28 +660,28 @@
             <div class="partnersBlockGr">
                 <span class="howWeHelpTitle">С нами сотрудничают</span>
                 <div class="partnersWrappeGr">
-                    <div class="partnersItemGr">
+                    <div class="partnersItemGr logoNadejda">
                         <span> Надежда махачкала </span>
                     </div>
-                    <div class="partnersItemGr">
-                        <span> Фонд </span>
+                    <div class="partnersItemGr logoHome">
+                        <span> Фонд Дом доброты</span>
                     </div>
-                    <div class="partnersItemGr">
+                    <div class="partnersItemGr logoSirat">
                         <span> Сират махачкала </span>
                     </div>
-                    <div class="partnersItemGr">
+                    <div class="partnersItemGr logoLekki">
                         <span> Лекки ЮЖДАГ </span>
                     </div>
-                    <div class="partnersItemGr">
+                    <div class="partnersItemGr logoZakyat">
                         <span> Закят - Москва</span>
                     </div>
-                    <div class="partnersItemGr">
-                        <span> Благое дело - УФА </span>
+                    <div class="partnersItemGr logoIhsan">
+                        <span> Фонд Ихсан </span>
                     </div>
-                    <div class="partnersItemGr">
+                    <div class="partnersItemGr logoKdl">
                         <span> КДЛ - Ингушетия </span>
                     </div>
-                    <div class="partnersItemGr">
+                    <div class="partnersItemGr logoLife">
                         <span> Жизнь как чудо Москва </span>
                     </div>
                 </div>
@@ -791,6 +796,68 @@
             $('html, body').css('overflowY', 'auto');
             $('.navdrawr').css('transform', 'translateX(-100%)');
         });
+        var summ = 0;
+        $('.amountAndLogo').click(function () {
+            var t = $(this).text();
+            summ = t;
+        });
+        let buttonPressed = true;
+        let timeIsChecked = false;
+        let monthisChecked = true;
+        $('#monthly').click(function name(params) {
+            if (monthisChecked) {
+                return
+            }
+            monthisChecked = true;
+            if (monthisChecked) {
+                $('#monthly').css({
+                    background: "#367bf5",
+                    color: "white"
+                })
+                $('#onetime').css({
+                    background: "white",
+                    color: "#367bf5"
+                })
+
+            } else {
+                $('#monthly').css({
+                    background: "white",
+                    color: "#367bf5"
+                })
+                $('#onetime').css({
+                    background: "#367bf5",
+                    color: "white"
+                })
+            }
+
+            timeIsChecked = false
+        })
+        $('#onetime').click(function name(params) {
+            if (timeIsChecked) {
+                return
+            }
+            timeIsChecked = true
+            if (timeIsChecked) {
+                $('#onetime').css({
+                    background: "#367bf5",
+                    color: "white"
+                })
+                $('#monthly').css({
+                    background: "white",
+                    color: "#367bf5"
+                })
+            } else {
+                $('#onetime').css({
+                    background: "red",
+                    color: "white"
+                })
+                $('#monthly').css({
+                    background: "#367bf5",
+                    color: "white"
+                })
+            }
+            monthisChecked = false
+        })
     </script>
     <!--  -->
 </body>

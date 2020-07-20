@@ -255,6 +255,40 @@ main .who-we-are .container .right {
           flex-direction: column;
 }
 
+main .who-we-are .container .right .asiyat,
+main .who-we-are .container .right .hiderlezov,
+main .who-we-are .container .right .emirbekov,
+main .who-we-are .container .right .abdullaeva,
+main .who-we-are .container .right .dzarulla,
+main .who-we-are .container .right .gorin {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .who-we-are .container .right .asiyat {
+  background-image: url(/img/Doctors/asiyat.jpg);
+}
+
+main .who-we-are .container .right .hiderlezov {
+  background-image: url(./img/Doctors/hiderlezov.jpg);
+}
+
+main .who-we-are .container .right .emirbekov {
+  background-image: url(./img/Doctors/emirbelov.jpg);
+}
+
+main .who-we-are .container .right .abdullaeva {
+  background-image: url(./img/Doctors/abdulaeva.jpg);
+}
+
+main .who-we-are .container .right .dzarulla {
+  background-image: url(/img/Doctors/djarulla.jpg);
+}
+
+main .who-we-are .container .right .gorin {
+  background-image: url(./img/Doctors/gorin.jpg);
+}
+
 main .who-we-are .container .right span {
   text-align: center;
   font-family: TT Norms-Bold;
@@ -283,6 +317,9 @@ main .who-we-are .container .right .row .card {
 }
 
 main .who-we-are .container .right .row .card .img {
+  display: block;
+  width: 180px;
+  height: 116px;
   border-radius: 12px;
 }
 
@@ -317,7 +354,7 @@ main .who-we-are .container .right .row .card:nth-child(odd) {
 }
 
 main .how-we-work {
-  background: #F5F8FA;
+  background: #f5f8fa;
   margin-top: 48px;
 }
 
@@ -389,8 +426,8 @@ main .how-we-work .howhelp .video button .tri {
 
 main .how-we-work .howhelp .video .undervideo {
   display: block;
-  font: normal normal   18px/134%  Inter;
-  color: #304B93;
+  font: normal normal 18px/134% Inter;
+  color: #304b93;
   width: 516px;
   margin-top: 30px;
 }
@@ -400,7 +437,7 @@ main .how-we-work .howhelp .video .undervideo .free {
 }
 
 main .how-we-work .howhelp .right-list h4 {
-  font: normal 500   24px/138%  Inter;
+  font: normal 500 24px/138% Inter;
   margin: 0 0 24px 56px;
   width: 60%;
 }
@@ -480,7 +517,7 @@ main .how-we-work .howhelp .right-list .description .undernumslide .descr .helpd
 }
 
 main .results {
-  background: #F5F8FA;
+  background: #f5f8fa;
 }
 
 main .results h1 {
@@ -523,7 +560,7 @@ main .results .years div:first-child {
 }
 
 main .offer-sec {
-  background: #F5F8FA;
+  background: #f5f8fa;
   padding-bottom: 48px;
 }
 
@@ -551,7 +588,7 @@ main .offer-sec .undertitle {
 main .offer-sec .benefits {
   display: block;
   font: normal bold 24px/146% TT Norms-Bold;
-  color: #367BF5;
+  color: #367bf5;
   text-align: center;
   margin-top: 40px;
 }
@@ -566,7 +603,7 @@ main .offer-sec .offer-row {
 main .offer-sec .offer-row .item-offer {
   width: 580px;
   height: 112px;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid rgba(0, 64, 148, 0.25);
   border-radius: 8px;
   -webkit-box-align: center;
@@ -611,7 +648,7 @@ main .offer-sec button {
   margin-top: 44px;
   padding: 15px 57px 15px 40px;
   display: block;
-  margin: 48px  auto 0;
+  margin: 48px auto 0;
 }
 
 main .offer-sec button span {
@@ -658,7 +695,7 @@ main .partners-title h1 {
   color: #367bf5;
   margin-top: 0;
   padding-top: 48px;
-  margin: 0 184px  48px;
+  margin: 0 184px 48px;
 }
 
 main .partnersWrappeGr {
@@ -677,13 +714,6 @@ main .partnersWrappeGr .partnersItemGr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #f5f8fa;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border-radius: 8px;
   padding: 75px;
   font-family: TT Norms;
@@ -691,7 +721,56 @@ main .partnersWrappeGr .partnersItemGr {
   font-weight: 500;
   font-size: 24px;
   line-height: 124%;
-  color: #304b93;
+}
+
+main .partnersWrappeGr .partnersItemGr span {
+  color: transparent;
+}
+
+main .partnersWrappeGr .logoNadejda,
+main .partnersWrappeGr .logoHome,
+main .partnersWrappeGr .logoIhsan,
+main .partnersWrappeGr .logoKdl,
+main .partnersWrappeGr .logoLekki,
+main .partnersWrappeGr .logoLife,
+main .partnersWrappeGr .logoSirat,
+main .partnersWrappeGr .logoZakyat {
+  background-size: cover;
+  background-position-x: no-repeat;
+  background-position: center;
+  background-color: #fff;
+}
+
+main .partnersWrappeGr .logoNadejda {
+  background-image: url(/img/fundslogo/nadejda_logo.jpeg);
+}
+
+main .partnersWrappeGr .logoHome {
+  background-image: url(/img/fundslogo/home_logo.png);
+}
+
+main .partnersWrappeGr .logoIhsan {
+  background-image: url(/img/fundslogo/ihsan_logo.jpg);
+}
+
+main .partnersWrappeGr .logoKdl {
+  background-image: url(/img/fundslogo/kdl_logo.jpg);
+}
+
+main .partnersWrappeGr .logoLekki {
+  background-image: url(/img/fundslogo/leki_logo.jpg);
+}
+
+main .partnersWrappeGr .logoLife {
+  background-image: url(/img/fundslogo/life_logo.jpg);
+}
+
+main .partnersWrappeGr .logoSirat {
+  background-image: url(/img/fundslogo/sirat_logo.jpg);
+}
+
+main .partnersWrappeGr .logoZakyat {
+  background-image: url(/img/fundslogo/zakyat_logo.png);
 }
 
 main .nko-title {
@@ -705,7 +784,7 @@ main .nko-title {
   color: #367bf5;
   margin-top: 0;
   padding-top: 32px;
-  margin: 0 361px  48px;
+  margin: 0 361px 48px;
 }
 
 main .nko {
@@ -772,7 +851,7 @@ main .how-become-title {
   line-height: 124%;
   color: #367bf5;
   margin-top: 0;
-  margin: 74px 399px  20px;
+  margin: 74px 399px 20px;
 }
 
 main .under-become {
@@ -786,16 +865,17 @@ main .become-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 40px 105px 0 223px;
+  margin: 40px 195px 0 223px;
   overflow: hidden;
 }
 
 main .become-container .form-container {
-  background: #F5F8FA;
+  background: #f5f8fa;
   border-radius: 8px;
   padding: 0 0 0 28px;
   margin-left: 64px;
   height: 352px;
+  width: 620px;
 }
 
 main .become-container .form-container .form-row {
@@ -809,9 +889,12 @@ main .become-container .form-container .form-row {
 main .become-container .form-container .form-row input {
   display: block;
   padding: 14px 0 14px 18px;
-  background: #F5F8FA;
+  background: #f5f8fa;
   border: 1px solid rgba(0, 64, 148, 0.3);
   border-radius: 8px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 main .become-container .form-container .form-row ::-webkit-input-placeholder {

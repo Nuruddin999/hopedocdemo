@@ -1,4 +1,4 @@
-@import "./styles.scss";
+@import "./common.scss";
 @media screen and(max-width:414px) {
       %fontcolor {
             color: #367bf5;
@@ -357,14 +357,7 @@
             gap: 4px;
             justify-content: center;
             .partnersItemGr {
-                  background: #f5f8fa;
-                  border-radius: unset;
-                  margin: 4px;
-                  padding: 55px 24px;
-                  font-size: unset;
-                  span {
-                        text-align: center;
-                  }
+                  padding: 4px;
             }
       }
       .nko-titles {

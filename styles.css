@@ -784,13 +784,6 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #f5f8fa;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border-radius: 8px;
   padding: 75px;
   font-family: TT Norms;
@@ -798,7 +791,56 @@ main {
   font-weight: 500;
   font-size: 24px;
   line-height: 124%;
-  color: #304b93;
+}
+
+.partnersWrappeGr .partnersItemGr span {
+  color: transparent;
+}
+
+.partnersWrappeGr .logoNadejda,
+.partnersWrappeGr .logoHome,
+.partnersWrappeGr .logoIhsan,
+.partnersWrappeGr .logoKdl,
+.partnersWrappeGr .logoLekki,
+.partnersWrappeGr .logoLife,
+.partnersWrappeGr .logoSirat,
+.partnersWrappeGr .logoZakyat {
+  background-size: cover;
+  background-position-x: no-repeat;
+  background-position: center;
+  background-color: #fff;
+}
+
+.partnersWrappeGr .logoNadejda {
+  background-image: url(/img/fundslogo/nadejda_logo.jpeg);
+}
+
+.partnersWrappeGr .logoHome {
+  background-image: url(/img/fundslogo/home_logo.png);
+}
+
+.partnersWrappeGr .logoIhsan {
+  background-image: url(/img/fundslogo/ihsan_logo.jpg);
+}
+
+.partnersWrappeGr .logoKdl {
+  background-image: url(/img/fundslogo/kdl_logo.jpg);
+}
+
+.partnersWrappeGr .logoLekki {
+  background-image: url(/img/fundslogo/leki_logo.jpg);
+}
+
+.partnersWrappeGr .logoLife {
+  background-image: url(/img/fundslogo/life_logo.jpg);
+}
+
+.partnersWrappeGr .logoSirat {
+  background-image: url(/img/fundslogo/sirat_logo.jpg);
+}
+
+.partnersWrappeGr .logoZakyat {
+  background-image: url(/img/fundslogo/zakyat_logo.png);
 }
 
 .nko-titles .nko-title {

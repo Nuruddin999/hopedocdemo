@@ -93,7 +93,7 @@ main {
     background: #367bf5;
     border-radius: 6px;
     color: white;
-    font-family: "PT Mono";
+    font-family: "RT Mono";
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -198,9 +198,9 @@ main {
     right: 22px;
 }
 
-.drawerlinks>div {
+.drawerlinks > div {
     display: table;
-    font-family: PT Mono;
+    font-family: RT Mono;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -211,7 +211,7 @@ main {
     margin-top: 18px;
 }
 
-.drawerlinks>div span {
+.drawerlinks > div span {
     display: table;
     margin: 11px;
 }
@@ -380,7 +380,9 @@ main {
     border-radius: 12px;
 }
 
-.underNavBlock *, .underNavBlock *:before, .underNavBlock *:after {
+.underNavBlock *,
+.underNavBlock *:before,
+.underNavBlock *:after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -610,7 +612,9 @@ main {
     margin-top: 80px;
 }
 
-.whyHelpBlock *, .whyHelpBlock *:before, .whyHelpBlock *:after {
+.whyHelpBlock *,
+.whyHelpBlock *:before,
+.whyHelpBlock *:after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -1082,7 +1086,8 @@ main {
 
 .partnersItemGr {
     display: flex;
-    background: #f5f8fa;
+    background-image: url("./img/fundslogo/nadejda_logo.jpeg");
+    background-size: cover;
     border-radius: 8px;
     padding: 75px;
     font-family: TT Norms;
@@ -1097,8 +1102,46 @@ main {
     text-align: center;
     display: block;
     margin: auto;
+    color: transparent;
+}
+.logoNadejda,
+.logoHome,
+.logoIhsan,
+.logoKdl,
+.logoLekki,
+.logoLife,
+.logoSirat,
+.logoZakyat {
+    background-size: cover;
+    background-position-x: no-repeat;
+    background-position: center;
+    background-color: #fff;
 }
 
+.logoNadejda {
+    background-image: url(/img/fundslogo/nadejda_logo.jpeg);
+}
+.logoHome {
+    background-image: url(/img/fundslogo/home_logo.png);
+}
+.logoIhsan {
+    background-image: url(/img/fundslogo/ihsan_logo.jpg);
+}
+.logoKdl {
+    background-image: url(/img/fundslogo/kdl_logo.jpg);
+}
+.logoLekki {
+    background-image: url(/img/fundslogo/leki_logo.jpg);
+}
+.logoLife {
+    background-image: url(/img/fundslogo/life_logo.jpg);
+}
+.logoSirat {
+    background-image: url(/img/fundslogo/sirat_logo.jpg);
+}
+.logoZakyat {
+    background-image: url(/img/fundslogo/zakyat_logo.png);
+}
 .anyQstnsBlock {
     background: #367bf5;
     overflow: hidden;
@@ -1344,7 +1387,7 @@ footer .socialIcons {
     align-items: center;
 }
 
-#main section>h1 {
+#main section > h1 {
     text-transform: uppercase;
     background-color: #fff;
     text-align: center;
@@ -1478,7 +1521,9 @@ footer .socialIcons {
     color: #939797;
 }
 
-.field, .modal input, select {
+.field,
+.modal input,
+select {
     background-color: #e2f2ff;
     border: 3px solid white;
     font-size: 18px;
@@ -1534,14 +1579,14 @@ option {
     padding: 10px 20px;
 }
 
-.work>h1 {
+.work > h1 {
     font-family: "ProximaNova-Bold";
     /*font-style: bold; */
     font-size: 45px;
     margin-top: 10px;
 }
 
-.work>img {
+.work > img {
     margin-top: -36px;
     width: 30px;
     margin-left: 15px;
@@ -1549,12 +1594,12 @@ option {
     padding: 0 20px;
 }
 
-.work>p {
+.work > p {
     font-family: "ProximaNova-Regular";
     color: #6c6f70;
 }
 
-.work:last-child>img {
+.work:last-child > img {
     width: 42px;
 }
 
@@ -1564,7 +1609,8 @@ option {
     height: 900px;
 }
 
-.h-container>p {}
+.h-container > p {
+}
 
 .helpeds {
     width: 50%;
@@ -1696,7 +1742,7 @@ option {
     height: 500px;
 }
 
-.block-doctors>h2 {
+.block-doctors > h2 {
     text-align: center;
     text-transform: uppercase;
     font-size: 40px;
@@ -1790,7 +1836,7 @@ option {
     margin: 0 auto;
 }
 
-.contacts .container>h1 {
+.contacts .container > h1 {
     text-align: center;
     padding: 1em 1em 0.5em;
     font-family: "ProximaNova-Bold";
@@ -1813,7 +1859,7 @@ option {
     margin-bottom: 1em;
 }
 
-.contact-item>div {
+.contact-item > div {
     display: flex;
     vertical-align: middle;
     /* width: 184px; */
@@ -1890,7 +1936,12 @@ option {
     margin-top: 10px;
 }
 
-#modal_close, #doctor_modal_close, #donate_modal_close, #signin_modal_close, #signup_modal_close, #nko_modal_close {
+#modal_close,
+#doctor_modal_close,
+#donate_modal_close,
+#signin_modal_close,
+#signup_modal_close,
+#nko_modal_close {
     position: absolute;
     top: -19px;
     right: -19px;
@@ -1899,7 +1950,7 @@ option {
     cursor: pointer;
 }
 
-.modal>h1 {
+.modal > h1 {
     text-align: center;
     background-color: #fff;
     padding: 1rem;
@@ -1923,13 +1974,15 @@ span.required {
     font-size: 17px;
 }
 
-.input-right input, .input-right select {
+.input-right input,
+.input-right select {
     width: 70%;
     float: right;
     font-size: inherit;
 }
 
-.input-bottom input, .input-bottom textarea {
+.input-bottom input,
+.input-bottom textarea {
     width: 100%;
     font-size: inherit;
 }
@@ -1946,7 +1999,9 @@ span.required {
     margin-bottom: 30px;
 }
 
-fieldset, .file-uploader, textarea {
+fieldset,
+.file-uploader,
+textarea {
     border-radius: 8px;
     border: 3px solid #fff;
 }
@@ -1969,7 +2024,8 @@ fieldset, .file-uploader, textarea {
     border: 2px solid #555;
 }
 
-.btn-tertiary:hover, .example-2 .btn-tertiary:focus {
+.btn-tertiary:hover,
+.example-2 .btn-tertiary:focus {
     color: #888;
     border-color: #888;
 }
@@ -1983,7 +2039,7 @@ fieldset, .file-uploader, textarea {
     z-index: -1;
 }
 
-.input-file+.js-labelFile {
+.input-file + .js-labelFile {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -1991,11 +2047,11 @@ fieldset, .file-uploader, textarea {
     cursor: pointer;
 }
 
-.input-file+.js-labelFile .icon:before {
+.input-file + .js-labelFile .icon:before {
     content: "\f093";
 }
 
-.input-file+.js-labelFile.has-file .icon:before {
+.input-file + .js-labelFile.has-file .icon:before {
     content: "\f00c";
     color: #5aac7b;
 }
@@ -2106,7 +2162,8 @@ fieldset, .file-uploader, textarea {
     top: 0px;
 }
 
-.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+.menu__icon span:nth-child(2),
+.menu__icon span:nth-child(3) {
     top: 13px;
 }
 
@@ -2347,8 +2404,9 @@ fieldset, .file-uploader, textarea {
 /*@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {} */
 
 @media only screen and (max-width: 320px) {
-    .partnersItem {
-        padding: 20% 6.6%;
+    .partnersItem img {
+        width: 162px;
+        height: 140px;
     }
 }
 
@@ -2955,6 +3013,19 @@ fieldset, .file-uploader, textarea {
         font-size: unset;
         flex-basis: 34%;
     }
+    .logoNadejda,
+    .logoHome,
+    .logoIhsan,
+    .logoKdl,
+    .logoLekki,
+    .logoLife,
+    .logoSirat,
+    .logoZakyat {
+        background-size: cover;
+        background-position-x: no-repeat;
+        background-position: center;
+        background-color: #fff;
+    }
     .underHelpBoard {
         display: block;
         margin: 30px 35px 150px;
@@ -2973,18 +3044,17 @@ fieldset, .file-uploader, textarea {
     }
     .partnersWrappeGr {
         margin-top: 24px;
-        grid-template-columns: 49% 49%;
+        grid-template-columns: auto auto;
         gap: 4px;
     }
     .partnersItemGr {
-        display: flex;
-        background: #b6c1c9;
-        border-radius: unset;
-        margin: 4px;
-        padding: 55px 24px;
         font-size: unset;
         flex-basis: 34%;
+        width: 162px;
+        height: 140px;
+        padding: 4px;
     }
+
     .anyQstnsBlock {
         margin-top: 64px;
     }
@@ -3137,16 +3207,16 @@ fieldset, .file-uploader, textarea {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.tabs>input {
+.tabs > input {
     display: none;
 }
 
-.tabs>div {
+.tabs > div {
     display: none;
     padding: 12px;
 }
 
-.tabs>label {
+.tabs > label {
     display: inline-block;
     padding: 7px;
     margin: 0 -5px -1px 0;
@@ -3154,11 +3224,11 @@ fieldset, .file-uploader, textarea {
     cursor: pointer;
 }
 
-.tabs>input+label {
+.tabs > input + label {
     background-color: #ffffff;
 }
 
-.tabs>input:checked+label {
+.tabs > input:checked + label {
     color: #000000;
     background-color: #e2f2ff;
     border: 2px solid white;
@@ -3166,11 +3236,13 @@ fieldset, .file-uploader, textarea {
     /*  background: #FFFFFF; */
 }
 
-#tab_1:checked~#txt_1, #tab_2:checked~#txt_2 {
+#tab_1:checked ~ #txt_1,
+#tab_2:checked ~ #txt_2 {
     display: block;
 }
 
-label[for="tab_1"], label[for="tab_2"] {
+label[for="tab_1"],
+label[for="tab_2"] {
     width: 38.53%;
     /* border: 1px solid; */
     border-bottom: none;
@@ -3180,7 +3252,8 @@ label[for="tab_1"] {
     margin-left: 10%;
 }
 
-#txt_1, #txt_2 {
+#txt_1,
+#txt_2 {
     padding-top: 0;
 }
 

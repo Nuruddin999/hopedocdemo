@@ -316,8 +316,47 @@ main {
       margin: 113px 20px 0;
 }
 .partnersWrappeGr {
- @include partners()
+      @include partners();
+      .logoNadejda,
+      .logoHome,
+      .logoIhsan,
+      .logoKdl,
+      .logoLekki,
+      .logoLife,
+      .logoSirat,
+      .logoZakyat {
+            background-size: cover;
+            background-position-x: no-repeat;
+            background-position: center;
+            background-color: #fff;
+      }
+
+      .logoNadejda {
+            background-image: url(/img/fundslogo/nadejda_logo.jpeg);
+      }
+      .logoHome {
+            background-image: url(/img/fundslogo/home_logo.png);
+      }
+      .logoIhsan {
+            background-image: url(/img/fundslogo/ihsan_logo.jpg);
+      }
+      .logoKdl {
+            background-image: url(/img/fundslogo/kdl_logo.jpg);
+      }
+      .logoLekki {
+            background-image: url(/img/fundslogo/leki_logo.jpg);
+      }
+      .logoLife {
+            background-image: url(/img/fundslogo/life_logo.jpg);
+      }
+      .logoSirat {
+            background-image: url(/img/fundslogo/sirat_logo.jpg);
+      }
+      .logoZakyat {
+            background-image: url(/img/fundslogo/zakyat_logo.png);
+      }
 }
+
 .nko-titles {
       .nko-title {
             @include title(90);
@@ -328,9 +367,9 @@ main {
       }
 }
 
-      .nko {
-      @include nko()
-      }
+.nko {
+      @include nko();
+}
 .nko-slides {
       display: none;
       .swiper-container {
@@ -525,7 +564,7 @@ main {
       }
 }
 .all-answers {
-     @include allanswers()
+      @include allanswers();
 }
 @media screen and(min-width:1280px) {
       body {
