@@ -215,6 +215,13 @@ main {
                         margin-left: unset;
                   }
             }
+            .numbs {
+                  @include mobslider();
+                  display:none;
+                      }
+                      .after-numbersmob {
+                      @include after-numbersmob()
+                       }
       }
       .offer-sec {
             background: #f5f8fa;
@@ -404,5 +411,262 @@ main {
       body {
             width: 1440px;
             margin: 0 auto 0;
+      }
+}
+@media screen and(max-width:420px) {
+      main {
+            margin-top: 104px;
+            .offer-help {
+                  display: flex;
+                  flex-wrap: wrap;
+                  section {
+                        order:2;
+                        margin-left: initial;
+                        margin-right: initial;
+                        .span-marg {
+                              margin: 18px 34px 0;
+                        }
+                        .span-sec-marg {
+                              margin: 16px 18px 0;
+                        }
+                        h1 {
+                              @include font(TT Norms-Bold, normal, normal, 24px, 132%, null);
+                              @include fontcolor;
+                              margin:40px 42px 0;
+                              text-align: center;
+                        }
+                        span {
+                              display: block;
+                              width: 90%;
+                              text-align: center;
+                              @include font(TT Norms, normal, 500, 16px, 134%, null);
+                              color: #304b93;
+                              .free {
+                                    display: inline;
+                                    color: #f23b53;
+                                    margin-right: 0;
+                              }
+                        }
+                     
+                        button {
+                              @include buttonInNKO();
+                              display: block;
+                              padding: 14px 26px;
+                              margin: 34px 68px 0;
+                        span {
+                              font: bold 16px/134%  RT Mono;
+                        }
+                        }
+                  }
+                  img {
+                        order: 1;
+                        margin-right: initial;
+                        display: block;
+                        width:100%;
+                        margin: 0 18px 0;
+                  }
+            }
+              .who-we-are {
+                  display: block;
+                  width: 100%;
+                  h1 {
+                        @include font(TT Norms-Bold, normal, normal, 34px, 138%, null);
+                        @include fontcolor;
+                        text-align: center;
+                        margin-top: 71px;
+                        margin-bottom: 18px;
+                  }
+                  .container {
+                        display: flex;
+                        padding-top: initial    ;
+                        margin-left: initial;
+                        margin-right: initial;
+                        flex-wrap: wrap;
+                        section {
+                              margin-right: initial;   
+                                  span:first-child {
+                                    margin: 0 29px;
+                                    text-align: center;
+                              }
+                      
+                              span {
+                                    .doctors {
+                                          display: inline;
+                                          color: #F23B53;
+                                          margin: 0;
+                                    }
+                                    display: block;
+                                    margin: 12px 20px;
+                                    @include font(TT Norms, normal, normal, 16px, 158%, null);
+                                    color: #202642;
+                                    text-align: center;
+                              }
+                         
+                              button {
+                                   display: none;
+                              }
+                        }
+                        .right {
+                              display: flex;
+                              flex-direction: column;
+                              span {
+                                    text-align: center;
+                                    @include font(TT Norms-Bold, normal, normal, 20px, 114%, null);
+                                    @include fontcolor;
+                                    margin-top: 32px;
+                              }
+                              .row {
+                                    display: none;
+                              }
+                              .row-marg {
+                                        margin: 18px 45px 0;
+                              }
+                              .sec-rowmarg{
+                                    margin: 14px 56px 0;
+                              }
+                              .third-rowmarg {
+                                    margin: 14px 30px 0;
+                              }
+                        .fourth-rowmarg {
+                              margin: 0 61px 0;
+                        }
+                              .tagrow { 
+                                    .chirurg {
+                                          color: #367BF5;
+                                    }   
+                                    span {         
+                                          text-align: center;
+                                          font: normal 16px/124%  Inter;
+                                          margin-left: 16px;
+                                          color: #304B93;
+                                    }
+                                    span:first-child {
+                                          margin-left: initial;
+                                    }
+                              }
+                        }
+                  }
+            }
+            .how-we-work {
+                  background: #f5f8fa;
+                  margin-top: 58px;
+                  h1 {
+                        @include title(0);
+                        font:  normal 34px/124% TT Norms-Bold;
+                        padding-top: 40px;
+                        margin-bottom: 20px;
+                  }
+                  .undertitle {
+                       display: none;
+                  }
+                  .howhelp {
+                      flex-wrap: wrap;
+                        margin:  0;
+
+                        .video {
+                              iframe {
+                                    display: block;
+                                    height: 196px;
+                                    width: calc(100% - 16px);
+                                    border-radius: 4px;
+                                    border: unset;
+                                    margin: 40px auto 0;
+                              }
+                              button {
+                                    display: none;
+                              }
+                              .undervideo {
+                                    display: block;
+                                    font: normal normal 16px/184% Inter;
+                                    color: #304b93;
+                                    width: initial;
+                                    margin: 24px 10px 0;
+                                    text-align: center;
+                                    .free {
+                                          @include fontcolor;
+                                    }
+                              }
+                        }
+                        .right-list {
+                              
+                              h4 {
+                                  display: none;
+                              }
+                              .description {
+                                    @include description();
+                                    padding: 0;
+                                    margin-top: 36px;
+                                    li {
+                                          list-style: none;
+                                          margin-top: 20px;
+                                    }
+                                    li:first-child {
+                                          margin-top: unset;
+                                    }
+                                    .undernumslide {
+                                          @include undernumslide();
+                                          .descr {
+                                                @include descr();
+                                                margin-left: 12px;
+                                                span {
+                                                     margin-right: 8px;   
+                                                }
+                                              
+                                                .helpdescr {
+                                                      margin-top: 8px;
+                                                }
+                                          }
+                                    }
+                                 
+                              }
+                              button {
+                                    @include buttonInNKO();
+                                    display: block;
+                                    margin: 48px auto 0;
+                              }
+                        }
+                  }
+            }
+            .results {
+                  background: initial;
+                  h1 {
+                        @include title(0);
+                        font: normal normal 34px/124% TT Norms-Bold;
+                        padding-top: 71px;
+                        margin:0 13px  0 25px;
+                  }
+                  .undertitle {
+                     display: none;
+                  }
+                  .since {
+                        display: block;
+                        font: normal 500 18px/138% TT Norms;
+                        color: #202642;
+                        text-align: center;
+                        margin-top: 24px;
+                        span {
+                            color:   #367bf5;
+                            
+                        }
+                  }
+                  .years {
+                        display: none;
+                  }
+                  .numbs {
+                        @include mobslider()
+                            }
+                            .after-numbersmob {
+                              display: block;
+                              padding: unset;
+                              margin: 35px 64px 0 16px;
+                              li {
+                                    span {
+                                          .life-hearts {
+                                                color: #f23b53;
+                                          }
+                                    }
+                              }
+                             }
+            }
       }
 }

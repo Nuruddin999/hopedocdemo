@@ -734,25 +734,13 @@ main {
 }
 
 .results .after-numbersmob {
-  display: none;
+  display: block;
+  padding: unset;
+  margin: 35px 64px 0 16px;
 }
 
-.results .after-numbersmob li {
-  list-style: none;
-  margin-top: 22px;
-}
-
-.results .after-numbersmob li span {
-  font-family: TT Norms;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 124%;
-  letter-spacing: 0.005em;
-}
-
-.results .after-numbersmob li:first-child {
-  margin-top: unset;
+.results .after-numbersmob li span .life-hearts {
+  color: #f23b53;
 }
 
 .partners-title {

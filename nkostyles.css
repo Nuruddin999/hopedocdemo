@@ -559,6 +559,51 @@ main .results .years div:first-child {
   margin-left: unset;
 }
 
+main .results .numbs {
+  margin-top: 32px;
+  display: block;
+  height: 390px;
+  display: none;
+}
+
+main .results .numbs .swiper-container {
+  width: 250px;
+  margin: 0 auto 0;
+  height: auto;
+}
+
+main .results .numbs .swiper-container img {
+  height: 368px;
+}
+
+main .results .numbs .swiper-container .swiper-pagination {
+  display: block;
+  background: white;
+  bottom: 0;
+}
+
+main .results .after-numbersmob {
+  display: none;
+}
+
+main .results .after-numbersmob li {
+  list-style: none;
+  margin-top: 22px;
+}
+
+main .results .after-numbersmob li span {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 124%;
+  letter-spacing: 0.005em;
+}
+
+main .results .after-numbersmob li:first-child {
+  margin-top: unset;
+}
+
 main .offer-sec {
   background: #f5f8fa;
   padding-bottom: 48px;
@@ -1094,6 +1139,539 @@ main .all-answers .answers .answers-list .answer-block span {
   body {
     width: 1440px;
     margin: 0 auto 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  main {
+    margin-top: 104px;
+  }
+  main .offer-help {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .offer-help section {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-left: initial;
+    margin-right: initial;
+  }
+  main .offer-help section .span-marg {
+    margin: 18px 34px 0;
+  }
+  main .offer-help section .span-sec-marg {
+    margin: 16px 18px 0;
+  }
+  main .offer-help section h1 {
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 132%;
+    color: #367bf5;
+    margin: 40px 42px 0;
+    text-align: center;
+  }
+  main .offer-help section span {
+    display: block;
+    width: 90%;
+    text-align: center;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 134%;
+    color: #304b93;
+  }
+  main .offer-help section span .free {
+    display: inline;
+    color: #f23b53;
+    margin-right: 0;
+  }
+  main .offer-help section button {
+    position: relative;
+    padding: 16px 20px;
+    font-family: RT Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 134%;
+    margin-top: 32px;
+    background: #367bf5;
+    color: white;
+    border: unset;
+    border-radius: 6px;
+    margin-top: 44px;
+    padding: 15px 57px 15px 40px;
+    display: block;
+    padding: 14px 26px;
+    margin: 34px 68px 0;
+  }
+  main .offer-help section button span {
+    display: inline;
+    font-family: RT Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 134%;
+    color: white;
+    margin-right: 0;
+  }
+  main .offer-help section button .tri {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-right: 4px solid #f9b53b;
+    border-bottom: 4px solid #f9b53b;
+    border-left: 4px solid transparent;
+    border-radius: 0px 0px 4px 0px;
+    bottom: 8px;
+    right: 8px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #f9b53b;
+    border-bottom: 8px solid #f9b53b;
+    border-left: 8px solid transparent;
+    border-radius: 0px 0px 4px 0px;
+  }
+  main .offer-help section button span {
+    font: bold 16px/134%  RT Mono;
+  }
+  main .offer-help img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-right: initial;
+    display: block;
+    width: 100%;
+    margin: 0 18px 0;
+  }
+  main .who-we-are {
+    display: block;
+    width: 100%;
+  }
+  main .who-we-are h1 {
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 138%;
+    color: #367bf5;
+    text-align: center;
+    margin-top: 71px;
+    margin-bottom: 18px;
+  }
+  main .who-we-are .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: initial;
+    margin-left: initial;
+    margin-right: initial;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .who-we-are .container section {
+    margin-right: initial;
+  }
+  main .who-we-are .container section span:first-child {
+    margin: 0 29px;
+    text-align: center;
+  }
+  main .who-we-are .container section span {
+    display: block;
+    margin: 12px 20px;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 158%;
+    color: #202642;
+    text-align: center;
+  }
+  main .who-we-are .container section span .doctors {
+    display: inline;
+    color: #F23B53;
+    margin: 0;
+  }
+  main .who-we-are .container section button {
+    display: none;
+  }
+  main .who-we-are .container .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .who-we-are .container .right span {
+    text-align: center;
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 114%;
+    color: #367bf5;
+    margin-top: 32px;
+  }
+  main .who-we-are .container .right .row {
+    display: none;
+  }
+  main .who-we-are .container .right .row-marg {
+    margin: 18px 45px 0;
+  }
+  main .who-we-are .container .right .sec-rowmarg {
+    margin: 14px 56px 0;
+  }
+  main .who-we-are .container .right .third-rowmarg {
+    margin: 14px 30px 0;
+  }
+  main .who-we-are .container .right .fourth-rowmarg {
+    margin: 0 61px 0;
+  }
+  main .who-we-are .container .right .tagrow .chirurg {
+    color: #367BF5;
+  }
+  main .who-we-are .container .right .tagrow span {
+    text-align: center;
+    font: normal 16px/124%  Inter;
+    margin-left: 16px;
+    color: #304B93;
+  }
+  main .who-we-are .container .right .tagrow span:first-child {
+    margin-left: initial;
+  }
+  main .how-we-work {
+    background: #f5f8fa;
+    margin-top: 58px;
+  }
+  main .how-we-work h1 {
+    display: block;
+    text-align: center;
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 124%;
+    color: #367bf5;
+    margin-top: 0;
+    font: normal 34px/124% TT Norms-Bold;
+    padding-top: 40px;
+    margin-bottom: 20px;
+  }
+  main .how-we-work .undertitle {
+    display: none;
+  }
+  main .how-we-work .howhelp {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+  }
+  main .how-we-work .howhelp .video iframe {
+    display: block;
+    height: 196px;
+    width: calc(100% - 16px);
+    border-radius: 4px;
+    border: unset;
+    margin: 40px auto 0;
+  }
+  main .how-we-work .howhelp .video button {
+    display: none;
+  }
+  main .how-we-work .howhelp .video .undervideo {
+    display: block;
+    font: normal normal 16px/184% Inter;
+    color: #304b93;
+    width: initial;
+    margin: 24px 10px 0;
+    text-align: center;
+  }
+  main .how-we-work .howhelp .video .undervideo .free {
+    color: #367bf5;
+  }
+  main .how-we-work .howhelp .right-list h4 {
+    display: none;
+  }
+  main .how-we-work .howhelp .right-list .description {
+    margin: unset;
+    padding: 0;
+    margin-top: 36px;
+  }
+  main .how-we-work .howhelp .right-list .description li {
+    list-style: none;
+    margin-top: 20px;
+  }
+  main .how-we-work .howhelp .right-list .description li:first-child {
+    margin-top: unset;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .redstar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16px;
+            flex: 0 0 16px;
+    height: 16px;
+    background-image: url(./img/redstar.png);
+    background-size: auto;
+    background-attachment: cover;
+    margin: 4px 0 0 16px;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .redstar .redpoint {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin: auto;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .descr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 20px;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .descr .helptitle {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 138%;
+    letter-spacing: 0.005em;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .descr .helpdescr {
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 134%;
+    letter-spacing: 0.005em;
+    margin-top: 6px;
+  }
+  main .how-we-work .howhelp .right-list .description li {
+    list-style: none;
+    margin-top: 20px;
+  }
+  main .how-we-work .howhelp .right-list .description li:first-child {
+    margin-top: unset;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .redstar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16px;
+            flex: 0 0 16px;
+    height: 16px;
+    background-image: url(./img/redstar.png);
+    background-size: auto;
+    background-attachment: cover;
+    margin: 4px 0 0 16px;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .redstar .redpoint {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin: auto;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .descr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 20px;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .descr .helptitle {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 138%;
+    letter-spacing: 0.005em;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .descr .helpdescr {
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 134%;
+    letter-spacing: 0.005em;
+    margin-top: 6px;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .descr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 20px;
+    margin-left: 12px;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .descr .helptitle {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 138%;
+    letter-spacing: 0.005em;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .descr .helpdescr {
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 134%;
+    letter-spacing: 0.005em;
+    margin-top: 6px;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .descr span {
+    margin-right: 8px;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .descr .helpdescr {
+    margin-top: 8px;
+  }
+  main .how-we-work .howhelp .right-list button {
+    position: relative;
+    padding: 16px 20px;
+    font-family: RT Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 134%;
+    margin-top: 32px;
+    background: #367bf5;
+    color: white;
+    border: unset;
+    border-radius: 6px;
+    margin-top: 44px;
+    padding: 15px 57px 15px 40px;
+    display: block;
+    margin: 48px auto 0;
+  }
+  main .how-we-work .howhelp .right-list button span {
+    display: inline;
+    font-family: RT Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 134%;
+    color: white;
+    margin-right: 0;
+  }
+  main .how-we-work .howhelp .right-list button .tri {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-right: 4px solid #f9b53b;
+    border-bottom: 4px solid #f9b53b;
+    border-left: 4px solid transparent;
+    border-radius: 0px 0px 4px 0px;
+    bottom: 8px;
+    right: 8px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #f9b53b;
+    border-bottom: 8px solid #f9b53b;
+    border-left: 8px solid transparent;
+    border-radius: 0px 0px 4px 0px;
+  }
+  main .results {
+    background: initial;
+  }
+  main .results h1 {
+    display: block;
+    text-align: center;
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 124%;
+    color: #367bf5;
+    margin-top: 0;
+    font: normal normal 34px/124% TT Norms-Bold;
+    padding-top: 71px;
+    margin: 0 13px  0 25px;
+  }
+  main .results .undertitle {
+    display: none;
+  }
+  main .results .since {
+    display: block;
+    font: normal 500 18px/138% TT Norms;
+    color: #202642;
+    text-align: center;
+    margin-top: 24px;
+  }
+  main .results .since span {
+    color: #367bf5;
+  }
+  main .results .years {
+    display: none;
+  }
+  main .results .numbs {
+    margin-top: 32px;
+    display: block;
+    height: 390px;
+  }
+  main .results .numbs .swiper-container {
+    width: 250px;
+    margin: 0 auto 0;
+    height: auto;
+  }
+  main .results .numbs .swiper-container img {
+    height: 368px;
+  }
+  main .results .numbs .swiper-container .swiper-pagination {
+    display: block;
+    background: white;
+    bottom: 0;
+  }
+  main .results .after-numbersmob {
+    display: block;
+    padding: unset;
+    margin: 35px 64px 0 16px;
+  }
+  main .results .after-numbersmob li span .life-hearts {
+    color: #f23b53;
   }
 }
 /*# sourceMappingURL=nkostyles.css.map */

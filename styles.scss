@@ -297,18 +297,7 @@ main {
             display: none;
       }
       .after-numbersmob {
-            li {
-                  list-style: none;
-                  margin-top: 22px;
-                  span {
-                        @include font(TT Norms, normal, 500, 20px, 124%, 0.005em);
-                  }
-            }
-            li:first-child {
-                  margin-top: unset;
-            }
-
-            display: none;
+        @include after-numbersmob()
       }
 }
 .partners-title {

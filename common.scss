@@ -244,3 +244,37 @@
             }
       }
 }
+@mixin  mobslider {
+      
+            margin-top: 32px;
+            display: block;
+            height: 390px;
+            .swiper-container {
+                  width: 250px;
+                  margin: 0 auto 0;
+                  height: auto;
+                  img {
+                        height: 368px;
+                  }
+                  .swiper-pagination {
+                        display: block;
+                        background: white;
+                        bottom: 0;
+                  }
+            }
+      
+}
+@mixin after-numbersmob {
+      li {
+            list-style: none;
+            margin-top: 22px;
+            span {
+                  @include font(TT Norms, normal, 500, 20px, 124%, 0.005em);
+            }
+      }
+      li:first-child {
+            margin-top: unset;
+      }
+
+      display: none;
+}
