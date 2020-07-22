@@ -1,4 +1,4 @@
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 768px) {
   .mainContent {
     margin-top: 104px;
     width: 100%;
@@ -395,6 +395,7 @@
     height: 16px;
     background-image: url(./img/redstar.png);
     background-size: auto;
+    background-repeat: no-repeat;
     background-attachment: cover;
     margin: 4px 0 0 16px;
     margin-left: unset;
@@ -484,16 +485,16 @@
   }
   .partnersWrappeGr {
     margin: 24px 12px 0;
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
     gap: 4px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .partnersWrappeGr .partnersItemGr {
+    font-size: unset;
+    -ms-flex-preferred-size: 34%;
+        flex-basis: 34%;
+    width: 162px;
+    height: 140px;
     padding: 4px;
   }
   .nko-titles .nko-title:first-child {

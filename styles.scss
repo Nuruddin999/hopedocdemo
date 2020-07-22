@@ -297,7 +297,7 @@ main {
             display: none;
       }
       .after-numbersmob {
-        @include after-numbersmob()
+            @include after-numbersmob();
       }
 }
 .partners-title {

@@ -53,6 +53,7 @@
       height: 16px;
       background-image: url(./img/redstar.png);
       background-size: auto;
+      background-repeat: no-repeat;
       background-attachment: cover;
       margin: 4px 0 0 16px;
       .redpoint {
@@ -244,25 +245,23 @@
             }
       }
 }
-@mixin  mobslider {
-      
-            margin-top: 32px;
-            display: block;
-            height: 390px;
-            .swiper-container {
-                  width: 250px;
-                  margin: 0 auto 0;
-                  height: auto;
-                  img {
-                        height: 368px;
-                  }
-                  .swiper-pagination {
-                        display: block;
-                        background: white;
-                        bottom: 0;
-                  }
+@mixin mobslider {
+      margin-top: 32px;
+      display: block;
+      height: 390px;
+      .swiper-container {
+            width: 250px;
+            margin: 0 auto 0;
+            height: auto;
+            img {
+                  height: 368px;
             }
-      
+            .swiper-pagination {
+                  display: block;
+                  background: white;
+                  bottom: 0;
+            }
+      }
 }
 @mixin after-numbersmob {
       li {

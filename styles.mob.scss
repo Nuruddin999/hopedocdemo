@@ -1,5 +1,5 @@
 @import "./common.scss";
-@media screen and(max-width:414px) {
+@media screen and(max-width:768px) {
       %fontcolor {
             color: #367bf5;
       }
@@ -316,7 +316,7 @@
                   display: none;
             }
             .numbs {
-        @include mobslider()
+                  @include mobslider();
             }
             .after-numbersmob {
                   display: block;
@@ -337,11 +337,13 @@
       }
       .partnersWrappeGr {
             margin: 24px 12px 0;
-            display: grid;
             grid-template-columns: auto auto;
             gap: 4px;
-            justify-content: center;
             .partnersItemGr {
+                  font-size: unset;
+                  flex-basis: 34%;
+                  width: 162px;
+                  height: 140px;
                   padding: 4px;
             }
       }

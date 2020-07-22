@@ -241,6 +241,7 @@ main {
   height: 16px;
   background-image: url(./img/redstar.png);
   background-size: auto;
+  background-repeat: no-repeat;
   background-attachment: cover;
   margin: 4px 0 0 16px;
 }
@@ -335,6 +336,7 @@ main {
   height: 16px;
   background-image: url(./img/redstar.png);
   background-size: auto;
+  background-repeat: no-repeat;
   background-attachment: cover;
   margin: 4px 0 0 16px;
   margin-left: unset;
@@ -639,6 +641,7 @@ main {
   height: 16px;
   background-image: url(./img/redstar.png);
   background-size: auto;
+  background-repeat: no-repeat;
   background-attachment: cover;
   margin: 4px 0 0 16px;
   margin-left: unset;
@@ -734,13 +737,25 @@ main {
 }
 
 .results .after-numbersmob {
-  display: block;
-  padding: unset;
-  margin: 35px 64px 0 16px;
+  display: none;
 }
 
-.results .after-numbersmob li span .life-hearts {
-  color: #f23b53;
+.results .after-numbersmob li {
+  list-style: none;
+  margin-top: 22px;
+}
+
+.results .after-numbersmob li span {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 124%;
+  letter-spacing: 0.005em;
+}
+
+.results .after-numbersmob li:first-child {
+  margin-top: unset;
 }
 
 .partners-title {
@@ -1235,6 +1250,7 @@ main {
   height: 16px;
   background-image: url(./img/redstar.png);
   background-size: auto;
+  background-repeat: no-repeat;
   background-attachment: cover;
   margin: 4px 0 0 16px;
   margin-left: unset;
@@ -1551,6 +1567,7 @@ main {
     height: 16px;
     background-image: url(./img/redstar.png);
     background-size: auto;
+    background-repeat: no-repeat;
     background-attachment: cover;
     margin: 4px 0 0 16px;
     margin-left: unset;

@@ -1,5 +1,6 @@
 @import "./fonts.sass";
 @import "./common.scss";
+
 main {
       margin-top: 156px;
       .offer-help {
@@ -103,6 +104,21 @@ main {
                               @include font(TT Norms-Bold, normal, normal, 20px, 114%, null);
                               @include fontcolor;
                         }
+                        .tagrow {
+                              display: none;
+                              .chirurg {
+                                    color: #367bf5;
+                              }
+                              span {
+                                    text-align: center;
+                                    font: normal 16px/124% Inter;
+                                    margin-left: 16px;
+                                    color: #304b93;
+                              }
+                              span:first-child {
+                                    margin-left: initial;
+                              }
+                        }
                         .row {
                               display: flex;
                               flex: 1;
@@ -204,6 +220,16 @@ main {
                   text-align: center;
                   margin: 0 323px 0;
             }
+            .since {
+                  display: none;
+                  font: normal 500 18px/138% TT Norms;
+                  color: #202642;
+                  text-align: center;
+                  margin-top: 24px;
+                  span {
+                        color: #367bf5;
+                  }
+            }
             .years {
                   display: flex;
                   justify-content: center;
@@ -217,11 +243,11 @@ main {
             }
             .numbs {
                   @include mobslider();
-                  display:none;
-                      }
-                      .after-numbersmob {
-                      @include after-numbersmob()
-                       }
+                  display: none;
+            }
+            .after-numbersmob {
+                  @include after-numbersmob();
+            }
       }
       .offer-sec {
             background: #f5f8fa;
@@ -244,6 +270,25 @@ main {
                   text-align: center;
                   margin-top: 40px;
             }
+            .stars-row {
+                  display: none;
+                  justify-content: center;
+                  margin: 13px 0;
+                  .redstar {
+                        @include redstar();
+                        flex: 0 0 8px;
+                        height: 8px;
+                        background-size: cover;
+                        .redpoint {
+                              @include redpoint();
+                              width: 2px;
+                              height: 2px;
+                        }
+                  }
+            }
+            .stars-row:first-of-type {
+                  margin-top: 41px;
+            }
 
             .offer-row {
                   display: flex;
@@ -264,14 +309,39 @@ main {
                               align-items: center;
                         }
                   }
+                  .stars-row {
+                        display: none;
+                        justify-content: center;
+                        margin: 13px 0;
+                        .redstar {
+                              @include redstar();
+                              flex: 0 0 8px;
+                              height: 8px;
+                              background-size: cover;
+                              .redpoint {
+                                    @include redpoint();
+                                    width: 2px;
+                                    height: 2px;
+                              }
+                        }
+                  }
                   .item-offer:last-child {
                         margin-left: 20px;
                   }
             }
             button {
-                  @include buttonInNKO();
                   display: block;
+                  position: relative;
+                  padding: 17px 21px;
                   margin: 48px auto 0;
+                  background: #367bf5;
+                  color: white;
+                  border: unset;
+                  border-radius: 6px;
+                  font: bold 18px/134% RT Mono;
+                  .tri {
+                        @include triangle;
+                  }
             }
       }
       .partners-title {
@@ -279,6 +349,9 @@ main {
                   @include title(0);
                   padding-top: 48px;
                   margin: 0 184px 48px;
+            }
+            h1:last-child {
+                  display: none;
             }
       }
       .partnersWrappeGr {
@@ -330,77 +403,102 @@ main {
       .nko {
             @include nko();
       }
-      .how-become-title {
-            @include title(0);
-            margin: 74px 399px 20px;
-      }
-      .under-become {
-            font: normal normal 22px/124% TT Norms;
-            color: #202642;
-            display: block;
-            text-align: center;
-      }
-      .become-container {
-            display: flex;
-            margin: 40px 195px 0 223px;
-            overflow: hidden;
-            .form-container {
-                  background: #f5f8fa;
-                  border-radius: 8px;
-                  padding: 0 0 0 28px;
-                  margin-left: 64px;
-                  height: 352px;
-                  width: 620px;
-                  .form-row {
-                        display: flex;
-                        margin-right: 20px;
-                        margin-top: 30px;
-                        input {
+      .nko-slides {
+            display: none;
+            .swiper-container {
+                  width: 100%;
+                  height: 420px;
+                  margin-top: 32px;
+                  .nko-worker {
+                        @include nko-worker(0);
+                        iframe {
+                              width: 95%;
                               display: block;
-                              padding: 14px 0 14px 18px;
-                              background: #f5f8fa;
-                              border: 1px solid rgba(0, 64, 148, 0.3);
-                              border-radius: 8px;
-                              flex: 1;
                         }
-                        ::placeholder {
-                              color: #004094;
-                              @include font(Inter, normal, normal, 14px, 140%, 0.005em);
-                        }
-                        input:last-child {
-                              margin-left: 20px;
+                        .nko-worker-description {
+                              display: block;
+                              width: 95%;
                         }
                   }
-                  .form-row:first-child {
-                        margin-top: 48px;
+                  .swiper-pagination {
+                        top: 410px;
                   }
-                  .agreement {
-                        display: block;
-                        justify-content: start;
-                        margin-top: 10px;
-                        padding-bottom: 20px;
-                        .agreement-text {
-                              @include font(Inter, normal, 500, 12px, 136%, null);
-                              color: #0b1635;
-                              margin-left: 7px;
-                              span {
+            }
+      }
+      .become-sec {
+            .how-become-title {
+                  @include title(0);
+                  margin: 74px 399px 20px;
+            }
+            .under-become {
+                  font: normal normal 22px/124% TT Norms;
+                  color: #202642;
+                  display: block;
+                  text-align: center;
+            }
+            .become-container {
+                  display: flex;
+                  margin: 40px 195px 0 223px;
+                  overflow: hidden;
+                  .form-container {
+                        background: #f5f8fa;
+                        border-radius: 8px;
+                        padding: 0 0 0 28px;
+                        margin-left: 64px;
+                        height: 352px;
+                        width: 620px;
+                        .form-row {
+                              display: flex;
+                              margin-right: 20px;
+                              margin-top: 30px;
+                              input {
+                                    display: block;
+                                    padding: 14px 0 14px 18px;
+                                    background: #f5f8fa;
+                                    border: 1px solid rgba(0, 64, 148, 0.3);
+                                    border-radius: 8px;
+                                    flex: 1;
+                              }
+                              ::placeholder {
                                     color: #004094;
+                                    @include font(Inter, normal, normal, 14px, 140%, 0.005em);
+                              }
+                              input:last-child {
+                                    margin-left: 20px;
                               }
                         }
-                  }
-                  button {
-                        display: block;
-                        @include btn();
-                        background: #304b93;
-                        border-radius: 6px;
-                        margin: 40px 0 0 0;
-                        padding: 12px 40px;
-                        .tri {
-                              @include triangle;
+                        .form-row:first-child {
+                              margin-top: 48px;
+                        }
+                        .agreement {
+                              display: block;
+                              justify-content: start;
+                              margin-top: 10px;
+                              padding-bottom: 20px;
+                              .agreement-text {
+                                    @include font(Inter, normal, 500, 12px, 136%, null);
+                                    color: #0b1635;
+                                    margin-left: 7px;
+                                    span {
+                                          color: #004094;
+                                    }
+                              }
+                        }
+                        button {
+                              display: block;
+                              @include btn();
+                              background: #304b93;
+                              border-radius: 6px;
+                              margin: 40px 0 0 0;
+                              padding: 12px 40px;
+                              .tri {
+                                    @include triangle;
+                              }
                         }
                   }
             }
       }
+
       .all-answers {
             @include allanswers();
             margin-top: 60px;
@@ -413,14 +511,17 @@ main {
             margin: 0 auto 0;
       }
 }
-@media screen and(max-width:420px) {
+@media screen and(max-width:768px) {
+      body {
+            width: 100%;
+      }
       main {
             margin-top: 104px;
             .offer-help {
                   display: flex;
                   flex-wrap: wrap;
                   section {
-                        order:2;
+                        order: 2;
                         margin-left: initial;
                         margin-right: initial;
                         .span-marg {
@@ -432,7 +533,7 @@ main {
                         h1 {
                               @include font(TT Norms-Bold, normal, normal, 24px, 132%, null);
                               @include fontcolor;
-                              margin:40px 42px 0;
+                              margin: 40px 42px 0;
                               text-align: center;
                         }
                         span {
@@ -447,26 +548,26 @@ main {
                                     margin-right: 0;
                               }
                         }
-                     
+
                         button {
                               @include buttonInNKO();
                               display: block;
                               padding: 14px 26px;
                               margin: 34px 68px 0;
-                        span {
-                              font: bold 16px/134%  RT Mono;
-                        }
+                              span {
+                                    font: bold 16px/134% RT Mono;
+                              }
                         }
                   }
                   img {
                         order: 1;
                         margin-right: initial;
                         display: block;
-                        width:100%;
-                        margin: 0 18px 0;
+                        width: calc(100% - 36px);
+                        margin: 0 auto 0;
                   }
             }
-              .who-we-are {
+            .who-we-are {
                   display: block;
                   width: 100%;
                   h1 {
@@ -478,21 +579,21 @@ main {
                   }
                   .container {
                         display: flex;
-                        padding-top: initial    ;
+                        padding-top: initial;
                         margin-left: initial;
                         margin-right: initial;
                         flex-wrap: wrap;
                         section {
-                              margin-right: initial;   
-                                  span:first-child {
+                              margin-right: initial;
+                              span:first-child {
                                     margin: 0 29px;
                                     text-align: center;
                               }
-                      
+
                               span {
                                     .doctors {
                                           display: inline;
-                                          color: #F23B53;
+                                          color: #f23b53;
                                           margin: 0;
                                     }
                                     display: block;
@@ -501,9 +602,9 @@ main {
                                     color: #202642;
                                     text-align: center;
                               }
-                         
+
                               button {
-                                   display: none;
+                                    display: none;
                               }
                         }
                         .right {
@@ -519,30 +620,19 @@ main {
                                     display: none;
                               }
                               .row-marg {
-                                        margin: 18px 45px 0;
+                                    margin: 18px 45px 0;
                               }
-                              .sec-rowmarg{
+                              .sec-rowmarg {
                                     margin: 14px 56px 0;
                               }
                               .third-rowmarg {
                                     margin: 14px 30px 0;
                               }
-                        .fourth-rowmarg {
-                              margin: 0 61px 0;
-                        }
-                              .tagrow { 
-                                    .chirurg {
-                                          color: #367BF5;
-                                    }   
-                                    span {         
-                                          text-align: center;
-                                          font: normal 16px/124%  Inter;
-                                          margin-left: 16px;
-                                          color: #304B93;
-                                    }
-                                    span:first-child {
-                                          margin-left: initial;
-                                    }
+                              .fourth-rowmarg {
+                                    margin: 0 61px 0;
+                              }
+                              .tagrow {
+                                    display: block;
                               }
                         }
                   }
@@ -552,16 +642,16 @@ main {
                   margin-top: 58px;
                   h1 {
                         @include title(0);
-                        font:  normal 34px/124% TT Norms-Bold;
+                        font: normal 34px/124% TT Norms-Bold;
                         padding-top: 40px;
                         margin-bottom: 20px;
                   }
                   .undertitle {
-                       display: none;
+                        display: none;
                   }
                   .howhelp {
-                      flex-wrap: wrap;
-                        margin:  0;
+                        flex-wrap: wrap;
+                        margin: 0;
 
                         .video {
                               iframe {
@@ -588,9 +678,8 @@ main {
                               }
                         }
                         .right-list {
-                              
                               h4 {
-                                  display: none;
+                                    display: none;
                               }
                               .description {
                                     @include description();
@@ -609,15 +698,14 @@ main {
                                                 @include descr();
                                                 margin-left: 12px;
                                                 span {
-                                                     margin-right: 8px;   
+                                                      margin-right: 8px;
                                                 }
-                                              
+
                                                 .helpdescr {
                                                       margin-top: 8px;
                                                 }
                                           }
                                     }
-                                 
                               }
                               button {
                                     @include buttonInNKO();
@@ -633,40 +721,250 @@ main {
                         @include title(0);
                         font: normal normal 34px/124% TT Norms-Bold;
                         padding-top: 71px;
-                        margin:0 13px  0 25px;
+                        margin: 0 13px 0 25px;
                   }
                   .undertitle {
-                     display: none;
+                        display: none;
                   }
                   .since {
                         display: block;
-                        font: normal 500 18px/138% TT Norms;
-                        color: #202642;
-                        text-align: center;
-                        margin-top: 24px;
-                        span {
-                            color:   #367bf5;
-                            
-                        }
                   }
                   .years {
                         display: none;
                   }
                   .numbs {
-                        @include mobslider()
-                            }
-                            .after-numbersmob {
-                              display: block;
-                              padding: unset;
-                              margin: 35px 64px 0 16px;
-                              li {
-                                    span {
-                                          .life-hearts {
-                                                color: #f23b53;
+                        @include mobslider();
+                  }
+                  .after-numbersmob {
+                        display: block;
+                        padding: unset;
+                        margin: 35px 64px 0 16px;
+                        li {
+                              span {
+                                    .life-hearts {
+                                          color: #f23b53;
+                                    }
+                              }
+                        }
+                  }
+            }
+            .offer-sec {
+                  background: initial;
+                  padding-bottom: 48px;
+                  h1 {
+                        @include title(0);
+                        font: normal bold 34px/124% TT Norms-Bold;
+                        padding-top: 80px;
+                        margin-bottom: 20px;
+                  }
+                  .undertitle {
+                        font: normal normal 16px/134% TT Norms;
+                        display: block;
+                        text-align: center;
+                        margin: 0 12px 0;
+                  }
+                  .benefits {
+                        display: none;
+                  }
+
+                  .stars-row {
+                        display: flex;
+                  }
+
+                  .offer-row {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        margin: 0px 8px 0;
+
+                        .item-offer {
+                              width: 100%;
+                              height: initial;
+                              background: #ffffff;
+                              border: 1px solid rgba(0, 64, 148, 0.25);
+                              border-radius: 8px;
+                              align-items: center;
+                              justify-content: center;
+                              display: flex;
+                              span {
+                                    display: flex;
+                                    margin: 10px 12px;
+                                    font: normal normal 15px/134% TT Norms;
+                                    text-align: center;
+                              }
+                        }
+                        .stars-row {
+                              display: flex;
+                        }
+                        .item-offer:last-child {
+                              margin-left: 0px;
+                        }
+                  }
+                  button {
+                  }
+            }
+            .partners-title {
+                  h1:first-child {
+                        display: none;
+                  }
+                  h1:last-child {
+                        display: block;
+                  }
+                  h1 {
+                        font: normal bold 34px/132% TT Norms-Bold;
+                        padding-top: 40px;
+                        margin: 0px 28px 0px;
+                  }
+            }
+            .partnersWrappeGr {
+                  margin: 24px 12px 0;
+                  grid-template-columns: auto auto;
+                  gap: 4px;
+                  .partnersItemGr {
+                        font-size: unset;
+                        flex-basis: 34%;
+                        width: 162px;
+                        height: 140px;
+                        padding: 4px;
+                  }
+            }
+            .nko-title {
+                  @include title(0);
+                  font: normal bold 34px/132% TT Norms-Bold;
+                  padding-top: 72px;
+                  margin: 0 12px 32px;
+            }
+            .nko {
+                  display: none;
+            }
+
+            .nko-slides {
+                  display: block;
+            }
+            .become-sec {
+                  background: #f5f8fa;
+                  overflow: hidden;
+                  margin-top: 45px;
+                  .how-become-title {
+                        @include title(0);
+                        font: normal bold 34px/132% TT Norms-Bold;
+                        margin: 48px auto 0;
+                  }
+                  .under-become {
+                        font-size: 20px;
+                        margin: 12px 13px 0;
+                  }
+                  .become-container {
+                        float: wrap;
+                        margin: 0;
+                        img {
+                              display: none;
+                        }
+                        .form-container {
+                              background: #f5f8fa;
+                              border-radius: 8px;
+                              padding: 0;
+                              margin-left: 0px;
+                              height: initial;
+                              width: 100%;
+                              .form-row {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    margin: 16px 12px 0;
+                                    input {
+                                          display: block;
+                                          padding: 22px 0 22px 24px;
+                                          background: #f5f8fa;
+                                          border: 1px solid rgba(0, 64, 148, 0.3);
+                                          border-radius: 8px;
+                                          flex: 1;
+                                          margin-top: 16px;
+                                    }
+                                    ::placeholder {
+                                          color: #004094;
+                                          @include font(Inter, normal, normal, 14px, 140%, 0.005em);
+                                    }
+                                    input:last-child {
+                                          margin-left: 0px;
+                                    }
+                                    input:first-child {
+                                          margin-top: 0px;
+                                    }
+                              }
+                              .form-row:first-child {
+                                    margin-top: 40px;
+                              }
+                              .agreement {
+                                    display: block;
+                                    justify-content: start;
+                                    margin-top: 10px;
+                                    padding-bottom: 20px;
+                                    .agreement-text {
+                                          @include font(Inter, normal, 500, 12px, 136%, null);
+                                          color: #0b1635;
+                                          margin-left: 7px;
+                                          span {
+                                                color: #004094;
                                           }
                                     }
                               }
-                             }
+                              button {
+                                    display: block;
+                                    @include btn();
+                                    background: #304b93;
+                                    border-radius: 6px;
+                                    margin: 40px 12px 0;
+                                    padding: 12px 40px;
+                                    width: calc(100% - 24px);
+                                    background: #367bf5;
+                                    .tri {
+                                          @include triangle;
+                                    }
+                              }
+                              .agreement {
+                                    display: block;
+                                    justify-content: start;
+                                    margin: 16px 106 0 12px;
+                                    padding-bottom: 20px;
+                                    .agreement-text {
+                                          @include font(Inter, normal, 500, 12px, 136%, null);
+                                          color: #0b1635;
+                                          margin-left: 7px;
+                                          span {
+                                                color: #004094;
+                                          }
+                                    }
+                              }
+                        }
+                  }
+            }
+            .all-answers {
+                  margin-top: 0;
+                  .title {
+                        margin-top: 72px;
+                        font: normal bold 34px/138% TT Norms-Bold;
+                  }
+                  .answers {
+                        margin-bottom: 70px;
+                        .answers-list {
+                              margin: 4px 0 0 0;
+                              .qa {
+                                    .plus {
+                                          border: initial;
+                                          img {
+                                                width: 14px;
+                                                height: 14px;
+                                          }
+                                    }
+                              }
+                        }
+                        .answers-list:first-child {
+                              margin: 0;
+                        }
+                  }
+            }
+            .anyQstnsBlock {
+                  margin-top: 0px;
             }
       }
 }

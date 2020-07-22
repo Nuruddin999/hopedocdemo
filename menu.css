@@ -125,7 +125,7 @@ a {
       right: 22px;
 }
 
-.drawerlinks>div {
+.drawerlinks > div {
       display: table;
       font-family: PT Mono;
       font-style: normal;
@@ -138,7 +138,7 @@ a {
       margin-top: 18px;
 }
 
-.drawerlinks>div span {
+.drawerlinks > div span {
       display: table;
       margin: 11px;
 }
@@ -227,7 +227,7 @@ a {
 
 .navSection .menuButtons {
       list-style: none;
-      display: inline;
+      display: none;
       background: #d6e5ff;
       border-radius: 4px;
       padding: 5px;
@@ -799,6 +799,7 @@ footer .socialIcons {
       }
       .navSection .logoSection {
             margin: 0;
+            padding: 0;
             margin-left: 2px;
       }
       .navSection .logoSection img {
@@ -821,6 +822,7 @@ footer .socialIcons {
             display: none;
       }
       .navSection ul .menuButtons {
+            display: inline;
             border-radius: unset;
             background: unset;
             margin: 0 5px;
