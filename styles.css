@@ -118,15 +118,15 @@ main {
 
 .invitation .text .tri {
   position: absolute;
-  bottom: 4px;
+  bottom: 5px;
   right: 4px;
   width: 0;
   height: 0;
-  border-top: 4px solid transparent;
-  border-right: 4px solid #f9b53b;
-  border-bottom: 4px solid #f9b53b;
-  border-left: 4px solid transparent;
-  border-radius: 0px 0px 4px 0px;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #f9b53b;
+  border-bottom: 8px solid #f9b53b;
+  border-left: 8px solid transparent;
+  border-radius: 0px 0px 6px 0px;
 }
 
 .invitation .text .underButton {
@@ -198,15 +198,15 @@ main {
 
 .howhelp .video button .tri {
   position: absolute;
-  bottom: 4px;
+  bottom: 5px;
   right: 4px;
   width: 0;
   height: 0;
-  border-top: 4px solid transparent;
-  border-right: 4px solid #f9b53b;
-  border-bottom: 4px solid #f9b53b;
-  border-left: 4px solid transparent;
-  border-radius: 0px 0px 4px 0px;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #f9b53b;
+  border-bottom: 8px solid #f9b53b;
+  border-left: 8px solid transparent;
+  border-radius: 0px 0px 6px 0px;
 }
 
 .howhelp .description {
@@ -568,15 +568,15 @@ main {
 
 .joinus button .tri {
   position: absolute;
-  bottom: 4px;
+  bottom: 5px;
   right: 4px;
   width: 0;
   height: 0;
-  border-top: 4px solid transparent;
-  border-right: 4px solid #f9b53b;
-  border-bottom: 4px solid #f9b53b;
-  border-left: 4px solid transparent;
-  border-radius: 0px 0px 4px 0px;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #f9b53b;
+  border-bottom: 8px solid #f9b53b;
+  border-left: 8px solid transparent;
+  border-radius: 0px 0px 6px 0px;
 }
 
 .who-we-need {
@@ -1407,15 +1407,15 @@ main {
 
 .how-become .container .form button .tri {
   position: absolute;
-  bottom: 4px;
+  bottom: 5px;
   right: 4px;
   width: 0;
   height: 0;
-  border-top: 4px solid transparent;
-  border-right: 4px solid #f9b53b;
-  border-bottom: 4px solid #f9b53b;
-  border-left: 4px solid transparent;
-  border-radius: 0px 0px 4px 0px;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #f9b53b;
+  border-bottom: 8px solid #f9b53b;
+  border-left: 8px solid transparent;
+  border-radius: 0px 0px 6px 0px;
 }
 
 .all-answers {
@@ -1708,15 +1708,15 @@ main {
   }
   body .how-become .container .form button .tri {
     position: absolute;
-    bottom: 4px;
+    bottom: 5px;
     right: 4px;
     width: 0;
     height: 0;
-    border-top: 4px solid transparent;
-    border-right: 4px solid #f9b53b;
-    border-bottom: 4px solid #f9b53b;
-    border-left: 4px solid transparent;
-    border-radius: 0px 0px 4px 0px;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #f9b53b;
+    border-bottom: 8px solid #f9b53b;
+    border-left: 8px solid transparent;
+    border-radius: 0px 0px 6px 0px;
   }
 }
 

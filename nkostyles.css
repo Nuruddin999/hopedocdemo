@@ -122,24 +122,24 @@ main .offer-help section button span {
 
 main .offer-help section button .tri {
   position: absolute;
-  bottom: 4px;
+  bottom: 5px;
   right: 4px;
-  width: 0;
-  height: 0;
-  border-top: 4px solid transparent;
-  border-right: 4px solid #f9b53b;
-  border-bottom: 4px solid #f9b53b;
-  border-left: 4px solid transparent;
-  border-radius: 0px 0px 4px 0px;
-  bottom: 8px;
-  right: 8px;
   width: 0;
   height: 0;
   border-top: 8px solid transparent;
   border-right: 8px solid #f9b53b;
   border-bottom: 8px solid #f9b53b;
   border-left: 8px solid transparent;
-  border-radius: 0px 0px 4px 0px;
+  border-radius: 0px 0px 6px 0px;
+  bottom: 5px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #f9b53b;
+  border-bottom: 8px solid #f9b53b;
+  border-left: 8px solid transparent;
+  border-radius: 0px 0px 6px 0px;
 }
 
 main .offer-help img {
@@ -225,24 +225,24 @@ main .who-we-are .container section button span {
 
 main .who-we-are .container section button .tri {
   position: absolute;
-  bottom: 4px;
+  bottom: 5px;
   right: 4px;
-  width: 0;
-  height: 0;
-  border-top: 4px solid transparent;
-  border-right: 4px solid #f9b53b;
-  border-bottom: 4px solid #f9b53b;
-  border-left: 4px solid transparent;
-  border-radius: 0px 0px 4px 0px;
-  bottom: 8px;
-  right: 8px;
   width: 0;
   height: 0;
   border-top: 8px solid transparent;
   border-right: 8px solid #f9b53b;
   border-bottom: 8px solid #f9b53b;
   border-left: 8px solid transparent;
-  border-radius: 0px 0px 4px 0px;
+  border-radius: 0px 0px 6px 0px;
+  bottom: 5px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #f9b53b;
+  border-bottom: 8px solid #f9b53b;
+  border-left: 8px solid transparent;
+  border-radius: 0px 0px 6px 0px;
 }
 
 main .who-we-are .container .right {
@@ -343,7 +343,7 @@ main .who-we-are .container .right .row .card .img {
 }
 
 main .who-we-are .container .right .row .card span {
-  display: table;
+  display: block;
 }
 
 main .who-we-are .container .right .row .card .name {
@@ -432,15 +432,15 @@ main .how-we-work .howhelp .video button {
 
 main .how-we-work .howhelp .video button .tri {
   position: absolute;
-  bottom: 4px;
+  bottom: 5px;
   right: 4px;
   width: 0;
   height: 0;
-  border-top: 4px solid transparent;
-  border-right: 4px solid #f9b53b;
-  border-bottom: 4px solid #f9b53b;
-  border-left: 4px solid transparent;
-  border-radius: 0px 0px 4px 0px;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #f9b53b;
+  border-bottom: 8px solid #f9b53b;
+  border-left: 8px solid transparent;
+  border-radius: 0px 0px 6px 0px;
 }
 
 main .how-we-work .howhelp .video .undervideo {
@@ -458,7 +458,6 @@ main .how-we-work .howhelp .video .undervideo .free {
 main .how-we-work .howhelp .right-list h4 {
   font: normal 500 24px/138% Inter;
   margin: 0 0 24px 56px;
-  width: 60%;
 }
 
 main .how-we-work .howhelp .right-list .description {
@@ -534,6 +533,10 @@ main .how-we-work .howhelp .right-list .description .undernumslide .descr .helpd
   line-height: 134%;
   letter-spacing: 0.005em;
   margin-top: 6px;
+}
+
+main .how-we-work .howhelp button {
+  display: none;
 }
 
 main .results {
@@ -817,15 +820,15 @@ main .offer-sec button {
 
 main .offer-sec button .tri {
   position: absolute;
-  bottom: 4px;
+  bottom: 5px;
   right: 4px;
   width: 0;
   height: 0;
-  border-top: 4px solid transparent;
-  border-right: 4px solid #f9b53b;
-  border-bottom: 4px solid #f9b53b;
-  border-left: 4px solid transparent;
-  border-radius: 0px 0px 4px 0px;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #f9b53b;
+  border-bottom: 8px solid #f9b53b;
+  border-left: 8px solid transparent;
+  border-radius: 0px 0px 6px 0px;
 }
 
 main .partners-title h1 {
@@ -1205,15 +1208,15 @@ main .become-sec .become-container .form-container button {
 
 main .become-sec .become-container .form-container button .tri {
   position: absolute;
-  bottom: 4px;
+  bottom: 5px;
   right: 4px;
   width: 0;
   height: 0;
-  border-top: 4px solid transparent;
-  border-right: 4px solid #f9b53b;
-  border-bottom: 4px solid #f9b53b;
-  border-left: 4px solid transparent;
-  border-radius: 0px 0px 4px 0px;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #f9b53b;
+  border-bottom: 8px solid #f9b53b;
+  border-left: 8px solid transparent;
+  border-radius: 0px 0px 6px 0px;
 }
 
 main .all-answers {
@@ -1305,6 +1308,10 @@ main .all-answers .answers .answers-list .answer-block span {
   margin: 16px 80px 12px 10px;
 }
 
+main .all-answers .title:last-of-type {
+  display: none;
+}
+
 @media screen and (min-width: 1500px) {
   body {
     width: 1440px;
@@ -1351,7 +1358,7 @@ main .all-answers .answers .answers-list .answer-block span {
   }
   main .offer-help section span {
     display: block;
-    width: 90%;
+    width: initial;
     text-align: center;
     font-family: TT Norms;
     font-style: normal;
@@ -1381,6 +1388,7 @@ main .all-answers .answers .answers-list .answer-block span {
     margin-top: 44px;
     padding: 15px 57px 15px 40px;
     display: block;
+    width: calc(100% - 136px);
     padding: 14px 26px;
     margin: 34px 68px 0;
   }
@@ -1396,24 +1404,24 @@ main .all-answers .answers .answers-list .answer-block span {
   }
   main .offer-help section button .tri {
     position: absolute;
-    bottom: 4px;
+    bottom: 5px;
     right: 4px;
-    width: 0;
-    height: 0;
-    border-top: 4px solid transparent;
-    border-right: 4px solid #f9b53b;
-    border-bottom: 4px solid #f9b53b;
-    border-left: 4px solid transparent;
-    border-radius: 0px 0px 4px 0px;
-    bottom: 8px;
-    right: 8px;
     width: 0;
     height: 0;
     border-top: 8px solid transparent;
     border-right: 8px solid #f9b53b;
     border-bottom: 8px solid #f9b53b;
     border-left: 8px solid transparent;
-    border-radius: 0px 0px 4px 0px;
+    border-radius: 0px 0px 6px 0px;
+    bottom: 5px;
+    right: 4px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #f9b53b;
+    border-bottom: 8px solid #f9b53b;
+    border-left: 8px solid transparent;
+    border-radius: 0px 0px 6px 0px;
   }
   main .offer-help section button span {
     font: bold 16px/134% RT Mono;
@@ -1504,13 +1512,13 @@ main .all-answers .answers .answers-list .answer-block span {
     margin: 18px 45px 0;
   }
   main .who-we-are .container .right .sec-rowmarg {
-    margin: 14px 56px 0;
+    margin: 14px 36px 0;
   }
   main .who-we-are .container .right .third-rowmarg {
-    margin: 14px 30px 0;
+    margin: 14px auto 0;
   }
   main .who-we-are .container .right .fourth-rowmarg {
-    margin: 0 61px 0;
+    margin: 14px auto 0;
   }
   main .who-we-are .container .right .tagrow {
     display: block;
@@ -1746,6 +1754,7 @@ main .all-answers .answers .answers-list .answer-block span {
     border-radius: 6px;
     margin-top: 44px;
     padding: 15px 57px 15px 40px;
+    padding: 16px 20px;
     display: block;
     margin: 48px auto 0;
   }
@@ -1761,24 +1770,39 @@ main .all-answers .answers .answers-list .answer-block span {
   }
   main .how-we-work .howhelp .right-list button .tri {
     position: absolute;
-    bottom: 4px;
+    bottom: 5px;
     right: 4px;
-    width: 0;
-    height: 0;
-    border-top: 4px solid transparent;
-    border-right: 4px solid #f9b53b;
-    border-bottom: 4px solid #f9b53b;
-    border-left: 4px solid transparent;
-    border-radius: 0px 0px 4px 0px;
-    bottom: 8px;
-    right: 8px;
     width: 0;
     height: 0;
     border-top: 8px solid transparent;
     border-right: 8px solid #f9b53b;
     border-bottom: 8px solid #f9b53b;
     border-left: 8px solid transparent;
-    border-radius: 0px 0px 4px 0px;
+    border-radius: 0px 0px 6px 0px;
+    bottom: 5px;
+    right: 4px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #f9b53b;
+    border-bottom: 8px solid #f9b53b;
+    border-left: 8px solid transparent;
+    border-radius: 0px 0px 6px 0px;
+  }
+  main .how-we-work .howhelp .right-list button span {
+    font: normal bold 18px/134% Rt Mono;
+  }
+  main .how-we-work .howhelp .right-list button .tri {
+    position: absolute;
+    bottom: 5px;
+    right: 4px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #f9b53b;
+    border-bottom: 8px solid #f9b53b;
+    border-left: 8px solid transparent;
+    border-radius: 0px 0px 6px 0px;
   }
   main .results {
     background: initial;
@@ -1906,6 +1930,26 @@ main .all-answers .answers .answers-list .answer-block span {
   }
   main .offer-sec .offer-row .item-offer:last-child {
     margin-left: 0px;
+  }
+  main .offer-sec button {
+    padding: 16px 20px;
+    display: block;
+    margin: 48px auto 0;
+  }
+  main .offer-sec button span {
+    font: normal bold 18px/134% Rt Mono;
+  }
+  main .offer-sec button .tri {
+    position: absolute;
+    bottom: 5px;
+    right: 4px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #f9b53b;
+    border-bottom: 8px solid #f9b53b;
+    border-left: 8px solid transparent;
+    border-radius: 0px 0px 6px 0px;
   }
   main .partners-title h1:first-child {
     display: none;
@@ -2096,15 +2140,15 @@ main .all-answers .answers .answers-list .answer-block span {
   }
   main .become-sec .become-container .form-container button .tri {
     position: absolute;
-    bottom: 4px;
+    bottom: 5px;
     right: 4px;
     width: 0;
     height: 0;
-    border-top: 4px solid transparent;
-    border-right: 4px solid #f9b53b;
-    border-bottom: 4px solid #f9b53b;
-    border-left: 4px solid transparent;
-    border-radius: 0px 0px 4px 0px;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #f9b53b;
+    border-bottom: 8px solid #f9b53b;
+    border-left: 8px solid transparent;
+    border-radius: 0px 0px 6px 0px;
   }
   main .become-sec .become-container .form-container .agreement {
     display: block;
@@ -2132,6 +2176,12 @@ main .all-answers .answers .answers-list .answer-block span {
   main .all-answers .title {
     margin-top: 72px;
     font: normal bold 34px/138% TT Norms-Bold;
+  }
+  main .all-answers .title:first-of-type {
+    display: none;
+  }
+  main .all-answers .title:last-of-type {
+    display: block;
   }
   main .all-answers .answers {
     margin-bottom: 70px;
