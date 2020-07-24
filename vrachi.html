@@ -24,7 +24,7 @@
       <div class="navdrawr">
 
             <div class="navdrawheader">
-                  <a href="./index.html"> <span>Врачи надежды</span></a>
+                  <span>Врачи надежды</span>
 
                   <img src="./img/close.png" alt="close" />
             </div>
@@ -82,17 +82,20 @@
                                     <li><a class="menu__links-item" href="#"
                                                 onclick="$('html, body').animate({scrollTop: $(`.anyqstnTitle`).offset().top}, 500);">Контакты</a>
                                     </li>
+                                    <li><a class="menu__links-item" href="./nko.html">НКО</a>
+                                    </li>
+
                               </div>
                               <div>
                                     <li class="menuButtons">
                                           <a href="./nko.html"><span>НКО</span></a>
                                     </li>
                               </div>
-                              <div>
+                              <!-- <div>
                                     <li class="menuButtons">
                                           <a href="#"><span>Врачи</span></a>
                                     </li>
-                              </div>
+                              </div> -->
                         </ul>
 
                   </nav>
@@ -274,8 +277,8 @@
                                           </div>
                                     </div>
                                     <div class="periodblock">
-                                          <button>ЕЖЕМЕСЯНОЕ</button>
-                                          <button>РАЗОВОЕ</button>
+                                          <button id="monthly">ЕЖЕМЕСЯНОЕ</button>
+                                          <button id="onetime">РАЗОВОЕ</button>
                                     </div>
                                     <div class="sumblock">
                                           <div class="sumRow">
@@ -463,7 +466,9 @@
                   </div>
             </div>
       </main>
+      <script src="./js/pay.js"></script>
       <script type="text/babel" src="./js/qa.js"></script>
+
       <script type="text/babel" src="./js/doctors.js"></script>
 </body>
 <footer>
@@ -483,7 +488,7 @@
             <div class="rightbotNav">
                   <div class="upbtns">
                         <li class="menuButtons">
-                              <a href="#"><span>НКО</span></a>
+                              <a href="./nko.html"><span>НКО</span></a>
                         </li>
                         <li class="menuButtons">
                               <a href="#"><span>Врачи</span></a>

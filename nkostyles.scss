@@ -841,13 +841,13 @@ main {
             .partnersWrappeGr {
                   margin: 24px 12px 0;
                   grid-template-columns: auto auto;
-                  gap: 4px;
+                  gap: 12px;
                   .partnersItemGr {
                         font-size: unset;
                         flex-basis: 34%;
                         width: 162px;
                         height: 140px;
-                        padding: 4px;
+                        padding: 0;
                   }
             }
             .nko-title {
