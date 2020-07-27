@@ -8,11 +8,7 @@
   font-style: normal;
 }*/
 
-<<<<<<< HEAD
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
-=======
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
->>>>>>> doctors
 body {
     margin: 0;
 }
@@ -79,21 +75,16 @@ a {
 .bg_main {
     position: fixed;
     top: 0;
-<<<<<<< HEAD
-=======
     left: 0;
->>>>>>> doctors
     z-index: 1;
     background: white;
     width: 100%;
 }
-<<<<<<< HEAD
 
-=======
 button {
     border: initial;
 }
->>>>>>> doctors
+
 main {
     margin-top: 84px;
 }
@@ -106,11 +97,7 @@ main {
     background: #367bf5;
     border-radius: 6px;
     color: white;
-<<<<<<< HEAD
-    font-family: "PT Mono";
-=======
     font-family: "RT Mono";
->>>>>>> doctors
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -142,17 +129,10 @@ main {
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-<<<<<<< HEAD
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-=======
     justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: unset;
->>>>>>> doctors
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-top: 20px;
@@ -178,11 +158,7 @@ main {
     /* or 30px */
     letter-spacing: 0.005em;
     /* Темно темно синий */
-<<<<<<< HEAD
-    color: #242F65;
-=======
     color: #242f65;
->>>>>>> doctors
     overflow: hidden;
 }
 
@@ -195,20 +171,12 @@ main {
 }
 
 .drawerlinks a {
-<<<<<<< HEAD
-    color: #242F65;
-=======
     color: #242f65;
->>>>>>> doctors
     margin-top: 20px;
 }
 
 .drawerlinks a:first-child {
-<<<<<<< HEAD
-    color: #242F65;
-=======
     color: #242f65;
->>>>>>> doctors
     margin-top: unset;
 }
 
@@ -234,35 +202,20 @@ main {
     right: 22px;
 }
 
-<<<<<<< HEAD
 .drawerlinks>div {
     display: table;
-    font-family: PT Mono;
-=======
-.drawerlinks > div {
-    display: table;
     font-family: RT Mono;
->>>>>>> doctors
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 134%;
-<<<<<<< HEAD
-    color: #FFFFFF;
-    background: #367BF5;
-=======
     color: #ffffff;
     background: #367bf5;
->>>>>>> doctors
     border-radius: 4px;
     margin-top: 18px;
 }
 
-<<<<<<< HEAD
 .drawerlinks>div span {
-=======
-.drawerlinks > div span {
->>>>>>> doctors
     display: table;
     margin: 11px;
 }
@@ -326,11 +279,8 @@ main {
     -webkit-box-flex: wrap;
     -ms-flex: wrap;
     flex: wrap;
-<<<<<<< HEAD
-=======
     margin: 22px 86px 0 0;
     padding: 0;
->>>>>>> doctors
 }
 
 .navSection ul .menuLinks li {
@@ -434,13 +384,7 @@ main {
     border-radius: 12px;
 }
 
-<<<<<<< HEAD
 .underNavBlock *, .underNavBlock *:before, .underNavBlock *:after {
-=======
-.underNavBlock *,
-.underNavBlock *:before,
-.underNavBlock *:after {
->>>>>>> doctors
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -670,13 +614,7 @@ main {
     margin-top: 80px;
 }
 
-<<<<<<< HEAD
 .whyHelpBlock *, .whyHelpBlock *:before, .whyHelpBlock *:after {
-=======
-.whyHelpBlock *,
-.whyHelpBlock *:before,
-.whyHelpBlock *:after {
->>>>>>> doctors
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -731,10 +669,7 @@ main {
 }
 
 .spendsContainer {
-<<<<<<< HEAD
-=======
     width: 1200px;
->>>>>>> doctors
     display: flex;
     justify-content: center;
     margin: 32px 0 20px 39px;
@@ -757,10 +692,7 @@ main {
 
 .spendsText {
     margin-left: 24px;
-<<<<<<< HEAD
-=======
     width: 697px;
->>>>>>> doctors
     font-family: TT Norms;
     font-style: normal;
     font-weight: normal;
@@ -965,11 +897,7 @@ main {
 .helpboard {
     margin: 47px 120px 47px 0;
     background: white;
-<<<<<<< HEAD
-    font-family: 'Inter', sans-serif;
-=======
     font-family: "Inter", sans-serif;
->>>>>>> doctors
     letter-spacing: 0.005em;
     line-height: 138%;
 }
@@ -1085,11 +1013,7 @@ main {
 
 .sumRow .amountAndLogo span {
     font-size: 15px;
-<<<<<<< HEAD
-    font-family: 'Inter', sans-serif;
-=======
     font-family: "Inter", sans-serif;
->>>>>>> doctors
     line-height: 138%;
     text-transform: uppercase;
     color: #0b1635;
@@ -1139,11 +1063,7 @@ main {
     line-height: 138%;
     font: 500 13px Inter;
     letter-spacing: 0.005em;
-<<<<<<< HEAD
-    border: unset;
-=======
     border-radius: 6px;
->>>>>>> doctors
     cursor: pointer;
 }
 
@@ -1166,12 +1086,8 @@ main {
 
 .partnersItemGr {
     display: flex;
-<<<<<<< HEAD
-    background: #f5f8fa;
-=======
     background-image: url("./img/fundslogo/nadejda_logo.jpeg");
     background-size: cover;
->>>>>>> doctors
     border-radius: 8px;
     padding: 75px;
     font-family: TT Norms;
@@ -1186,20 +1102,10 @@ main {
     text-align: center;
     display: block;
     margin: auto;
-<<<<<<< HEAD
-}
-
-=======
     color: transparent;
 }
-.logoNadejda,
-.logoHome,
-.logoIhsan,
-.logoKdl,
-.logoLekki,
-.logoLife,
-.logoSirat,
-.logoZakyat {
+
+.logoNadejda, .logoHome, .logoIhsan, .logoKdl, .logoLekki, .logoLife, .logoSirat, .logoZakyat {
     background-size: cover;
     background-position-x: no-repeat;
     background-position: center;
@@ -1209,28 +1115,35 @@ main {
 .logoNadejda {
     background-image: url(/img/fundslogo/nadejda_logo.jpeg);
 }
+
 .logoHome {
     background-image: url(/img/fundslogo/home_logo.png);
 }
+
 .logoIhsan {
     background-image: url(/img/fundslogo/ihsan_logo.jpg);
 }
+
 .logoKdl {
     background-image: url(/img/fundslogo/kdl_logo.jpg);
 }
+
 .logoLekki {
     background-image: url(/img/fundslogo/leki_logo.jpg);
 }
+
 .logoLife {
     background-image: url(/img/fundslogo/life_logo.jpg);
 }
+
 .logoSirat {
     background-image: url(/img/fundslogo/sirat_logo.jpg);
 }
+
 .logoZakyat {
     background-image: url(/img/fundslogo/zakyat_logo.png);
 }
->>>>>>> doctors
+
 .anyQstnsBlock {
     background: #367bf5;
     overflow: hidden;
@@ -1476,11 +1389,7 @@ footer .socialIcons {
     align-items: center;
 }
 
-<<<<<<< HEAD
 #main section>h1 {
-=======
-#main section > h1 {
->>>>>>> doctors
     text-transform: uppercase;
     background-color: #fff;
     text-align: center;
@@ -1614,13 +1523,7 @@ footer .socialIcons {
     color: #939797;
 }
 
-<<<<<<< HEAD
 .field, .modal input, select {
-=======
-.field,
-.modal input,
-select {
->>>>>>> doctors
     background-color: #e2f2ff;
     border: 3px solid white;
     font-size: 18px;
@@ -1676,22 +1579,14 @@ option {
     padding: 10px 20px;
 }
 
-<<<<<<< HEAD
 .work>h1 {
-=======
-.work > h1 {
->>>>>>> doctors
     font-family: "ProximaNova-Bold";
     /*font-style: bold; */
     font-size: 45px;
     margin-top: 10px;
 }
 
-<<<<<<< HEAD
 .work>img {
-=======
-.work > img {
->>>>>>> doctors
     margin-top: -36px;
     width: 30px;
     margin-left: 15px;
@@ -1699,20 +1594,12 @@ option {
     padding: 0 20px;
 }
 
-<<<<<<< HEAD
 .work>p {
-=======
-.work > p {
->>>>>>> doctors
     font-family: "ProximaNova-Regular";
     color: #6c6f70;
 }
 
-<<<<<<< HEAD
 .work:last-child>img {
-=======
-.work:last-child > img {
->>>>>>> doctors
     width: 42px;
 }
 
@@ -1722,12 +1609,7 @@ option {
     height: 900px;
 }
 
-<<<<<<< HEAD
 .h-container>p {}
-=======
-.h-container > p {
-}
->>>>>>> doctors
 
 .helpeds {
     width: 50%;
@@ -1859,11 +1741,7 @@ option {
     height: 500px;
 }
 
-<<<<<<< HEAD
 .block-doctors>h2 {
-=======
-.block-doctors > h2 {
->>>>>>> doctors
     text-align: center;
     text-transform: uppercase;
     font-size: 40px;
@@ -1957,11 +1835,7 @@ option {
     margin: 0 auto;
 }
 
-<<<<<<< HEAD
 .contacts .container>h1 {
-=======
-.contacts .container > h1 {
->>>>>>> doctors
     text-align: center;
     padding: 1em 1em 0.5em;
     font-family: "ProximaNova-Bold";
@@ -1984,11 +1858,7 @@ option {
     margin-bottom: 1em;
 }
 
-<<<<<<< HEAD
 .contact-item>div {
-=======
-.contact-item > div {
->>>>>>> doctors
     display: flex;
     vertical-align: middle;
     /* width: 184px; */
@@ -2065,16 +1935,7 @@ option {
     margin-top: 10px;
 }
 
-<<<<<<< HEAD
 #modal_close, #doctor_modal_close, #donate_modal_close, #signin_modal_close, #signup_modal_close, #nko_modal_close {
-=======
-#modal_close,
-#doctor_modal_close,
-#donate_modal_close,
-#signin_modal_close,
-#signup_modal_close,
-#nko_modal_close {
->>>>>>> doctors
     position: absolute;
     top: -19px;
     right: -19px;
@@ -2083,11 +1944,7 @@ option {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
 .modal>h1 {
-=======
-.modal > h1 {
->>>>>>> doctors
     text-align: center;
     background-color: #fff;
     padding: 1rem;
@@ -2111,23 +1968,13 @@ span.required {
     font-size: 17px;
 }
 
-<<<<<<< HEAD
 .input-right input, .input-right select {
-=======
-.input-right input,
-.input-right select {
->>>>>>> doctors
     width: 70%;
     float: right;
     font-size: inherit;
 }
 
-<<<<<<< HEAD
 .input-bottom input, .input-bottom textarea {
-=======
-.input-bottom input,
-.input-bottom textarea {
->>>>>>> doctors
     width: 100%;
     font-size: inherit;
 }
@@ -2144,13 +1991,7 @@ span.required {
     margin-bottom: 30px;
 }
 
-<<<<<<< HEAD
 fieldset, .file-uploader, textarea {
-=======
-fieldset,
-.file-uploader,
-textarea {
->>>>>>> doctors
     border-radius: 8px;
     border: 3px solid #fff;
 }
@@ -2173,12 +2014,7 @@ textarea {
     border: 2px solid #555;
 }
 
-<<<<<<< HEAD
 .btn-tertiary:hover, .example-2 .btn-tertiary:focus {
-=======
-.btn-tertiary:hover,
-.example-2 .btn-tertiary:focus {
->>>>>>> doctors
     color: #888;
     border-color: #888;
 }
@@ -2192,11 +2028,7 @@ textarea {
     z-index: -1;
 }
 
-<<<<<<< HEAD
 .input-file+.js-labelFile {
-=======
-.input-file + .js-labelFile {
->>>>>>> doctors
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -2204,19 +2036,11 @@ textarea {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
 .input-file+.js-labelFile .icon:before {
     content: "\f093";
 }
 
 .input-file+.js-labelFile.has-file .icon:before {
-=======
-.input-file + .js-labelFile .icon:before {
-    content: "\f093";
-}
-
-.input-file + .js-labelFile.has-file .icon:before {
->>>>>>> doctors
     content: "\f00c";
     color: #5aac7b;
 }
@@ -2327,12 +2151,7 @@ textarea {
     top: 0px;
 }
 
-<<<<<<< HEAD
 .menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
-=======
-.menu__icon span:nth-child(2),
-.menu__icon span:nth-child(3) {
->>>>>>> doctors
     top: 13px;
 }
 
@@ -2350,11 +2169,7 @@ textarea {
 
 /* Ноутбуки HDPI*/
 
-<<<<<<< HEAD
-@media screen and (max-width: 1440px) {
-=======
 @media screen and (min-width: 1440px) {
->>>>>>> doctors
     main {
         margin-top: 108px;
     }
@@ -2362,11 +2177,7 @@ textarea {
         padding: 0;
     }
     .navSection .logoSection {
-<<<<<<< HEAD
-        margin-left: 62px;
-=======
         margin: 7px 0 27px 120px;
->>>>>>> doctors
     }
     .underNavBlock {
         margin: 48px auto 0;
@@ -2455,22 +2266,14 @@ textarea {
     .whyHelpBlock .underTitle span span {
         font: 500 18px TT Norms;
         letter-spacing: 0.005em;
-<<<<<<< HEAD
-        color: #304B93;
-=======
         color: #304b93;
->>>>>>> doctors
         opacity: 0.9;
         margin-top: 202px;
     }
     .whyHelpBlock .underTitle span p {
         font: mormal 18px TT Norms;
         margin: 12px 0 0 0;
-<<<<<<< HEAD
-        color: #0B1635;
-=======
         color: #0b1635;
->>>>>>> doctors
     }
     .firstHalfYear {
         margin: 0;
@@ -2480,11 +2283,7 @@ textarea {
     }
     .spendsWrapper {
         display: table;
-<<<<<<< HEAD
-        margin: 0 224px;
-=======
         margin: 0 auto;
->>>>>>> doctors
         background: #f5f8fa;
         overflow: auto;
         border-bottom: 2px solid rgba(47, 73, 140, 0.12);
@@ -2515,8 +2314,6 @@ textarea {
 
 /*ноутбуки */
 
-<<<<<<< HEAD
-=======
 @media screen and (min-width: 1500px) {
     body {
         width: 1440px;
@@ -2524,7 +2321,6 @@ textarea {
     }
 }
 
->>>>>>> doctors
 @media screen and (max-width: 1280px) {
     .navSection ul {
         margin-left: unset;
@@ -2583,11 +2379,7 @@ textarea {
         margin: 0;
     }
     .spendsWrapper {
-<<<<<<< HEAD
-        margin: 0 124px;
-=======
         margin: 0 auto;
->>>>>>> doctors
     }
     .partnersBlockGr {
         display: block;
@@ -2600,24 +2392,16 @@ textarea {
 /*@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {} */
 
 @media only screen and (max-width: 320px) {
-<<<<<<< HEAD
-    .partnersItem {
-        padding: 20% 6.6%;
-=======
     .partnersItem img {
         width: 162px;
         height: 140px;
->>>>>>> doctors
     }
 }
 
 @media only screen and (max-width: 768px) {
-<<<<<<< HEAD
-=======
     body {
         width: 100%;
     }
->>>>>>> doctors
     main {
         margin-top: 64px;
     }
@@ -2760,15 +2544,9 @@ textarea {
         display: none;
     }
     .underNavBlock .row iframe {
-<<<<<<< HEAD
-        width: 100%;
-        height: 196px;
-        margin: 0;
-=======
         width: calc(100% - 20px);
         height: 196px;
         margin: 0 10px 0;
->>>>>>> doctors
     }
     .howWeHelp {
         margin: 0;
@@ -2845,11 +2623,7 @@ textarea {
         width: 75%;
         margin-left: 16px;
         font: 500 20px TT Norms;
-<<<<<<< HEAD
-        color: #242F65;
-=======
         color: #242f65;
->>>>>>> doctors
     }
     .redstar {
         display: flex;
@@ -2992,22 +2766,14 @@ textarea {
         font: 500 16px TT Norms;
         line-height: 138%;
         letter-spacing: 0.005em;
-<<<<<<< HEAD
-        color: #304B93;
-=======
         color: #304b93;
->>>>>>> doctors
         opacity: 0.9;
     }
     .whyHelpBlock .row span span p {
         font: normal 16px TT Norms;
         line-height: 138%;
         letter-spacing: 0.005em;
-<<<<<<< HEAD
-        color: #0B1635;
-=======
         color: #0b1635;
->>>>>>> doctors
     }
     .whyHelpBlock .row .underTitle br {
         display: none;
@@ -3078,10 +2844,7 @@ textarea {
         font-size: 16px;
     }
     .spendsContainer {
-<<<<<<< HEAD
-=======
         width: 100%;
->>>>>>> doctors
         flex-wrap: nowrap;
         justify-content: unset;
         margin: 0;
@@ -3092,10 +2855,7 @@ textarea {
     }
     .spendsText {
         margin-left: 10px;
-<<<<<<< HEAD
-=======
         width: unset;
->>>>>>> doctors
     }
     .spendsDescr {
         display: inline-block;
@@ -3158,12 +2918,7 @@ textarea {
         order: 2;
         margin: 24px 35px 0;
     }
-    .spendsGenWrap .wantHelpButton .wantHelpButtonText {
-<<<<<<< HEAD
-        padding: 18px 20px 14px;
-=======
->>>>>>> doctors
-    }
+    .spendsGenWrap .wantHelpButton .wantHelpButtonText {}
     .helpToWork {
         margin-top: 48px;
         position: relative;
@@ -3247,22 +3002,12 @@ textarea {
         font-size: unset;
         flex-basis: 34%;
     }
-<<<<<<< HEAD
-=======
-    .logoNadejda,
-    .logoHome,
-    .logoIhsan,
-    .logoKdl,
-    .logoLekki,
-    .logoLife,
-    .logoSirat,
-    .logoZakyat {
+    .logoNadejda, .logoHome, .logoIhsan, .logoKdl, .logoLekki, .logoLife, .logoSirat, .logoZakyat {
         background-size: cover;
         background-position-x: no-repeat;
         background-position: center;
         background-color: #fff;
     }
->>>>>>> doctors
     .underHelpBoard {
         display: block;
         margin: 30px 35px 150px;
@@ -3281,20 +3026,6 @@ textarea {
     }
     .partnersWrappeGr {
         margin-top: 24px;
-<<<<<<< HEAD
-        grid-template-columns: 49% 49%;
-        gap: 4px;
-    }
-    .partnersItemGr {
-        display: flex;
-        background: #b6c1c9;
-        border-radius: unset;
-        margin: 4px;
-        padding: 55px 24px;
-        font-size: unset;
-        flex-basis: 34%;
-    }
-=======
         grid-template-columns: auto auto;
         gap: 12px;
     }
@@ -3305,8 +3036,6 @@ textarea {
         height: 140px;
         padding: 0;
     }
-
->>>>>>> doctors
     .anyQstnsBlock {
         margin-top: 64px;
     }
@@ -3459,28 +3188,16 @@ textarea {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-<<<<<<< HEAD
 .tabs>input {
     display: none;
 }
 
 .tabs>div {
-=======
-.tabs > input {
-    display: none;
-}
-
-.tabs > div {
->>>>>>> doctors
     display: none;
     padding: 12px;
 }
 
-<<<<<<< HEAD
 .tabs>label {
-=======
-.tabs > label {
->>>>>>> doctors
     display: inline-block;
     padding: 7px;
     margin: 0 -5px -1px 0;
@@ -3488,19 +3205,11 @@ textarea {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
 .tabs>input+label {
     background-color: #ffffff;
 }
 
 .tabs>input:checked+label {
-=======
-.tabs > input + label {
-    background-color: #ffffff;
-}
-
-.tabs > input:checked + label {
->>>>>>> doctors
     color: #000000;
     background-color: #e2f2ff;
     border: 2px solid white;
@@ -3508,21 +3217,11 @@ textarea {
     /*  background: #FFFFFF; */
 }
 
-<<<<<<< HEAD
 #tab_1:checked~#txt_1, #tab_2:checked~#txt_2 {
     display: block;
 }
 
 label[for="tab_1"], label[for="tab_2"] {
-=======
-#tab_1:checked ~ #txt_1,
-#tab_2:checked ~ #txt_2 {
-    display: block;
-}
-
-label[for="tab_1"],
-label[for="tab_2"] {
->>>>>>> doctors
     width: 38.53%;
     /* border: 1px solid; */
     border-bottom: none;
@@ -3532,12 +3231,7 @@ label[for="tab_1"] {
     margin-left: 10%;
 }
 
-<<<<<<< HEAD
 #txt_1, #txt_2 {
-=======
-#txt_1,
-#txt_2 {
->>>>>>> doctors
     padding-top: 0;
 }
 
@@ -3545,8 +3239,4 @@ label[for="tab_1"] {
     border: 2px solid white;
     padding: 0 10.9%;
     padding-bottom: 30px;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> doctors
