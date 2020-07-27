@@ -616,6 +616,7 @@ main {
                         .right {
                               display: flex;
                               flex-direction: column;
+                              width:100%;
                               span {
                                     text-align: center;
                                     @include font(TT Norms-Bold, normal, normal, 20px, 114%, null);
@@ -629,7 +630,7 @@ main {
                                     margin: 18px auto 0;
                               }
                               .sec-rowmarg {
-                                    margin: 14px 20px 0;
+                                    margin: 14px auto 0;
                               }
                               .third-rowmarg {
                                     margin: 14px auto 0;

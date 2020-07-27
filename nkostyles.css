@@ -1494,6 +1494,7 @@ main .all-answers .title:last-of-type {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
   }
   main .who-we-are .container .right span {
     text-align: center;
@@ -1512,7 +1513,7 @@ main .all-answers .title:last-of-type {
     margin: 18px auto 0;
   }
   main .who-we-are .container .right .sec-rowmarg {
-    margin: 14px 20px 0;
+    margin: 14px auto 0;
   }
   main .who-we-are .container .right .third-rowmarg {
     margin: 14px auto 0;
