@@ -8,7 +8,7 @@ main {
       margin-top: 157px;
 }
 .invitation {
-      display: flex;
+      display:-webkit-flex;
       margin: 0 120px 0;
       .maiinContent {
             margin: unset;

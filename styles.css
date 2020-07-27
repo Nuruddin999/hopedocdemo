@@ -55,9 +55,7 @@ main {
 }
 
 .invitation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-flex;
   margin: 0 120px 0;
 }
 

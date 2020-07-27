@@ -80,6 +80,9 @@
     margin-top: 16px;
   }
   .invitation img {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
     display: block;
     width: 100%;
   }
