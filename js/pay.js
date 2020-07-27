@@ -84,21 +84,19 @@
 // }
 // ReactDOM.render(<Calculator />, document.getElementById('board'))
 var summ = 0;
-$('.amountAndLogo').click(function () {
+$('.item').click(function () {
+      $('.item').css({ "background": "white" });
+      $('.item').find("span").css({ color: "#0b1635" })
       var t = $(this).text();
       summ = t;
+      console.log(summ)
+      $(this).css({ "background": "#367bf5" });
+      $(this).find("span").css({ color: "white" })
 });
 let buttonPressed = true;
 let timeIsChecked = false;
 let monthisChecked = true;
 var summ = 0;
-$('.amountAndLogo').click(function () {
-
-      var t = $(this).text();
-      summ = t;
-      console.log(summ)
-      $(this).css({ "background-color": "yellow", "font-size": "200%" });
-});
 $('#monthly').click(function name(params) {
       if (monthisChecked) {
             return
