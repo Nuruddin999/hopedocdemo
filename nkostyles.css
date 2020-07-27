@@ -266,7 +266,7 @@ main .who-we-are .container .right .gorin {
 }
 
 main .who-we-are .container .right .asiyat {
-  background-image: url(/img/Doctors/asiyat.jpg);
+  background-image: url(./img/Doctors/asiyat.jpg);
 }
 
 main .who-we-are .container .right .hiderlezov {
@@ -282,7 +282,7 @@ main .who-we-are .container .right .abdullaeva {
 }
 
 main .who-we-are .container .right .dzarulla {
-  background-image: url(/img/Doctors/djarulla.jpg);
+  background-image: url(./img/Doctors/djarulla.jpg);
 }
 
 main .who-we-are .container .right .gorin {
