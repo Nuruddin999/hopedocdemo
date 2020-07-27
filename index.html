@@ -603,6 +603,7 @@
                                                 <img src="./img/RubleIcon.png" width=14px heigth=21px />
 
                                             </div>
+
                                         </div>
                                         <div class="item">
 
@@ -800,10 +801,14 @@
             $('.navdrawr').css('transform', 'translateX(-100%)');
         });
         var summ = 0;
-        $('.amountAndLogo').click(function () {
+        $('.item').click(function () {
+            $('.item').css({ "background": "white" });
+            $('.item').find("span").css({ color: "#0b1635" })
             var t = $(this).text();
             summ = t;
             console.log(summ)
+            $(this).css({ "background": "#367bf5" });
+            $(this).find("span").css({ color: "white" })
         });
         let buttonPressed = true;
         let timeIsChecked = false;

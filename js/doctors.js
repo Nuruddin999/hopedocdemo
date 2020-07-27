@@ -1,7 +1,4 @@
 'use strict'
-
-
-
 var btn = document.querySelector(".hamburger")
 
 $('.hamburger').click(function () {

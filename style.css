@@ -1011,6 +1011,10 @@ main {
     margin: auto;
 }
 
+.item .amountAndLogo:visited {
+    background: greenyellow;
+}
+
 .sumRow .amountAndLogo span {
     font-size: 15px;
     font-family: "Inter", sans-serif;
