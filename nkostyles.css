@@ -1522,7 +1522,7 @@ main .all-answers .title:last-of-type {
     margin: 14px auto 0;
   }
   main .who-we-are .container .right .tagrow {
-    display: block;
+    display: table;
   }
   main .how-we-work {
     background: #f5f8fa;
