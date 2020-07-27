@@ -1,0 +1,2206 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
+@font-face {
+  font-family: "TT Norms";
+  font-style: normal;
+  src: url("./fonts/TTNorms-Regular.ttf");
+}
+
+@font-face {
+  font-family: "TT Norms-Regular";
+  font-style: normal;
+  src: url("./fonts/TTNorms-Regular.ttf");
+}
+
+@font-face {
+  font-family: "TT Norms-Bold";
+  font-style: bold;
+  src: url("./fonts/TTNorms-Bold.ttf");
+}
+
+@font-face {
+  font-family: "RT Mono";
+  font-style: normal;
+  src: url("./fonts/PTMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "PT Mono-Bold";
+  font-style: normal;
+  src: url("./fonts/PTM75F.ttf");
+}
+
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url("./fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("./fonts/ProximaNova-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova-Light";
+  src: url("./fonts/ProximaNova-Light.ttf") format("truetype");
+}
+
+main {
+  margin-top: 156px;
+}
+
+main .offer-help {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .offer-help section {
+  margin-left: 120px;
+  margin-right: 109px;
+}
+
+main .offer-help section h1 {
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 124%;
+  color: #367bf5;
+}
+
+main .offer-help section span {
+  display: block;
+  width: 90%;
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 134%;
+  color: #304b93;
+  margin-top: 22px;
+  margin-right: 22px;
+}
+
+main .offer-help section span .free {
+  display: inline;
+  color: #f23b53;
+  margin-right: 0;
+}
+
+main .offer-help section span:first-child {
+  margin-top: 0;
+}
+
+main .offer-help section button {
+  position: relative;
+  padding: 16px 20px;
+  font-family: RT Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 134%;
+  margin-top: 32px;
+  background: #367bf5;
+  color: white;
+  border: unset;
+  border-radius: 6px;
+  margin-top: 44px;
+  padding: 15px 57px 15px 40px;
+}
+
+main .offer-help section button span {
+  display: inline;
+  font-family: RT Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 134%;
+  color: white;
+  margin-right: 0;
+}
+
+main .offer-help section button .tri {
+  position: absolute;
+  bottom: 5px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #f9b53b;
+  border-bottom: 8px solid #f9b53b;
+  border-left: 8px solid transparent;
+  border-radius: 0px 0px 6px 0px;
+  bottom: 5px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #f9b53b;
+  border-bottom: 8px solid #f9b53b;
+  border-left: 8px solid transparent;
+  border-radius: 0px 0px 6px 0px;
+}
+
+main .offer-help img {
+  margin-right: 78px;
+}
+
+main .who-we-are {
+  display: block;
+  width: 100%;
+}
+
+main .who-we-are h1 {
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 124%;
+  color: #367bf5;
+  text-align: center;
+  margin-top: 122px;
+}
+
+main .who-we-are .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 6px;
+  margin-left: 120px;
+  margin-right: 205px;
+}
+
+main .who-we-are .container section {
+  margin-right: 103px;
+}
+
+main .who-we-are .container section span {
+  display: block;
+  margin-top: 48px;
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 158%;
+  color: #202642;
+}
+
+main .who-we-are .container section span .doctors {
+  display: inline;
+}
+
+main .who-we-are .container section span:first-child {
+  margin-top: 0;
+}
+
+main .who-we-are .container section button {
+  position: relative;
+  padding: 16px 20px;
+  font-family: RT Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 134%;
+  margin-top: 32px;
+  background: #367bf5;
+  color: white;
+  border: unset;
+  border-radius: 6px;
+  margin-top: 44px;
+  padding: 15px 57px 15px 40px;
+  margin-top: 48px;
+}
+
+main .who-we-are .container section button span {
+  display: inline;
+  font-family: RT Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 134%;
+  color: white;
+  margin-right: 0;
+}
+
+main .who-we-are .container section button .tri {
+  position: absolute;
+  bottom: 5px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #f9b53b;
+  border-bottom: 8px solid #f9b53b;
+  border-left: 8px solid transparent;
+  border-radius: 0px 0px 6px 0px;
+  bottom: 5px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #f9b53b;
+  border-bottom: 8px solid #f9b53b;
+  border-left: 8px solid transparent;
+  border-radius: 0px 0px 6px 0px;
+}
+
+main .who-we-are .container .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .who-we-are .container .right .asiyat,
+main .who-we-are .container .right .hiderlezov,
+main .who-we-are .container .right .emirbekov,
+main .who-we-are .container .right .abdullaeva,
+main .who-we-are .container .right .dzarulla,
+main .who-we-are .container .right .gorin {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .who-we-are .container .right .asiyat {
+  background-image: url(/img/Doctors/asiyat.jpg);
+}
+
+main .who-we-are .container .right .hiderlezov {
+  background-image: url(./img/Doctors/hiderlezov.jpg);
+}
+
+main .who-we-are .container .right .emirbekov {
+  background-image: url(./img/Doctors/emirbelov.jpg);
+}
+
+main .who-we-are .container .right .abdullaeva {
+  background-image: url(./img/Doctors/abdulaeva.jpg);
+}
+
+main .who-we-are .container .right .dzarulla {
+  background-image: url(/img/Doctors/djarulla.jpg);
+}
+
+main .who-we-are .container .right .gorin {
+  background-image: url(./img/Doctors/gorin.jpg);
+}
+
+main .who-we-are .container .right span {
+  text-align: center;
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 114%;
+  color: #367bf5;
+}
+
+main .who-we-are .container .right .tagrow {
+  display: none;
+}
+
+main .who-we-are .container .right .tagrow .chirurg {
+  color: #367bf5;
+}
+
+main .who-we-are .container .right .tagrow span {
+  text-align: center;
+  font: normal 16px/124% Inter;
+  margin-left: 16px;
+  color: #304b93;
+}
+
+main .who-we-are .container .right .tagrow span:first-child {
+  margin-left: initial;
+}
+
+main .who-we-are .container .right .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main .who-we-are .container .right .row .card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 67px;
+  margin-top: 32px;
+}
+
+main .who-we-are .container .right .row .card .img {
+  display: block;
+  width: 180px;
+  height: 116px;
+  border-radius: 12px;
+}
+
+main .who-we-are .container .right .row .card span {
+  display: block;
+}
+
+main .who-we-are .container .right .row .card .name {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 132%;
+  letter-spacing: 0.005em;
+  color: #0b1635;
+  margin-top: 12px;
+}
+
+main .who-we-are .container .right .row .card .position {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 138%;
+  letter-spacing: 0.005em;
+  color: #f23b53;
+  margin-top: 4px;
+}
+
+main .who-we-are .container .right .row .card:nth-child(odd) {
+  margin-left: 0;
+}
+
+main .how-we-work {
+  background: #f5f8fa;
+  margin-top: 48px;
+}
+
+main .how-we-work h1 {
+  display: block;
+  text-align: center;
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 124%;
+  color: #367bf5;
+  margin-top: 0;
+  padding-top: 72px;
+  margin-bottom: 20px;
+}
+
+main .how-we-work .undertitle {
+  font: normal normal 18px/166% TT Norms;
+  display: block;
+  text-align: center;
+  margin: 0 323px 0;
+}
+
+main .how-we-work .howhelp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 36px 182px 0;
+}
+
+main .how-we-work .howhelp .video iframe {
+  border-radius: 4px;
+  border: unset;
+}
+
+main .how-we-work .howhelp .video button {
+  display: block;
+  position: relative;
+  padding: 16px 20px;
+  font-family: RT Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 134%;
+  margin-top: 32px;
+  background: #367bf5;
+  color: white;
+  border: unset;
+  border-radius: 6px;
+  margin-top: 40px;
+}
+
+main .how-we-work .howhelp .video button .tri {
+  position: absolute;
+  bottom: 5px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #f9b53b;
+  border-bottom: 8px solid #f9b53b;
+  border-left: 8px solid transparent;
+  border-radius: 0px 0px 6px 0px;
+}
+
+main .how-we-work .howhelp .video .undervideo {
+  display: block;
+  font: normal normal 18px/134% Inter;
+  color: #304b93;
+  width: 516px;
+  margin-top: 30px;
+}
+
+main .how-we-work .howhelp .video .undervideo .free {
+  color: #367bf5;
+}
+
+main .how-we-work .howhelp .right-list h4 {
+  font: normal 500 24px/138% Inter;
+  margin: 0 0 24px 56px;
+}
+
+main .how-we-work .howhelp .right-list .description {
+  margin: unset;
+}
+
+main .how-we-work .howhelp .right-list .description li {
+  list-style: none;
+  margin-top: 20px;
+}
+
+main .how-we-work .howhelp .right-list .description li:first-child {
+  margin-top: unset;
+}
+
+main .how-we-work .howhelp .right-list .description .undernumslide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main .how-we-work .howhelp .right-list .description .undernumslide .redstar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16px;
+          flex: 0 0 16px;
+  height: 16px;
+  background-image: url(./img/redstar.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: cover;
+  margin: 4px 0 0 16px;
+}
+
+main .how-we-work .howhelp .right-list .description .undernumslide .redstar .redpoint {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin: auto;
+}
+
+main .how-we-work .howhelp .right-list .description .undernumslide .descr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+}
+
+main .how-we-work .howhelp .right-list .description .undernumslide .descr .helptitle {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 138%;
+  letter-spacing: 0.005em;
+}
+
+main .how-we-work .howhelp .right-list .description .undernumslide .descr .helpdescr {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 134%;
+  letter-spacing: 0.005em;
+  margin-top: 6px;
+}
+
+main .how-we-work .howhelp button {
+  display: none;
+}
+
+main .results {
+  background: #f5f8fa;
+}
+
+main .results h1 {
+  display: block;
+  text-align: center;
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 124%;
+  color: #367bf5;
+  margin-top: 0;
+  padding-top: 80px;
+  margin-bottom: 20px;
+}
+
+main .results .undertitle {
+  font: normal normal 18px/166% TT Norms;
+  display: block;
+  text-align: center;
+  margin: 0 323px 0;
+}
+
+main .results .since {
+  display: none;
+  font: normal 500 18px/138% TT Norms;
+  color: #202642;
+  text-align: center;
+  margin-top: 24px;
+}
+
+main .results .since span {
+  color: #367bf5;
+}
+
+main .results .years {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 38px 120px 0;
+}
+
+main .results .years div {
+  margin-left: 64px;
+}
+
+main .results .years div:first-child {
+  margin-left: unset;
+}
+
+main .results .numbs {
+  margin-top: 32px;
+  display: block;
+  height: 390px;
+  display: none;
+}
+
+main .results .numbs .swiper-container {
+  width: 250px;
+  margin: 0 auto 0;
+  height: auto;
+}
+
+main .results .numbs .swiper-container img {
+  height: 368px;
+}
+
+main .results .numbs .swiper-container .swiper-pagination {
+  display: block;
+  background: white;
+  bottom: 0;
+}
+
+main .results .after-numbersmob {
+  display: none;
+}
+
+main .results .after-numbersmob li {
+  list-style: none;
+  margin-top: 22px;
+}
+
+main .results .after-numbersmob li span {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 124%;
+  letter-spacing: 0.005em;
+}
+
+main .results .after-numbersmob li:first-child {
+  margin-top: unset;
+}
+
+main .offer-sec {
+  background: #f5f8fa;
+  padding-bottom: 48px;
+}
+
+main .offer-sec h1 {
+  display: block;
+  text-align: center;
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 124%;
+  color: #367bf5;
+  margin-top: 0;
+  padding-top: 112px;
+  margin-bottom: 20px;
+}
+
+main .offer-sec .undertitle {
+  font: normal normal 18px/166% TT Norms;
+  display: block;
+  text-align: center;
+  margin: 0 366px 0;
+}
+
+main .offer-sec .benefits {
+  display: block;
+  font: normal bold 24px/146% TT Norms-Bold;
+  color: #367bf5;
+  text-align: center;
+  margin-top: 40px;
+}
+
+main .offer-sec .stars-row {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 13px 0;
+}
+
+main .offer-sec .stars-row .redstar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16px;
+          flex: 0 0 16px;
+  height: 16px;
+  background-image: url(./img/redstar.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: cover;
+  margin: 4px 0 0 16px;
+  -ms-flex: 0 0 8px;
+      flex: 0 0 8px;
+  height: 8px;
+  background-size: cover;
+}
+
+main .offer-sec .stars-row .redstar .redpoint {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin: auto;
+}
+
+main .offer-sec .stars-row .redstar .redpoint {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin: auto;
+  width: 2px;
+  height: 2px;
+}
+
+main .offer-sec .stars-row:first-of-type {
+  margin-top: 41px;
+}
+
+main .offer-sec .offer-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 130px 0;
+}
+
+main .offer-sec .offer-row .item-offer {
+  width: 580px;
+  height: 112px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 64, 148, 0.25);
+  border-radius: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .offer-sec .offer-row .item-offer span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 12px 0 26px;
+  font: normal normal 18px/136% TT Norms;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .offer-sec .offer-row .stars-row {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 13px 0;
+}
+
+main .offer-sec .offer-row .stars-row .redstar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16px;
+          flex: 0 0 16px;
+  height: 16px;
+  background-image: url(./img/redstar.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: cover;
+  margin: 4px 0 0 16px;
+  -ms-flex: 0 0 8px;
+      flex: 0 0 8px;
+  height: 8px;
+  background-size: cover;
+}
+
+main .offer-sec .offer-row .stars-row .redstar .redpoint {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin: auto;
+}
+
+main .offer-sec .offer-row .stars-row .redstar .redpoint {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin: auto;
+  width: 2px;
+  height: 2px;
+}
+
+main .offer-sec .offer-row .item-offer:last-child {
+  margin-left: 20px;
+}
+
+main .offer-sec button {
+  display: block;
+  position: relative;
+  padding: 17px 21px;
+  margin: 48px auto 0;
+  background: #367bf5;
+  color: white;
+  border: unset;
+  border-radius: 6px;
+  font: bold 18px/134% RT Mono;
+}
+
+main .offer-sec button .tri {
+  position: absolute;
+  bottom: 5px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #f9b53b;
+  border-bottom: 8px solid #f9b53b;
+  border-left: 8px solid transparent;
+  border-radius: 0px 0px 6px 0px;
+}
+
+main .partners-title h1 {
+  display: block;
+  text-align: center;
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 124%;
+  color: #367bf5;
+  margin-top: 0;
+  padding-top: 48px;
+  margin: 0 184px 48px;
+}
+
+main .partners-title h1:last-child {
+  display: none;
+}
+
+main .partnersWrappeGr {
+  margin: 48px 132px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  gap: 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .partnersWrappeGr .partnersItemGr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 8px;
+  padding: 75px;
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 124%;
+}
+
+main .partnersWrappeGr .partnersItemGr span {
+  color: transparent;
+}
+
+main .partnersWrappeGr .logoNadejda,
+main .partnersWrappeGr .logoHome,
+main .partnersWrappeGr .logoIhsan,
+main .partnersWrappeGr .logoKdl,
+main .partnersWrappeGr .logoLekki,
+main .partnersWrappeGr .logoLife,
+main .partnersWrappeGr .logoSirat,
+main .partnersWrappeGr .logoZakyat {
+  background-size: cover;
+  background-position-x: no-repeat;
+  background-position: center;
+  background-color: #fff;
+}
+
+main .partnersWrappeGr .logoNadejda {
+  background-image: url(/img/fundslogo/nadejda_logo.jpeg);
+}
+
+main .partnersWrappeGr .logoHome {
+  background-image: url(/img/fundslogo/home_logo.png);
+}
+
+main .partnersWrappeGr .logoIhsan {
+  background-image: url(/img/fundslogo/ihsan_logo.jpg);
+}
+
+main .partnersWrappeGr .logoKdl {
+  background-image: url(/img/fundslogo/kdl_logo.jpg);
+}
+
+main .partnersWrappeGr .logoLekki {
+  background-image: url(/img/fundslogo/leki_logo.jpg);
+}
+
+main .partnersWrappeGr .logoLife {
+  background-image: url(/img/fundslogo/life_logo.jpg);
+}
+
+main .partnersWrappeGr .logoSirat {
+  background-image: url(/img/fundslogo/sirat_logo.jpg);
+}
+
+main .partnersWrappeGr .logoZakyat {
+  background-image: url(/img/fundslogo/zakyat_logo.png);
+}
+
+main .nko-title {
+  display: block;
+  text-align: center;
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 124%;
+  color: #367bf5;
+  margin-top: 0;
+  padding-top: 32px;
+  margin: 0 361px 48px;
+}
+
+main .nko {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 48px 140px 0;
+}
+
+main .nko .nko-worker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 40;
+}
+
+main .nko .nko-worker iframe {
+  border-radius: 12px;
+}
+
+main .nko .nko-worker .nko-worker-name {
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 124%;
+  letter-spacing: 0.005em;
+  color: #324883;
+  text-align: center;
+  margin-top: 28px;
+  color: #324883;
+}
+
+main .nko .nko-worker .nko-worker-description {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 134%;
+  letter-spacing: 0.005em;
+  color: #324883;
+  text-align: center;
+  margin-top: 28px;
+}
+
+main .nko .nko-worker:first-child {
+  margin-left: unset;
+}
+
+main .nko-slides {
+  display: none;
+}
+
+main .nko-slides .swiper-container {
+  width: 100%;
+  height: 420px;
+  margin-top: 32px;
+}
+
+main .nko-slides .swiper-container .nko-worker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0;
+}
+
+main .nko-slides .swiper-container .nko-worker iframe {
+  border-radius: 12px;
+}
+
+main .nko-slides .swiper-container .nko-worker .nko-worker-name {
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 124%;
+  letter-spacing: 0.005em;
+  color: #324883;
+  text-align: center;
+  margin-top: 28px;
+  color: #324883;
+}
+
+main .nko-slides .swiper-container .nko-worker .nko-worker-description {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 134%;
+  letter-spacing: 0.005em;
+  color: #324883;
+  text-align: center;
+  margin-top: 28px;
+}
+
+main .nko-slides .swiper-container .nko-worker iframe {
+  width: 95%;
+  display: block;
+}
+
+main .nko-slides .swiper-container .nko-worker .nko-worker-description {
+  display: block;
+  width: 95%;
+}
+
+main .nko-slides .swiper-container .swiper-pagination {
+  top: 410px;
+}
+
+main .become-sec .how-become-title {
+  display: block;
+  text-align: center;
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 124%;
+  color: #367bf5;
+  margin-top: 0;
+  margin: 74px 399px 20px;
+}
+
+main .become-sec .under-become {
+  font: normal normal 22px/124% TT Norms;
+  color: #202642;
+  display: block;
+  text-align: center;
+}
+
+main .become-sec .become-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px 195px 0 223px;
+  overflow: hidden;
+}
+
+main .become-sec .become-container .form-container {
+  background: #f5f8fa;
+  border-radius: 8px;
+  padding: 0 0 0 28px;
+  margin-left: 64px;
+  height: 352px;
+  width: 620px;
+}
+
+main .become-sec .become-container .form-container .form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+main .become-sec .become-container .form-container .form-row input {
+  display: block;
+  padding: 14px 0 14px 18px;
+  background: #f5f8fa;
+  border: 1px solid rgba(0, 64, 148, 0.3);
+  border-radius: 8px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main .become-sec .become-container .form-container .form-row ::-webkit-input-placeholder {
+  color: #004094;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.005em;
+}
+
+main .become-sec .become-container .form-container .form-row :-ms-input-placeholder {
+  color: #004094;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.005em;
+}
+
+main .become-sec .become-container .form-container .form-row ::-ms-input-placeholder {
+  color: #004094;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.005em;
+}
+
+main .become-sec .become-container .form-container .form-row ::placeholder {
+  color: #004094;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.005em;
+}
+
+main .become-sec .become-container .form-container .form-row input:last-child {
+  margin-left: 20px;
+}
+
+main .become-sec .become-container .form-container .form-row:first-child {
+  margin-top: 48px;
+}
+
+main .become-sec .become-container .form-container .agreement {
+  display: block;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+main .become-sec .become-container .form-container .agreement .agreement-text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 136%;
+  color: #0b1635;
+  margin-left: 7px;
+}
+
+main .become-sec .become-container .form-container .agreement .agreement-text span {
+  color: #004094;
+}
+
+main .become-sec .become-container .form-container button {
+  display: block;
+  position: relative;
+  padding: 16px 20px;
+  font-family: RT Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 134%;
+  margin-top: 32px;
+  background: #367bf5;
+  color: white;
+  border: unset;
+  border-radius: 6px;
+  background: #304b93;
+  border-radius: 6px;
+  margin: 40px 0 0 0;
+  padding: 12px 40px;
+}
+
+main .become-sec .become-container .form-container button .tri {
+  position: absolute;
+  bottom: 5px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #f9b53b;
+  border-bottom: 8px solid #f9b53b;
+  border-left: 8px solid transparent;
+  border-radius: 0px 0px 6px 0px;
+}
+
+main .all-answers {
+  display: block;
+  background: #f5f8fa;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-top: 60px;
+}
+
+main .all-answers .title {
+  display: block;
+  text-align: center;
+  font-family: TT Norms-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 124%;
+  color: #367bf5;
+  margin-top: 48;
+}
+
+main .all-answers .answers {
+  margin: 32px 0 48px;
+}
+
+main .all-answers .answers .answers-list {
+  margin: 0 297px 0;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+main .all-answers .answers .answers-list .qa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .all-answers .answers .answers-list .qa .question {
+  font-family: TT Norms;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 124%;
+  color: #367bf5;
+  margin-left: 20px;
+  padding: 18px 0;
+}
+
+main .all-answers .answers .answers-list .qa .plus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #304b93;
+  border-radius: 50%;
+  padding: 9px;
+  color: #304b93;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+main .all-answers .answers .answers-list .answer-block {
+  margin: 0 8px 8px;
+  background: #f5f8fa;
+  overflow: hidden;
+}
+
+main .all-answers .answers .answers-list .answer-block span {
+  display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 154%;
+  letter-spacing: 0.005em;
+  color: #0b1635;
+  margin: 16px 80px 12px 10px;
+}
+
+main .all-answers .title:last-of-type {
+  display: none;
+}
+
+@media screen and (min-width: 1500px) {
+  body {
+    width: 1440px;
+    margin: 0 auto 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  main {
+    margin-top: 104px;
+  }
+  main .offer-help {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .offer-help section {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-left: initial;
+    margin-right: initial;
+  }
+  main .offer-help section .span-marg {
+    margin: 18px 34px 0;
+  }
+  main .offer-help section .span-sec-marg {
+    margin: 16px 18px 0;
+  }
+  main .offer-help section h1 {
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 132%;
+    color: #367bf5;
+    margin: 40px 42px 0;
+    text-align: center;
+  }
+  main .offer-help section span {
+    display: block;
+    width: initial;
+    text-align: center;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 134%;
+    color: #304b93;
+  }
+  main .offer-help section span .free {
+    display: inline;
+    color: #f23b53;
+    margin-right: 0;
+  }
+  main .offer-help section button {
+    position: relative;
+    padding: 16px 20px;
+    font-family: RT Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 134%;
+    margin-top: 32px;
+    background: #367bf5;
+    color: white;
+    border: unset;
+    border-radius: 6px;
+    margin-top: 44px;
+    padding: 15px 57px 15px 40px;
+    display: block;
+    width: calc(100% - 136px);
+    padding: 14px 26px;
+    margin: 34px 68px 0;
+  }
+  main .offer-help section button span {
+    display: inline;
+    font-family: RT Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 134%;
+    color: white;
+    margin-right: 0;
+  }
+  main .offer-help section button .tri {
+    position: absolute;
+    bottom: 5px;
+    right: 4px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #f9b53b;
+    border-bottom: 8px solid #f9b53b;
+    border-left: 8px solid transparent;
+    border-radius: 0px 0px 6px 0px;
+    bottom: 5px;
+    right: 4px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #f9b53b;
+    border-bottom: 8px solid #f9b53b;
+    border-left: 8px solid transparent;
+    border-radius: 0px 0px 6px 0px;
+  }
+  main .offer-help section button span {
+    font: bold 16px/134% RT Mono;
+  }
+  main .offer-help img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-right: initial;
+    display: block;
+    width: calc(100% - 36px);
+    margin: 0 auto 0;
+  }
+  main .who-we-are {
+    display: block;
+    width: 100%;
+  }
+  main .who-we-are h1 {
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 138%;
+    color: #367bf5;
+    text-align: center;
+    margin-top: 71px;
+    margin-bottom: 18px;
+  }
+  main .who-we-are .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: initial;
+    margin-left: initial;
+    margin-right: initial;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .who-we-are .container section {
+    margin-right: initial;
+  }
+  main .who-we-are .container section span:first-child {
+    margin: 0 29px;
+    text-align: center;
+  }
+  main .who-we-are .container section span {
+    display: block;
+    margin: 12px 20px;
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 158%;
+    color: #202642;
+    text-align: center;
+  }
+  main .who-we-are .container section span .doctors {
+    display: inline;
+    color: #f23b53;
+    margin: 0;
+  }
+  main .who-we-are .container section button {
+    display: none;
+  }
+  main .who-we-are .container .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .who-we-are .container .right span {
+    text-align: center;
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 114%;
+    color: #367bf5;
+    margin-top: 32px;
+  }
+  main .who-we-are .container .right .row {
+    display: none;
+  }
+  main .who-we-are .container .right .row-marg {
+    margin: 18px 45px 0;
+  }
+  main .who-we-are .container .right .sec-rowmarg {
+    margin: 14px 36px 0;
+  }
+  main .who-we-are .container .right .third-rowmarg {
+    margin: 14px auto 0;
+  }
+  main .who-we-are .container .right .fourth-rowmarg {
+    margin: 14px auto 0;
+  }
+  main .who-we-are .container .right .tagrow {
+    display: block;
+  }
+  main .how-we-work {
+    background: #f5f8fa;
+    margin-top: 58px;
+  }
+  main .how-we-work h1 {
+    display: block;
+    text-align: center;
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 124%;
+    color: #367bf5;
+    margin-top: 0;
+    font: normal 34px/124% TT Norms-Bold;
+    padding-top: 40px;
+    margin-bottom: 20px;
+  }
+  main .how-we-work .undertitle {
+    display: none;
+  }
+  main .how-we-work .howhelp {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+  }
+  main .how-we-work .howhelp .video iframe {
+    display: block;
+    height: 196px;
+    width: calc(100% - 16px);
+    border-radius: 4px;
+    border: unset;
+    margin: 40px auto 0;
+  }
+  main .how-we-work .howhelp .video button {
+    display: none;
+  }
+  main .how-we-work .howhelp .video .undervideo {
+    display: block;
+    font: normal normal 16px/184% Inter;
+    color: #304b93;
+    width: initial;
+    margin: 24px 10px 0;
+    text-align: center;
+  }
+  main .how-we-work .howhelp .video .undervideo .free {
+    color: #367bf5;
+  }
+  main .how-we-work .howhelp .right-list h4 {
+    display: none;
+  }
+  main .how-we-work .howhelp .right-list .description {
+    margin: unset;
+    padding: 0;
+    margin-top: 36px;
+  }
+  main .how-we-work .howhelp .right-list .description li {
+    list-style: none;
+    margin-top: 20px;
+  }
+  main .how-we-work .howhelp .right-list .description li:first-child {
+    margin-top: unset;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .redstar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16px;
+            flex: 0 0 16px;
+    height: 16px;
+    background-image: url(./img/redstar.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: cover;
+    margin: 4px 0 0 16px;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .redstar .redpoint {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin: auto;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .descr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 20px;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .descr .helptitle {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 138%;
+    letter-spacing: 0.005em;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .descr .helpdescr {
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 134%;
+    letter-spacing: 0.005em;
+    margin-top: 6px;
+  }
+  main .how-we-work .howhelp .right-list .description li {
+    list-style: none;
+    margin-top: 20px;
+  }
+  main .how-we-work .howhelp .right-list .description li:first-child {
+    margin-top: unset;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .redstar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16px;
+            flex: 0 0 16px;
+    height: 16px;
+    background-image: url(./img/redstar.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: cover;
+    margin: 4px 0 0 16px;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .redstar .redpoint {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin: auto;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .descr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 20px;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .descr .helptitle {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 138%;
+    letter-spacing: 0.005em;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .descr .helpdescr {
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 134%;
+    letter-spacing: 0.005em;
+    margin-top: 6px;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .descr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 20px;
+    margin-left: 12px;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .descr .helptitle {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 138%;
+    letter-spacing: 0.005em;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .descr .helpdescr {
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 134%;
+    letter-spacing: 0.005em;
+    margin-top: 6px;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .descr span {
+    margin-right: 8px;
+  }
+  main .how-we-work .howhelp .right-list .description .undernumslide .descr .helpdescr {
+    margin-top: 8px;
+  }
+  main .how-we-work .howhelp .right-list button {
+    position: relative;
+    padding: 16px 20px;
+    font-family: RT Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 134%;
+    margin-top: 32px;
+    background: #367bf5;
+    color: white;
+    border: unset;
+    border-radius: 6px;
+    margin-top: 44px;
+    padding: 15px 57px 15px 40px;
+    padding: 16px 20px;
+    display: block;
+    margin: 48px auto 0;
+  }
+  main .how-we-work .howhelp .right-list button span {
+    display: inline;
+    font-family: RT Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 134%;
+    color: white;
+    margin-right: 0;
+  }
+  main .how-we-work .howhelp .right-list button .tri {
+    position: absolute;
+    bottom: 5px;
+    right: 4px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #f9b53b;
+    border-bottom: 8px solid #f9b53b;
+    border-left: 8px solid transparent;
+    border-radius: 0px 0px 6px 0px;
+    bottom: 5px;
+    right: 4px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #f9b53b;
+    border-bottom: 8px solid #f9b53b;
+    border-left: 8px solid transparent;
+    border-radius: 0px 0px 6px 0px;
+  }
+  main .how-we-work .howhelp .right-list button span {
+    font: normal bold 18px/134% Rt Mono;
+  }
+  main .how-we-work .howhelp .right-list button .tri {
+    position: absolute;
+    bottom: 5px;
+    right: 4px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #f9b53b;
+    border-bottom: 8px solid #f9b53b;
+    border-left: 8px solid transparent;
+    border-radius: 0px 0px 6px 0px;
+  }
+  main .results {
+    background: initial;
+  }
+  main .results h1 {
+    display: block;
+    text-align: center;
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 124%;
+    color: #367bf5;
+    margin-top: 0;
+    font: normal normal 34px/124% TT Norms-Bold;
+    padding-top: 71px;
+    margin: 0 13px 0 25px;
+  }
+  main .results .undertitle {
+    display: none;
+  }
+  main .results .since {
+    display: block;
+  }
+  main .results .years {
+    display: none;
+  }
+  main .results .numbs {
+    margin-top: 32px;
+    display: block;
+    height: 390px;
+  }
+  main .results .numbs .swiper-container {
+    width: 250px;
+    margin: 0 auto 0;
+    height: auto;
+  }
+  main .results .numbs .swiper-container img {
+    height: 368px;
+  }
+  main .results .numbs .swiper-container .swiper-pagination {
+    display: block;
+    background: white;
+    bottom: 0;
+  }
+  main .results .after-numbersmob {
+    display: block;
+    padding: unset;
+    margin: 35px 64px 0 16px;
+  }
+  main .results .after-numbersmob li span .life-hearts {
+    color: #f23b53;
+  }
+  main .offer-sec {
+    background: initial;
+    padding-bottom: 48px;
+  }
+  main .offer-sec h1 {
+    display: block;
+    text-align: center;
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 124%;
+    color: #367bf5;
+    margin-top: 0;
+    font: normal bold 34px/124% TT Norms-Bold;
+    padding-top: 80px;
+    margin-bottom: 20px;
+  }
+  main .offer-sec .undertitle {
+    font: normal normal 16px/134% TT Norms;
+    display: block;
+    text-align: center;
+    margin: 0 12px 0;
+  }
+  main .offer-sec .benefits {
+    display: none;
+  }
+  main .offer-sec .stars-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .offer-sec .offer-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0px 8px 0;
+  }
+  main .offer-sec .offer-row .item-offer {
+    width: 100%;
+    height: initial;
+    background: #ffffff;
+    border: 1px solid rgba(0, 64, 148, 0.25);
+    border-radius: 8px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .offer-sec .offer-row .item-offer span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px 12px;
+    font: normal normal 15px/134% TT Norms;
+    text-align: center;
+  }
+  main .offer-sec .offer-row .stars-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .offer-sec .offer-row .item-offer:last-child {
+    margin-left: 0px;
+  }
+  main .offer-sec button {
+    padding: 16px 20px;
+    display: block;
+    margin: 48px auto 0;
+  }
+  main .offer-sec button span {
+    font: normal bold 18px/134% Rt Mono;
+  }
+  main .offer-sec button .tri {
+    position: absolute;
+    bottom: 5px;
+    right: 4px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #f9b53b;
+    border-bottom: 8px solid #f9b53b;
+    border-left: 8px solid transparent;
+    border-radius: 0px 0px 6px 0px;
+  }
+  main .partners-title h1:first-child {
+    display: none;
+  }
+  main .partners-title h1:last-child {
+    display: block;
+  }
+  main .partners-title h1 {
+    font: normal bold 34px/132% TT Norms-Bold;
+    padding-top: 40px;
+    margin: 0px 28px 0px;
+  }
+  main .partnersWrappeGr {
+    margin: 24px 12px 0;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    gap: 12px;
+  }
+  main .partnersWrappeGr .partnersItemGr {
+    font-size: unset;
+    -ms-flex-preferred-size: 34%;
+        flex-basis: 34%;
+    width: 162px;
+    height: 140px;
+    padding: 0;
+  }
+  main .nko-title {
+    display: block;
+    text-align: center;
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 124%;
+    color: #367bf5;
+    margin-top: 0;
+    font: normal bold 34px/132% TT Norms-Bold;
+    padding-top: 72px;
+    margin: 0 12px 32px;
+  }
+  main .nko {
+    display: none;
+  }
+  main .nko-slides {
+    display: block;
+  }
+  main .become-sec {
+    background: #f5f8fa;
+    overflow: hidden;
+    margin-top: 45px;
+  }
+  main .become-sec .how-become-title {
+    display: block;
+    text-align: center;
+    font-family: TT Norms-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 124%;
+    color: #367bf5;
+    margin-top: 0;
+    font: normal bold 34px/132% TT Norms-Bold;
+    margin: 48px auto 0;
+  }
+  main .become-sec .under-become {
+    font-size: 20px;
+    margin: 12px 13px 0;
+  }
+  main .become-sec .become-container {
+    float: wrap;
+    margin: 0;
+  }
+  main .become-sec .become-container img {
+    display: none;
+  }
+  main .become-sec .become-container .form-container {
+    background: #f5f8fa;
+    border-radius: 8px;
+    padding: 0;
+    margin-left: 0px;
+    height: initial;
+    width: 100%;
+  }
+  main .become-sec .become-container .form-container .form-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 16px 12px 0;
+  }
+  main .become-sec .become-container .form-container .form-row input {
+    display: block;
+    padding: 22px 0 22px 24px;
+    background: #f5f8fa;
+    border: 1px solid rgba(0, 64, 148, 0.3);
+    border-radius: 8px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-top: 16px;
+  }
+  main .become-sec .become-container .form-container .form-row ::-webkit-input-placeholder {
+    color: #004094;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.005em;
+  }
+  main .become-sec .become-container .form-container .form-row :-ms-input-placeholder {
+    color: #004094;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.005em;
+  }
+  main .become-sec .become-container .form-container .form-row ::-ms-input-placeholder {
+    color: #004094;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.005em;
+  }
+  main .become-sec .become-container .form-container .form-row ::placeholder {
+    color: #004094;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.005em;
+  }
+  main .become-sec .become-container .form-container .form-row input:last-child {
+    margin-left: 0px;
+  }
+  main .become-sec .become-container .form-container .form-row input:first-child {
+    margin-top: 0px;
+  }
+  main .become-sec .become-container .form-container .form-row:first-child {
+    margin-top: 40px;
+  }
+  main .become-sec .become-container .form-container .agreement {
+    display: block;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-top: 10px;
+    padding-bottom: 20px;
+  }
+  main .become-sec .become-container .form-container .agreement .agreement-text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 136%;
+    color: #0b1635;
+    margin-left: 7px;
+  }
+  main .become-sec .become-container .form-container .agreement .agreement-text span {
+    color: #004094;
+  }
+  main .become-sec .become-container .form-container button {
+    display: block;
+    position: relative;
+    padding: 16px 20px;
+    font-family: RT Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 134%;
+    margin-top: 32px;
+    background: #367bf5;
+    color: white;
+    border: unset;
+    border-radius: 6px;
+    background: #304b93;
+    border-radius: 6px;
+    margin: 40px 12px 0;
+    padding: 12px 40px;
+    width: calc(100% - 24px);
+    background: #367bf5;
+  }
+  main .become-sec .become-container .form-container button .tri {
+    position: absolute;
+    bottom: 5px;
+    right: 4px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #f9b53b;
+    border-bottom: 8px solid #f9b53b;
+    border-left: 8px solid transparent;
+    border-radius: 0px 0px 6px 0px;
+  }
+  main .become-sec .become-container .form-container .agreement {
+    display: block;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin: 16px 106 0 12px;
+    padding-bottom: 20px;
+  }
+  main .become-sec .become-container .form-container .agreement .agreement-text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 136%;
+    color: #0b1635;
+    margin-left: 7px;
+  }
+  main .become-sec .become-container .form-container .agreement .agreement-text span {
+    color: #004094;
+  }
+  main .all-answers {
+    margin-top: 0;
+  }
+  main .all-answers .title {
+    margin-top: 72px;
+    font: normal bold 34px/138% TT Norms-Bold;
+  }
+  main .all-answers .title:first-of-type {
+    display: none;
+  }
+  main .all-answers .title:last-of-type {
+    display: block;
+  }
+  main .all-answers .answers {
+    margin-bottom: 70px;
+  }
+  main .all-answers .answers .answers-list {
+    margin: 4px 0 0 0;
+  }
+  main .all-answers .answers .answers-list .qa .plus {
+    border: initial;
+  }
+  main .all-answers .answers .answers-list .qa .plus img {
+    width: 14px;
+    height: 14px;
+  }
+  main .all-answers .answers .answers-list:first-child {
+    margin: 0;
+  }
+  main .anyQstnsBlock {
+    margin-top: 0px;
+  }
+}
+/*# sourceMappingURL=nkostyles.css.map */
