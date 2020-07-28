@@ -18,6 +18,7 @@
       <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
       <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
       <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
       <title>Предлагаем экспертную помощь для НКО </title>
 </head>
 
@@ -136,7 +137,8 @@
                               <span>Это большая и сплочённая команда проверенных специалистов с
                                     высочайшей
                                     ответственностью за каждое решение.</span>
-                              <button onclick="$('html, body').animate({scrollTop: $(`.become-sec`).offset().top-100}, 500);">
+                              <button
+                                    onclick="$('html, body').animate({scrollTop: $(`.become-sec`).offset().top-100}, 500);">
                                     <span>Присоединяйтесь к нам</span>
                                     <div class="tri"></div>
                               </button>
@@ -731,26 +733,26 @@
                   </span>
                   <div class="become-container">
                         <img src="./img/7funds.png" alt="7 фондов">
-                        <div class="form-container">
+                        <form id="myForm" class="form-container">
                               <div class="form-row">
-                                    <input type="text" placeholder="ФИО*">
-                                    <input type="text" placeholder="Наименование НКО*">
+                                    <input id="fioform" type="text" placeholder="ФИО*">
+                                    <input id="nko-name-form" type="text" placeholder="Наименование НКО*">
                               </div>
                               <div class="form-row">
-                                    <input type="text" placeholder="Телефон для связи*">
-                                    <input type="text" placeholder="Электронная почта">
+                                    <input id="phone-form" type="text" placeholder="Телефон для связи*">
+                                    <input id="email-form" type="text" placeholder="Электронная почта">
                               </div>
-                              <button>
+                              <button id="send-button">
                                     <span>Оставить заявку</span>
                                     <div class="tri"></div>
                               </button>
                               <div class="agreement">
-                                    <input type="checkbox">
+                                    <input id="agr-check" type="checkbox">
                                     <span class="agreement-text">
                                           Я согласен с условиями <span>обработки персональных данных</span>
                                     </span>
                               </div>
-                        </div>
+                        </form>
                   </div>
             </div>
 

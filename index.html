@@ -15,6 +15,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/select2.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -703,12 +704,12 @@
                         <input type="text" name="i_email" placeholder="Ваш Email">
                         <input type="submit" value="Позвоните мне">
                   </form> -->
-                    <form action="/i_doctor" class="form-inline" method="post">
+                    <form id="myForm" class="form-inline">
                         <div class="formfields">
                             <input type="text" id="name" placeholder="Имя" name="name">
                             <input type="text" id="phone" placeholder="Телефон" name="phone">
                             <input type="email" id="eml" placeholder="Email" name="eml">
-                            <button type="Submit" class="wantHelpButton">
+                            <button id="send-button" type="submit" class="wantHelpButton">
                                 <span class="wantHelpButtonText">Получить консультацию</span>
                                 <span class="wantHelpButtonText2">Отправить</span>
                                 <div class="triangle"></div>
@@ -716,7 +717,9 @@
                         </div>
                         <div class="checkAgreement">
                             <input type="checkbox" id="agree">
-                            <span>Я согласен с условиями обработки </span> <span>персональных данных</span>
+                            <span class="i-agree">Я согласен с условиями обработки </span> <span>персональных
+                                данных</span>
+                            <span id="warning"> Подтвердите ваше согласие</span>
                         </div>
 
                     </form>
@@ -778,95 +781,7 @@
         </div>
     </footer>
 
-    <script type="text/javascript">
-        var mySwiper = new Swiper('.swiper-container', {
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-            }
-        })
-        var btn = document.querySelector(".hamburger")
-        btn.addEventListener('click', () => {
-            document.body.addEventListener('touchstart', function (e) { e.preventDefault(); });
-            document.body.style.overflow = 'hidden';
-            document.querySelector("body > div.navdrawr").style.transform = "translateX(0)";
-        })
-
-        $('.navdrawheader, img').click(function () {
-            $('html, body').css('overflowY', 'auto');
-            $('.navdrawr').css('transform', 'translateX(-100%)');
-        });
-        var summ = 0;
-        $('.item').click(function () {
-            $('.item').css({ "background": "white" });
-            $('.item').find("span").css({ color: "#0b1635" })
-            var t = $(this).text();
-            summ = t;
-            console.log(summ)
-            $(this).css({ "background": "#367bf5" });
-            $(this).find("span").css({ color: "white" })
-        });
-        let buttonPressed = true;
-        let timeIsChecked = false;
-        let monthisChecked = true;
-        $('#monthly').click(function name(params) {
-            if (monthisChecked) {
-                return
-            }
-            monthisChecked = true;
-            if (monthisChecked) {
-                $('#monthly').css({
-                    background: "#367bf5",
-                    color: "white"
-                })
-                $('#onetime').css({
-                    background: "white",
-                    color: "#367bf5"
-                })
-
-            } else {
-                $('#monthly').css({
-                    background: "white",
-                    color: "#367bf5"
-                })
-                $('#onetime').css({
-                    background: "#367bf5",
-                    color: "white"
-                })
-            }
-
-            timeIsChecked = false
-        })
-        $('#onetime').click(function name(params) {
-            if (timeIsChecked) {
-                return
-            }
-            timeIsChecked = true
-            if (timeIsChecked) {
-                $('#onetime').css({
-                    background: "#367bf5",
-                    color: "white"
-                })
-                $('#monthly').css({
-                    background: "white",
-                    color: "#367bf5"
-                })
-            } else {
-                $('#onetime').css({
-                    background: "red",
-                    color: "white"
-                })
-                $('#monthly').css({
-                    background: "#367bf5",
-                    color: "white"
-                })
-            }
-            monthisChecked = false
-        })
+    <script type="text/javascript" src="./js/index.js">
     </script>
 
 </body>
