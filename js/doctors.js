@@ -168,10 +168,10 @@ const WeNeedList = ({ names }) => {
 }
 ReactDOM.render(<WeNeedList names={list} />, document.getElementById('we-need-list'))
 const NKO = () => {
-      let nkoWorkers = [{ name: "Гашимов Заур", descr: "Я являюсь волонтером “Врачей Надежды” уже два года, и рад быть полезным обществу и иметь возможность помогать" }, { name: "Кибирова Диана", descr: "Я являюсь волонтером “Врачей Надежды” уже два года, и рад быть полезным обществу и иметь возможность помогать " }, { name: "Османов Тамерлан", descr: "Я являюсь волонтером “Врачей Надежды” уже два года, и рад быть полезным обществу и иметь возможность помогать " },]
+      let nkoWorkers = [{ name: "Гашимов Азамат", descr: "Я являюсь волонтером “Врачей Надежды” уже два года, и рад быть полезным обществу и иметь возможность помогать", src: "https://www.youtube.com/embed/2CpmlCkVHCQ" }, { name: "Кибирова Диана", descr: "Я являюсь волонтером “Врачей Надежды” уже два года, и рад быть полезным обществу и иметь возможность помогать ", src: "https://www.youtube.com/embed/sTswsrq-hLE" }, { name: "Османов Тамерлан", descr: "Я являюсь волонтером “Врачей Надежды” уже два года, и рад быть полезным обществу и иметь возможность помогать ", src: "https://www.youtube.com/embed/7KDwsCT7_6c" },]
       return <React.Fragment>
             {nkoWorkers.map(volunteer => <div class="nko-worker">
-                  <iframe src="https://www.youtube.com/embed/Dw-RIuz3_X8" frameborder="0"
+                  <iframe src={volunteer.src} frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen width="360px" height="242px"></iframe>
                   <span class="nko-worker-name">{volunteer.name}</span>
