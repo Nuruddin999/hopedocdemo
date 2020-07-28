@@ -486,6 +486,9 @@ main {
                                     }
                               }
                         }
+                        .warning {
+                              display: none;
+                        }
                         button {
                               display: block;
                               @include btn();
@@ -616,7 +619,7 @@ main {
                         .right {
                               display: flex;
                               flex-direction: column;
-                              width:100%;
+                              width: 100%;
                               span {
                                     text-align: center;
                                     @include font(TT Norms-Bold, normal, normal, 20px, 114%, null);
@@ -922,6 +925,7 @@ main {
                                     justify-content: start;
                                     margin-top: 10px;
                                     padding-bottom: 20px;
+
                                     .agreement-text {
                                           @include font(Inter, normal, 500, 12px, 136%, null);
                                           color: #0b1635;
@@ -931,6 +935,7 @@ main {
                                           }
                                     }
                               }
+
                               button {
                                     display: block;
                                     @include btn();

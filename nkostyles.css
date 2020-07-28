@@ -1186,6 +1186,10 @@ main .become-sec .become-container .form-container .agreement .agreement-text sp
   color: #004094;
 }
 
+main .become-sec .become-container .form-container .warning {
+  display: none;
+}
+
 main .become-sec .become-container .form-container button {
   display: block;
   position: relative;
