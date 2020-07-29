@@ -292,9 +292,14 @@ a {
       font-family: TT Norms;
 }
 
-.checkAgreement span:last-child {
+.checkAgreement span:nth-child(3) {
       margin-left: 4px;
       color: #367bf5;
+}
+.checkAgreement span:last-child {
+      display: none;
+      margin-left: 10px;
+      color: lightcoral;
 }
 
 .formfields input {

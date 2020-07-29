@@ -17,6 +17,7 @@
       <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
       <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
       <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
       <title>Document</title>
 </head>
 
@@ -60,7 +61,7 @@
                         </div>
 
                         <div class="logoSection">
-                              <a href="/index.html"> <img src="img/logo.png" /></a>
+                              <a href="/"> <img src="img/logo.png" /></a>
 
                               <span>Врачи <br />
                                     надежды</span>
@@ -407,27 +408,27 @@
                   </span>
                   <div class="container">
                         <div id="become-list" class="become-list"> </div>
-                        <div class="form">
+                        <form id="myForm" class="form">
                               <span class="form-title">Пожалуйста, заполните эти поля</span>
                               <div class="form-container">
-                                    <input type="text" placeholder="Полное ФИО">
-                                    <input type="text" placeholder="Полное ФИО">
-                                    <input type="text" placeholder="Специальность:">
-                                    <input type="text" placeholder="Номер телефона:">
-                                    <input type="text" placeholder="Адрес электронной почты:">
-                                    <input type="text" placeholder="Город, где вы работаете:">
+                                    <input id="fioform" type="text" placeholder="Полное ФИО">
+                                    <input id="profession-form" type="text" placeholder="Специальность:">
+                                    <input id="phone-form" type="text" placeholder="Номер телефона:">
+                                    <input id="email-form" type="text" placeholder="Адрес электронной почты:">
+                                    <input id="city" type="text" placeholder="Город, где вы работаете:">
                               </div>
                               <button>
                                     <span>Оставить заявку</span>
                                     <div class="tri"></div>
                               </button>
+                              <div id="warning" class="warning"> <span> Подтвердите ваше согласие</span></div>
                               <div class="agreement">
-                                    <input type="checkbox">
+                                    <input id="agr-check" type="checkbox">
                                     <span class="agreement-text">
                                           Я согласен с условиями <span>обработки персональных данных</span>
                                     </span>
                               </div>
-                        </div>
+                        </form>
                   </div>
             </div>
             <div class="all-answers">
@@ -446,11 +447,12 @@
                           <input type="text" name="i_email" placeholder="Ваш Email">
                           <input type="submit" value="Позвоните мне">
                     </form> -->
-                        <form action="/i_doctor" class="form-inline" method="post">
+                        <form id="anyquestionsForm" class="form-inline">
                               <div class="formfields">
-                                    <input type="text" id="name" placeholder="Имя" name="name">
-                                    <input type="text" id="phone" placeholder="Телефон" name="phone">
-                                    <input type="email" id="eml" placeholder="Email" name="eml">
+                                    <input id="anyname" type="text" id="name" placeholder="Имя" name="name" required>
+                                    <input id="phone" type="text" id="phone" placeholder="Телефон" name="phone"
+                                          required>
+                                    <input id="eml" type="email" id="eml" placeholder="Email" name="eml" required>
                                     <button type="Submit" class="wantHelpButton">
                                           <span class="wantHelpButtonText">Получить консультацию</span>
                                           <span class="wantHelpButtonText2">Отправить</span>
@@ -460,6 +462,7 @@
                               <div class="checkAgreement">
                                     <input type="checkbox" id="agree">
                                     <span>Я согласен с условиями обработки </span> <span>персональных данных</span>
+                                    <span id="any-warning"> Подтвердите ваше согласие</span>
                               </div>
 
                         </form>

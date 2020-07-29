@@ -8,7 +8,7 @@ main {
       margin-top: 157px;
 }
 .invitation {
-      display:-webkit-flex;
+      display: -webkit-flex;
       display: flex;
       margin: 0 120px 0;
       .maiinContent {
@@ -526,9 +526,9 @@ main {
                         }
                   }
                   .agreement {
-                        display: none;
+                        display: block;
                         justify-content: start;
-                        margin-top: 17px;
+                        margin: 10px 0 0 24px;
                         padding-bottom: 38px;
                         .agreement-text {
                               @include font(Inter, normal, 500, 12px, 136%, null);
@@ -549,6 +549,12 @@ main {
                         .tri {
                               @include triangle;
                         }
+                  }
+                  .warning {
+                        display: none;
+                        margin: 10px 0 32px 24px;
+                        @include font(Inter, normal, normal, 14px, 140%, 0.005em);
+                        color: crimson;
                   }
             }
       }
@@ -629,9 +635,9 @@ main {
                                     }
                               }
                               .agreement {
-                                    display: none;
+                                    display: block;
                                     justify-content: start;
-                                    margin-top: 17px;
+                                    margin: 10px 0 0 24px;
                                     padding-bottom: 38px;
                                     .agreement-text {
                                           @include font(Inter, normal, 500, 12px, 136%, null);

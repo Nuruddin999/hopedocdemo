@@ -11,6 +11,81 @@ $('.navdrawheader, img').click(function () {
       $('html, body').css('overflowY', 'auto');
       $('.navdrawr').css('transform', 'translateX(-100%)');
 });
+let fioname = document.getElementById("fioform")
+let profession = document.getElementById("profession-form")
+let becomephone = document.getElementById("phone-form")
+let becomeemail = document.getElementById("email-form")
+let city = document.getElementById("city")
+let becomewarning = document.getElementById("warning")
+let agree = document.getElementById('agr-check')
+let anyname = document.getElementById("anyname")
+let phone = document.getElementById("phone")
+let email = document.getElementById("eml")
+let anyagree = document.getElementById('agree')
+let button = document.getElementById("send-button")
+let anywarning = document.getElementById("any-warning")
+const getConsultation = (event) => {
+      event.preventDefault();
+      if (fioname.value === "" || becomephone.value === "" || profession.value === "") return
+      if (!agree.checked) {
+            warning.style.display = "block"
+            setTimeout(() => { warning.style.display = "none"; }, 1000)
+            return
+      }
+      let data = {
+            name, phone, eml,
+            from: "main"
+      }
+      console.log(data)
+      axios.post('sendForm.php', {
+            name: fioname.value,
+            phone: becomephone.value,
+            email: becomeemail.value,
+            profession: profession.value,
+            city: city.value,
+            from: "doctors-zayavka"
+
+      })
+            .then(function (response) {
+                  console.log(response);
+            })
+            .catch(function (error) {
+                  console.log(error);
+            });
+
+}
+let form = document.getElementById("myForm");
+form.addEventListener('submit', getConsultation);
+const sendQuestion = (event) => {
+      event.preventDefault();
+      if (anyname.value === "" || phone.value === "" || email.value === "") return
+      if (!anyagree.checked) {
+            anywarning.style.display = "block"
+            setTimeout(() => { anywarning.style.display = "none"; }, 1000)
+            return
+      }
+      let data = {
+            name, phone, eml,
+            from: "main"
+      }
+      console.log(data)
+      axios.post('sendForm.php', {
+            name: anyname.value,
+            phone: phone.value,
+            email: email.value,
+            from: "vrachi-any-questions-form"
+
+      })
+            .then(function (response) {
+                  console.log(response);
+            })
+            .catch(function (error) {
+                  console.log(error);
+            });
+
+}
+let anyquestionform = document.getElementById("anyquestionsForm");
+anyquestionform.addEventListener('submit', sendQuestion);
 const Hello = () => {
       let names = ["Средний стаж 7 лет", "Вторая строчка 2", "Третья строчка 3"]
       return <React.Fragment>

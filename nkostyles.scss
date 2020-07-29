@@ -488,6 +488,9 @@ main {
                         }
                         .warning {
                               display: none;
+                              margin-left: 24px;
+                              @include font(Inter, normal, 500, 12px, 136%, null);
+                              color: crimson;
                         }
                         button {
                               display: block;

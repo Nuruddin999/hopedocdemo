@@ -1188,6 +1188,13 @@ main .become-sec .become-container .form-container .agreement .agreement-text sp
 
 main .become-sec .become-container .form-container .warning {
   display: none;
+  margin-left: 24px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 136%;
+  color: crimson;
 }
 
 main .become-sec .become-container .form-container button {

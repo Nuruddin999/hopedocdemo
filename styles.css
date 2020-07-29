@@ -1363,11 +1363,11 @@ main {
 }
 
 .how-become .container .form .agreement {
-  display: none;
+  display: block;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  margin-top: 17px;
+  margin: 10px 0 0 24px;
   padding-bottom: 38px;
 }
 
@@ -1416,6 +1416,18 @@ main {
   border-bottom: 8px solid #f9b53b;
   border-left: 8px solid transparent;
   border-radius: 0px 0px 6px 0px;
+}
+
+.how-become .container .form .warning {
+  display: none;
+  margin: 10px 0 32px 24px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.005em;
+  color: crimson;
 }
 
 .all-answers {
@@ -1668,11 +1680,11 @@ main {
     margin-left: unset;
   }
   body .how-become .container .form .agreement {
-    display: none;
+    display: block;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    margin-top: 17px;
+    margin: 10px 0 0 24px;
     padding-bottom: 38px;
   }
   body .how-become .container .form .agreement .agreement-text {

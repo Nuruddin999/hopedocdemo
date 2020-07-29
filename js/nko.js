@@ -35,6 +35,7 @@ let nkowarning = document.getElementById("warning")
 let agree = document.getElementById('agr-check')
 let button = document.getElementById("send-button")
 let warning = document.getElementById("warning")
+let anywarning = document.getElementById("any-warning")
 const getConsultation = (event) => {
     event.preventDefault();
     if (fioname.value === "" || nkophone.value === "" || nkophone.value === "") return
@@ -67,12 +68,11 @@ const getConsultation = (event) => {
 let form = document.getElementById("myForm");
 form.addEventListener('submit', getConsultation);
 const sendQuestion = (event) => {
-    debugger
     event.preventDefault();
     if (anyname.value === "" || phone.value === "" || email.value === "") return
     if (!anyagree.checked) {
-        warning.style.display = "block"
-        setTimeout(() => { warning.style.display = "none"; }, 1000)
+        anywarning.style.display = "block"
+        setTimeout(() => { anywarning.style.display = "none"; }, 1000)
         return
     }
     let data = {

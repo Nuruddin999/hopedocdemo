@@ -61,7 +61,7 @@
                         </div>
 
                         <div class="logoSection">
-                              <a href="/hopedocdemo/index.html"> <img src="img/logo.png" /></a>
+                              <a href="/"> <img src="img/logo.png" /></a>
 
                               <span>Врачи <br />
                                     надежды</span>
@@ -777,9 +777,9 @@
         </form> -->
                         <form id="anyquestionsForm" class="form-inline">
                               <div class="formfields">
-                                    <input type="text" id="name" placeholder="Имя" name="name">
-                                    <input type="text" id="phone" placeholder="Телефон" name="phone">
-                                    <input type="email" id="eml" placeholder="Email" name="eml">
+                                    <input type="text" id="name" placeholder="Имя" name="name" required>
+                                    <input type="text" id="phone" placeholder="Телефон" name="phone" required>
+                                    <input type="email" id="eml" placeholder="Email" name="eml" required>
                                     <button class="wantHelpButton">
                                           <span class="wantHelpButtonText">Получить консультацию</span>
                                           <span class="wantHelpButtonText2">Отправить</span>
@@ -789,6 +789,7 @@
                               <div class="checkAgreement">
                                     <input type="checkbox" id="agree">
                                     <span>Я согласен с условиями обработки </span> <span>персональных данных</span>
+                                    <span id="any-warning"> Подтвердите ваше согласие</span>
                               </div>
 
                         </form>
