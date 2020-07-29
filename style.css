@@ -79,6 +79,7 @@ a {
     z-index: 1;
     background: white;
     width: 100%;
+    box-shadow: 0px 4px 12px rgba(44, 81, 147, 0.12);
 }
 
 button {
@@ -754,7 +755,7 @@ main {
 }
 
 .totalSpends {
-    margin: 40px auto;
+    margin: 40px 0 0 100px;
     display: flex;
     align-items: center;
     font-family: TT Norms-Bold;
@@ -788,7 +789,7 @@ main {
 
 .spendsGenWrap .wantHelpButton {
     display: block;
-    margin: 0 auto;
+    margin: 40px 0 0 100px;
 }
 
 /* Секция затрат -конец*/
@@ -800,7 +801,7 @@ main {
     background-image: url("./img/Rect.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 43px;
+    margin-top: 72px;
 }
 
 .rowToWork {
@@ -1088,16 +1089,18 @@ main {
     margin-top: 40px;
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 32px;
+    gap: 64px 32px;
     justify-content: center;
 }
 
 .partnersItemGr {
-    display: flex;
+    display: block;
+    width: 270px;
+    height: 230px;
     background-image: url("./img/fundslogo/nadejda_logo.jpeg");
     background-size: cover;
     border-radius: 8px;
-    padding: 75px;
+    padding: 0;
     font-family: TT Norms;
     font-style: normal;
     font-weight: 500;
@@ -1106,11 +1109,13 @@ main {
     color: #304b93;
 }
 
-.partnersItemGr span {
+.grid-item span {
     text-align: center;
     display: block;
     margin: auto;
-    color: transparent;
+   font: normal 500 24px/124% TT Norms;
+   color: #304B93;
+   margin-top: 10px;
 }
 
 .logoNadejda,
@@ -1287,7 +1292,7 @@ main {
 
 footer .tellAboutUS {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 90px;
     font-size: 24px;
     color: #304b93;
 }
@@ -2211,10 +2216,10 @@ textarea {
         padding: 0;
     }
     .navSection .logoSection {
-        margin: 7px 0 27px 120px;
+        margin: 7px 0 19px 120px;
     }
     .underNavBlock {
-        margin: 48px auto 0;
+        margin: 158px auto 0;
     }
     .underNavBlock .row .underTitle {
         margin-top: 174px;
@@ -2310,7 +2315,7 @@ textarea {
         color: #0b1635;
     }
     .firstHalfYear {
-        margin: 0;
+      margin-top: 32px;
     }
     .spendsGenWrap {
         margin-top: 32px;
@@ -2339,7 +2344,7 @@ textarea {
         margin: 0 132px;
     }
     .partnersBlockGr .howWeHelpTitle {
-        margin-top: 70px;
+        margin-top: 90px;
     }
     footer .socialIcons {
         margin-top: 22px;
@@ -3069,7 +3074,7 @@ textarea {
     .partnersWrappeGr {
         margin-top: 24px;
         grid-template-columns: auto auto;
-        gap: 12px;
+        gap: 24px 12px;
     }
     .partnersItemGr {
         font-size: unset;
