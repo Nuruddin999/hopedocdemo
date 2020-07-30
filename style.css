@@ -556,7 +556,7 @@ main {
 }
 
 .whyHelpBlock {
-    max-width: 1300px;
+    width: 1144px;
     margin: 30px auto;
     position: relative;
 }
@@ -593,7 +593,7 @@ main {
 .whyHelpBlock .underTitle {
     display: table;
     margin-top: 194px;
-    margin-right: 105px;
+    margin-right: 249px;
     font-family: "TT Norms";
     font-style: normal;
     font-weight: normal;
@@ -663,6 +663,10 @@ main {
 .spendsGenWrap {
     display: flex;
     flex-direction: column;
+}
+.spendsTables {
+    width: 1144px;
+    margin: 0 auto;
 }
 
 .spendsWrapper {
@@ -755,7 +759,7 @@ main {
 }
 
 .totalSpends {
-    margin: 40px 0 0 100px;
+    margin-top: 48px;
     display: flex;
     align-items: center;
     font-family: TT Norms-Bold;
@@ -789,7 +793,7 @@ main {
 
 .spendsGenWrap .wantHelpButton {
     display: block;
-    margin: 40px 0 0 100px;
+    margin: 40px 0 0 0;
 }
 
 /* Секция затрат -конец*/
@@ -1113,9 +1117,9 @@ main {
     text-align: center;
     display: block;
     margin: auto;
-   font: normal 500 24px/124% TT Norms;
-   color: #304B93;
-   margin-top: 10px;
+    font: normal 500 24px/124% TT Norms;
+    color: #304b93;
+    margin-top: 10px;
 }
 
 .logoNadejda,
@@ -1168,7 +1172,7 @@ main {
     background: #367bf5;
     overflow: hidden;
     display: block;
-    margin: 44px auto 0;
+    margin: 72px auto 0;
     text-align: center;
     font-family: TT Norms-Bold;
     font-style: normal;
@@ -2254,7 +2258,8 @@ textarea {
         margin-top: 72px;
     }
     .yearsBlock {
-        margin: 32px 148px 84px;
+        display: table;
+        margin: 32px auto 84px;
     }
     .years {
         flex-wrap: nowrap;
@@ -2266,12 +2271,9 @@ textarea {
         margin: 0;
         margin-left: 48px;
     }
-    /* .years div:last-child {
-    width: 250px;
-    height: 368px;
-    margin: 0;
-    margin-left: 28px;
-  }*/
+    .years div:first-child {
+        margin-left: 0;
+    }
     .years img {
         width: 100%;
         height: 368px;
@@ -2292,7 +2294,7 @@ textarea {
         margin-left: unset;
     }
     .whyHelpBlock {
-        margin: 0 224px;
+        margin: 0 auto;
         position: relative;
     }
     .whyHelpBlock .title {
@@ -2315,10 +2317,11 @@ textarea {
         color: #0b1635;
     }
     .firstHalfYear {
-      margin-top: 32px;
+        margin-bottom: 32px;
+        margin-top: 0;
     }
     .spendsGenWrap {
-        margin-top: 32px;
+        margin-top: 24px;
     }
     .spendsWrapper {
         display: table;
@@ -2353,12 +2356,12 @@ textarea {
 
 /*ноутбуки */
 
-@media screen and (min-width: 1500px) {
+/* @media screen and (min-width: 1500px) {
     body {
         width: 1440px;
         margin: 0 auto;
     }
-}
+} */
 
 @media screen and (max-width: 1280px) {
     .navSection ul {
@@ -2872,6 +2875,7 @@ textarea {
     }
     .spendsTables {
         order: 1;
+        width: initial;
     }
     .spendsWrapper {
         margin: 24px 12px 24px 16px;
