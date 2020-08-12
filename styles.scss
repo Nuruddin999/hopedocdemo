@@ -1,0 +1,664 @@
+@import "./fonts.sass";
+@import "./common.scss";
+body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+}
+main {
+      margin-top: 157px;
+}
+.yrs-padding {
+      padding-bottom: 48px;
+}
+.invitation {
+      display: -webkit-flex;
+      display: flex;
+      margin: 0 120px 0;
+      .maiinContent {
+            margin: unset;
+      }
+      .text {
+            margin-right: 177px;
+            .title {
+                  display: block;
+                  @include font(TT Norms-Bold, normal, bold, 48px, 114%, null);
+                  @include fontcolor;
+                  margin: unset;
+                  text-align: initial;
+                  margin-top: 51px;
+                  span {
+                        color: #f23b53;
+                  }
+            }
+            .undertitle {
+                  display: block;
+                  @include font(TT Norms, normal, normal, 22px, 148%, 0.005em);
+                  @include fontcolor;
+                  margin-top: 18px;
+            }
+            button {
+                  @include btn;
+                  outline: none;
+                  .becomedoctor {
+                        display: none;
+                  }
+            }
+            .tri {
+                  @include triangle;
+            }
+            .underButton {
+                  display: block;
+                  @include font(TT Norms, normal, 500, 16px, 128%, 0.005em);
+                  @include fontcolor;
+                  margin-top: 13px;
+            }
+      }
+}
+.title {
+      display: block;
+      text-align: center;
+      @include font(TT Norms-Bold, normal, normal, 48px, 124%, null);
+      @include fontcolor;
+      margin-top: 128px;
+}
+.undertitle2 {
+      display: block;
+      text-align: center;
+      @include font(TT Norms, normal, normal, 18px, 148%, null);
+      margin: 20px 328px 0;
+}
+.howhelp {
+      display: flex;
+      justify-content: center;
+      margin: 36px 182px 0;
+      .video {
+            iframe {
+                  border-radius: 4px;
+                  border: unset;
+            }
+            button {
+                  display: block;
+                  @include btn();
+                  margin-top: 40px;
+                  .tri {
+                        @include triangle;
+                  }
+            }
+      }
+      .description {
+            @include description();
+      }
+}
+.selection {
+      margin: 88px 120px 0 182px;
+      display: flex;
+      .title {
+            margin-top: unset;
+            text-align: unset;
+      }
+      .selection-list {
+            flex-direction: column;
+            margin-top: 33px;
+            padding: unset;
+            li {
+                  list-style: none;
+                  margin-top: 18px;
+            }
+            li:first-child {
+                  margin-top: unset;
+            }
+            display: flex;
+            .undernumslide {
+                  display: flex;
+                  align-items: flex-start;
+                  .redstar {
+                        @include redstar();
+                        margin-left: unset;
+                  }
+
+                  .descr {
+                        @include descr();
+                        .helptitle {
+                              @include font(TT Norms, normal, 500, 18px, 136%, null);
+                              color: #304b93;
+                        }
+                  }
+            }
+      }
+      .swiper-container {
+            flex: 0 0 620px;
+            min-height: 332px;
+            background: #f5f8fa;
+            border-radius: 12px;
+            .row {
+                  display: flex;
+                  align-items: flex-start;
+                  margin: 40px 0 0 32px;
+                  .doctorinfo {
+                        display: flex;
+                        flex-direction: column;
+                        max-width: 500px;
+                        margin-left: 24px;
+                        .position,
+                        .opit {
+                              @include font(TT Norms-Bold, normal, normal, 16px, 136%, 0.01em);
+                              color: #304b93;
+                        }
+                        .fio {
+                              display: block;
+                              margin-top: 14px;
+                              @include font(TT Norms-Bold, normal, 500, 30px, 124%, 0.005em);
+                              color: #0b1635;
+                        }
+                        .opit {
+                              margin-top: 10px;
+                        }
+                        .education {
+                              margin-top: 16px;
+                              @include font(TT Norms, normal, 500, 16px, 144%, null);
+                              span {
+                                    color: #0b1635;
+                              }
+                        }
+                  }
+            }
+            .educationmob {
+                  display: none;
+            }
+            .swiper-pagination {
+                  display: none;
+            }
+            .swiper-button-prev {
+                  @include buttons(155);
+            }
+            .swiper-button-prev::after,
+            .swiper-button-next::after {
+                  content: unset;
+            }
+            .swiper-button-next {
+                  @include buttons(217);
+            }
+      }
+}
+.inourteam {
+      margin: 50px 0 0 182px;
+      .title {
+            font-size: 36px;
+            line-height: 114%;
+            text-align: unset;
+            margin: unset;
+      }
+      .undertitle {
+            display: block;
+            width: 45%;
+            margin-top: 14px;
+            @include font(TT Norms, normal, 500, 16px, 134%, 0.005em);
+            color: #202642;
+      }
+      .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            .item {
+                  display: flex;
+                  align-items: center;
+                  flex: 0 0 33%;
+                  margin-top: 40px;
+                  border: unset;
+                  span {
+                        margin-left: 16px;
+                        @include font(Inter, normal, 500, 20px, 138%, 0.005em);
+                        color: #304b93;
+                  }
+            }
+      }
+}
+.joinus {
+      button {
+            display: block;
+            @include btn();
+            margin: 64px auto 0;
+            .tri {
+                  @include triangle;
+            }
+      }
+}
+.who-we-need {
+      background: #f5f8fa;
+      margin-top: 48px;
+      .title {
+            padding-top: 48px;
+            margin-top: unset;
+      }
+      .undertitle {
+            @include undertitle();
+            span {
+                  font-weight: 800;
+            }
+      }
+      .we-need-list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 23px 116px 0 282px;
+            justify-content: center;
+            .undernumslide {
+                  flex: 0 0 33%;
+                  display: flex;
+                  align-items: center;
+                  margin-top: 32px;
+                  .redstar {
+                        @include redstar();
+                        margin-left: unset;
+                  }
+
+                  .helptitle {
+                        margin-left: 12px;
+                        @include font(TT Norms, normal, 500, 26px, 134%, 0.005em);
+                        color: #202642;
+                  }
+            }
+      }
+      .lastext {
+            display: block;
+            text-align: center;
+            margin: 40px 328px 0;
+            @include font(TT Norms, normal, 500, 18px, 158%, null);
+            color: #304b93;
+      }
+      .joinus {
+            padding-bottom: 48px;
+            button {
+                  margin: 48px auto 0;
+            }
+      }
+}
+.results {
+      .title {
+            margin-top: 96px;
+      }
+      .title:nth-child(2) {
+            display: none;
+      }
+      .undertitle {
+            display: block;
+            @include undertitle();
+            margin: 0 377px 0;
+            font-size: 20px;
+      }
+      .undertitlemob {
+            display: none;
+      }
+      .years {
+            display: flex;
+            justify-content: center;
+            margin: 38px 124px 0;
+            div {
+                  margin-left: 64px;
+            }
+            div:first-child {
+                  margin-left: unset;
+            }
+      }
+      .numbs {
+            display: none;
+      }
+      .after-numbersmob {
+            @include after-numbersmob();
+      }
+}
+.partners-title {
+      @include title(113px);
+      margin: 113px 20px 0;
+}
+
+.partnersBlockGr {
+      @include partnersBlock();
+      @include logos;
+}
+.nko-titles {
+      .nko-title {
+            @include title(90);
+            margin: 90px 361px 0;
+      }
+      .nko-title:nth-child(2) {
+            display: none;
+      }
+}
+
+.nko {
+      @include nko();
+}
+.nko-slides {
+      display: none;
+      .swiper-container {
+            width: 100%;
+            height: 420px;
+            margin-top: 32px;
+            .nko-worker {
+                  @include nko-worker(0);
+                  iframe {
+                        width: 95%;
+                        display: block;
+                  }
+                  .nko-worker-description {
+                        display: block;
+                        width: 95%;
+                  }
+            }
+            .swiper-pagination {
+                  top: 410px;
+            }
+      }
+}
+.history {
+      .title {
+            @include title(90);
+      }
+      .undertitle {
+            display: block;
+            @include font(TT Norms, normal, normal, 18px, 136%, 0.005em);
+            color: #0b1635;
+            margin-top: 20px;
+            text-align: center;
+      }
+      .patients {
+            display: flex;
+            margin: 48px 140px 0;
+            .nko-worker {
+                  @include nko-worker(48);
+                  iframe {
+                        border-radius: unset;
+                        border-top-left-radius: 12px;
+                        border-top-right-radius: 12px;
+                  }
+                  align-items: flex-start;
+                  .nko-worker-name {
+                        display: block;
+                        margin: 16px 0 0 15px;
+                        @include font(TT Norms, normal, 500, 18px, 148%, 0.005em);
+                        color: #004094;
+                  }
+                  .nko-worker-description {
+                        text-align: unset;
+                        @include font(TT Norms, normal, 500, 18px, 148%, 0.005em);
+                        color: #0b1635;
+                        margin: 8px 0 0 15px;
+                  }
+                  .patient-name {
+                        display: flex;
+                        align-items: center;
+                        margin: 16px 0 0 16px;
+                        img {
+                              border-radius: 50%;
+                        }
+                        span {
+                              margin-left: 14px;
+                              @include font(TT Norms, normal, 500, 16px, 138%, 0.005em);
+                              color: #0b1635;
+                        }
+                  }
+            }
+            .nko-worker:first-child {
+                  margin-left: unset;
+            }
+      }
+      .patients-slide {
+            display: none;
+            .swiper-container {
+                  width: 100%;
+                  height: 420px;
+                  margin-top: 32px;
+                  .nko-worker {
+                        @include nko-worker(0);
+                        iframe {
+                              width: 95%;
+                              border-radius: unset;
+                              border-top-left-radius: 12px;
+                              border-top-right-radius: 12px;
+                              box-shadow: 0px 3px 10px rgba(37, 76, 147, 0.14);
+                        }
+                        .nko-worker-description {
+                              display: block;
+                              width: 95%;
+                        }
+                  }
+                  .swiper-pagination {
+                        top: 410px;
+                  }
+            }
+      }
+}
+.how-become {
+      .title {
+            @include title(98);
+      }
+      .undertitle {
+            display: block;
+            @include font(TT Norms, normal, normal, 18px, 148%, 0.01em);
+            color: #202642;
+            margin: 18px auto 0;
+            width: 60%;
+            text-align: center;
+      }
+      .container {
+            display: flex;
+            margin: 24px 121px 0 183px;
+            .become-list {
+                  flex: 0 0 50%;
+                  .undernumslide {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 24px;
+                        .redstar {
+                              @include redstar();
+                              margin-left: unset;
+                        }
+
+                        .helptitle {
+                              margin-left: 12px;
+                              @include font(TT Norms, normal, 500, 18px, 136%, 0.005em);
+                              color: #202642;
+                        }
+                  }
+            }
+            .form {
+                  margin-top: 24px;
+                  background: #f5f8fa;
+                  border-radius: 8px;
+                  flex: 0 0 50%;
+                  .form-title {
+                        display: block;
+                        margin: 24px auto 0;
+                        @include font(TT Norms, normal, 500, 18px, 136%, 0.005em);
+                        color: #202642;
+                        text-align: center;
+                  }
+                  .form-container {
+                        margin: 0 24px 0;
+                        display: flex;
+                        flex-wrap: wrap;
+                        input {
+                              display: block;
+                              flex: 0 0 calc(50% - 16px);
+                              margin: 20px 0 0 32px;
+                              padding: 14px 0 14px 18px;
+                              background: #ffffff;
+                              border: 1px solid rgba(0, 64, 148, 0.3);
+                              border-radius: 4px;
+                        }
+                        ::placeholder {
+                              color: #004094;
+                              @include font(Inter, normal, normal, 14px, 140%, 0.005em);
+                        }
+                        input:nth-child(odd) {
+                              margin-left: unset;
+                        }
+                  }
+                  .agreement {
+                        display: block;
+                        justify-content: start;
+                        margin: 10px 0 0 24px;
+                        padding-bottom: 38px;
+                        .agreement-text {
+                              @include font(Inter, normal, 500, 12px, 136%, null);
+                              color: #0b1635;
+                              margin-left: 7px;
+                              span {
+                                    color: #004094;
+                              }
+                        }
+                  }
+                  button {
+                        display: block;
+                        @include btn();
+                        background: #304b93;
+                        border-radius: 6px;
+                        margin: 24px 0 32px 24px;
+                        padding: 12px 40px;
+                        .tri {
+                              @include triangle;
+                        }
+                  }
+                  .warning {
+                        display: none;
+                        margin: 10px 0 32px 24px;
+                        @include font(Inter, normal, normal, 14px, 140%, 0.005em);
+                        color: crimson;
+                  }
+            }
+      }
+}
+.all-answers {
+      @include allanswers();
+}
+@media screen and(min-width:1280px) and (max-width: 1619px) {
+      body {
+            width: 100%;
+            margin: 0 auto 0;
+            .nko {
+                  margin: 48px 140px 0;
+            }
+            .how-become {
+                  .title {
+                        @include title(98);
+                  }
+                  // .undertitle {
+                  //       display: block;
+                  //       @include font(TT Norms, normal, normal, 18px, 148%, 0.01em);
+                  //       color: #202642;
+                  //       margin: 18px 328px 0;
+                  //       text-align: center;
+                  // }
+                  .container {
+                        display: flex;
+                        margin: 24px 121px 0 183px;
+                        .become-list {
+                              flex: 0 0 50%;
+                              .undernumslide {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-top: 24px;
+                                    .redstar {
+                                          @include redstar();
+                                          margin-left: unset;
+                                    }
+
+                                    .helptitle {
+                                          margin-left: 12px;
+                                          @include font(TT Norms, normal, 500, 18px, 136%, 0.005em);
+                                          color: #202642;
+                                    }
+                              }
+                        }
+                        .form {
+                              margin-top: 24px;
+                              background: #f5f8fa;
+                              border-radius: 8px;
+                              flex: 0 0 50%;
+                              .form-title {
+                                    display: block;
+                                    margin: 24px auto 0;
+                                    @include font(TT Norms, normal, 500, 18px, 136%, 0.005em);
+                                    color: #202642;
+                                    text-align: center;
+                              }
+                              .form-container {
+                                    margin: 0 24px 0;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    input {
+                                          display: block;
+                                          flex: 0 0 calc(50%-16px);
+                                          margin: 10px 0 0 8px;
+                                          padding: 7px 0 7px 9px;
+                                          background: #ffffff;
+                                          border: 1px solid rgba(0, 64, 148, 0.3);
+                                          border-radius: 4px;
+                                    }
+                                    ::placeholder {
+                                          color: #004094;
+                                          @include font(Inter, normal, normal, 14px, 140%, 0.005em);
+                                    }
+                                    input:nth-child(odd) {
+                                          margin-left: unset;
+                                    }
+                              }
+                              .agreement {
+                                    display: block;
+                                    justify-content: start;
+                                    margin: 10px 0 0 24px;
+                                    padding-bottom: 38px;
+                                    .agreement-text {
+                                          @include font(Inter, normal, 500, 12px, 136%, null);
+                                          color: #0b1635;
+                                          margin-left: 7px;
+                                          span {
+                                                color: #004094;
+                                          }
+                                    }
+                              }
+                              button {
+                                    display: block;
+                                    @include btn();
+                                    background: #304b93;
+                                    border-radius: 6px;
+                                    margin: 24px 0 32px 24px;
+                                    padding: 12px 40px;
+                                    .tri {
+                                          @include triangle;
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+}
+@media screen and(min-width:1620px) {
+      .invitation {
+            margin: 0 20% 0;
+            .text {
+                  margin-right: 85px;
+            }
+      }
+      .undertitle2 {
+            margin: 20px 30% 0;
+      }
+      .selection {
+            margin: 88px 20% 0;
+      }
+      .inourteam {
+            margin: 50px 20% 0;
+      }
+      .nko {
+            width: 1200px;
+            margin: 48px auto 0;
+      }
+      .how-become {
+            width: 1200px;
+            margin: 0 auto;
+            .container {
+                  margin: 0px;
+            }
+      }
+}

@@ -1,0 +1,1357 @@
+a {
+      text-decoration: none;
+}
+
+.bg_main {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 3;
+      background: white;
+      width: 100%;
+      box-shadow: 0px 4px 14px rgba(88, 119, 174, 0.14);
+}
+
+.wantHelpButton {
+      position: relative;
+      margin: 40px auto;
+      width: 310px;
+      height: 56px;
+      background: #367bf5;
+      border-radius: 6px;
+      color: white;
+      font-family: "RT Mono";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      outline: none;
+      line-height: 134%;
+}
+
+.triangle {
+      border-bottom: solid 6px #fca80e;
+      border-right: solid 6px #fca80e;
+      border-left: solid 6px transparent;
+      border-top: solid 6px transparent;
+      border-radius: 0 0 3px 0;
+      position: absolute;
+      bottom: 6px;
+      right: 6px;
+}
+
+.tellAboutUS {
+      display: block;
+      margin-top: 31px;
+      font-family: TT Norms-Bold;
+      font-size: 18px;
+      line-height: 118%;
+}
+
+.navSection {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: space-between;
+      align-items: unset;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding-top: 27px;
+      position: relative;
+}
+
+.navdrawr {
+      position: fixed;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      transform: translateX(-100%);
+      transition: transform 0.5s;
+      z-index: 4;
+      font-family: TT Norms;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 138%;
+      /* or 30px */
+      letter-spacing: 0.005em;
+      /* Темно темно синий */
+      color: #242f65;
+      overflow: hidden;
+}
+
+.drawerlinks {
+      margin: 40px 0 0 24px;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      align-items: start;
+}
+
+.drawerlinks a {
+      color: #242f65;
+      margin-top: 20px;
+}
+
+.drawerlinks a:first-child {
+      color: #242f65;
+      margin-top: unset;
+}
+
+.navdrawheader {
+      background: #ffffff;
+      border-bottom: 1px solid rgba(0, 64, 148, 0.3);
+}
+
+.navdrawheader span {
+      display: block;
+      padding: 22px 0 22px 24px;
+      font-family: TT Norms-Bold;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+      /* Темно синий */
+      color: #004094;
+}
+
+.navdrawheader img {
+      position: fixed;
+      top: 26px;
+      right: 22px;
+}
+
+.drawerlinks > div {
+      display: table;
+      font-family: PT Mono;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 134%;
+      color: #ffffff;
+      background: #367bf5;
+      border-radius: 4px;
+      margin-top: 18px;
+}
+
+.drawerlinks > div span {
+      display: table;
+      margin: 11px;
+}
+
+.drwrSocIcons img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+}
+
+.drwrSocIcons {
+      position: fixed;
+      width: 100%;
+      bottom: 37px;
+      font: 500 18px TT Norms;
+      color: rgba(35, 44, 87, 0.95);
+}
+
+.drwrSocIcons span {
+      display: block;
+      text-align: center;
+}
+
+.icns {
+      margin: 26px 28px 0;
+      display: flex;
+      justify-content: space-between;
+}
+
+.navSection ul {
+      margin-left: 131px;
+      padding: 0px 0 18px 0;
+}
+
+.navSection .hamburger {
+      display: none;
+}
+
+.navSection .logoSection {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      align-items: center;
+      padding-bottom: 27px;
+      margin-left: 120px;
+}
+
+.navSection .logoSection span {
+      font-family: TT Norms-Bold;
+      font-style: normal;
+      font-weight: normal;
+      color: #004094;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 114%;
+      letter-spacing: 0.03em;
+      margin-left: 15px;
+}
+
+.navSection ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+      flex: wrap;
+      margin: 15px 86px 0 0;
+      padding: 0;
+}
+
+.navSection ul .menuLinks li {
+      list-style: none;
+      display: inline;
+}
+
+.navSection ul .menuLinks li a {
+      font-family: "TT Norms";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 136%;
+      color: #304b93;
+      text-decoration: none;
+      margin-left: 24px;
+}
+
+.navSection .menuButtons {
+      list-style: none;
+      display: none;
+      background: #d6e5ff;
+      border-radius: 4px;
+      padding: 5px;
+      margin: 10px;
+      outline: none;
+}
+.btn-nko {
+      background: #d6e5ff;
+      border-radius: 4px;
+      padding: 5px 10px;
+}
+.navSection .menuButtons:first-child {
+      margin-left: 20px;
+}
+.navSection .menuButtons a {
+      font-family: "TT Norms";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 136%;
+      color: #304b93;
+      text-decoration: none;
+      margin: 10px;
+}
+
+.anyQstnsBlock {
+      background: #367bf5;
+      overflow: hidden;
+      display: block;
+      margin: 0 auto 0;
+      text-align: center;
+      font-family: TT Norms-Bold;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 124%;
+      /* or 60px */
+      color: #f5f7fa;
+}
+
+.anyqstnformblock {
+      display: block;
+      width: 1200px;
+      margin: 27px auto 41px;
+      overflow: hidden;
+      background: #f5f7fa;
+      border-radius: 12px;
+}
+
+/* form fromw3schools*/
+
+.form-inline {
+      width: unset;
+      margin: 49px 40px 19px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+}
+
+.formfields {
+      display: flex;
+}
+
+.checkAgreement {
+      padding: 32px 0 0 18px;
+      display: flex;
+      align-items: center;
+      color: #0b1635;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 136%;
+      font-family: TT Norms;
+}
+
+.checkAgreement span:nth-child(3) {
+      margin-left: 4px;
+      color: #367bf5;
+}
+.checkAgreement span:last-child {
+      display: none;
+      margin-left: 10px;
+      color: lightcoral;
+}
+
+.formfields input {
+      width: 248px;
+      margin-left: 18px;
+      padding: 9px 20px;
+      border: 1px solid rgba(0, 64, 148, 0.5);
+      box-sizing: border-box;
+      border-radius: 6px;
+}
+
+.formfields .wantHelpButton {
+      margin: 0;
+      margin-left: 14px;
+      width: unset;
+      border: 1px;
+      padding: 0 30px;
+      background: #367bf5;
+      outline: none;
+}
+
+.wantHelpButtonText2 {
+      display: none;
+}
+
+.form-inline button:hover {
+      background-color: royalblue;
+}
+
+/**/
+
+.anyqstnTitle {
+      display: block;
+      margin: 40px auto 0;
+      text-align: center;
+      font-family: TT Norms-Bold;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 124%;
+      /* or 60px */
+      color: #f5f7fa;
+}
+
+.anyqstnunder {
+      display: block;
+      margin: 16px auto 0;
+      font-family: TT Norms;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 136%;
+      /* identical to box height, or 27px */
+      color: #f5f7fa;
+}
+
+.anyqstnform {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.input-right .formhint {
+      width: 50%;
+      float: left;
+}
+
+.input-right input[type="checkbox"] {
+      float: left;
+      width: 10%;
+}
+
+.socialIcons {
+      margin-top: 18px;
+      padding-bottom: 42px;
+      display: flex;
+}
+
+.socialIcons div {
+      margin-left: 24px;
+}
+
+.socialIcons div:first-child {
+      margin: 0;
+}
+
+.whatsapp {
+      width: 36px;
+      height: 36px;
+      background: #0dc143;
+      border-radius: 24px;
+      display: flex;
+}
+
+.whatsapp img {
+      margin: auto;
+}
+
+.telegram {
+      width: 36px;
+      height: 36px;
+      background: #419fd9;
+      border-radius: 24px;
+      display: flex;
+}
+
+.telegram img {
+      margin: auto;
+}
+
+.facebook {
+      width: 40px;
+      height: 40px;
+      background: #4267b2;
+      border-radius: 24px;
+      display: flex;
+}
+
+.facebook img {
+      margin: auto;
+}
+
+.tellAboutUS {
+      display: block;
+      margin-top: 31px;
+      font-family: TT Norms-Bold;
+      font-size: 18px;
+      line-height: 118%;
+}
+
+footer .tellAboutUS {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 24px;
+      color: #304b93;
+}
+
+footer .socialIcons {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+}
+
+.botNav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      /* center items horizontally, in this case */
+      align-items: center;
+}
+
+.botNav .logoSection {
+      display: flex;
+      margin: 0 0 52px 119px;
+      align-items: center;
+      font-family: TT Norms-Bold;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 114%;
+      /* or 27px */
+      letter-spacing: 0.03em;
+      /* Темно синий */
+      color: #004094;
+}
+
+.rightbotNav {
+      margin: 0 120px 32px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+}
+
+.upbtns {
+      display: flex;
+      justify-content: flex-end;
+}
+
+.botNav .logoSection span {
+      margin-left: 9px;
+}
+
+.botNav .menuLinks {
+      margin: 16px 0 20px 32px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+}
+
+.botNav .menuButtons {
+      list-style: none;
+      display: inline;
+      background: #d6e5ff;
+      border-radius: 4px;
+      padding: 5px;
+      margin: 10px 0 10px 18px;
+}
+
+.botNav .menuButtons span {
+      padding: 10px 12px;
+      margin: 0;
+}
+
+.botNav .menuButtons a {
+      text-align: center;
+      margin: 0 auto;
+}
+
+.botNav a {
+      font-family: "TT Norms";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 136%;
+      color: #304b93;
+      text-decoration: none;
+      margin-left: 24px;
+}
+
+.botNav ul {
+      margin: 0;
+}
+
+.botNav li {
+      list-style: none;
+      display: inline;
+}
+
+.helpToWork {
+      overflow: hidden;
+      background-image: url("./img/Rect.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-top: 0;
+}
+
+.rowToWork {
+      display: flex;
+      align-items: center;
+}
+
+.descrToWork {
+      display: block;
+      margin-top: 40px;
+      margin-left: 120px;
+      margin-right: 118px;
+      font-family: TT Norms;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 128%;
+      /* or 31px */
+      /* white */
+      color: #ffffff;
+}
+
+.helpTohelp {
+      margin-top: 20px;
+      display: block;
+      font-family: PT Mono-Bold;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 42px;
+      line-height: 134%;
+      /* or 56px */
+      /* white */
+      color: #ffffff;
+}
+
+.helpboard {
+      margin: 47px 120px 47px 0;
+      background: white;
+      font-family: "Inter", sans-serif;
+      letter-spacing: 0.005em;
+      line-height: 138%;
+      width: 356px;
+      border-radius: 4px;
+}
+
+.hlpbrdTitle {
+      padding-top: 26px;
+      letter-spacing: 0.005em;
+      color: #304b93;
+      display: block;
+      text-align: center;
+      font-size: 18px;
+      line-height: 138%;
+}
+
+.boardRow {
+      margin-top: 20px;
+      padding: 0 33px 0;
+      display: flex;
+      justify-content: space-around;
+}
+
+.numberCol {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: nowrap;
+}
+
+.numbCol {
+      font-size: 18px;
+      display: table;
+      padding: 4px 11px;
+      background: #f5f8fa;
+      border-radius: 50%;
+      color: #304b93;
+}
+
+.amountCol {
+      margin-top: 10px;
+      font-weight: 500;
+      font-size: 12px;
+      color: #304b93;
+}
+
+.boardGap {
+      width: 48px;
+      height: 2px;
+      margin-top: 20px;
+      background: #304b93;
+}
+
+.periodblock {
+      display: flex;
+      justify-content: center;
+      margin: 0 40px 0;
+}
+
+.periodblock button {
+      width: 138px;
+      background: #367bf5;
+      border: 2px solid #367bf5;
+      border-radius: 2px;
+      padding: 17px;
+      color: #ffffff;
+      margin-top: 26px;
+      cursor: pointer;
+      outline: none;
+      font: 500 13px Inter;
+}
+
+.periodblock button:last-child {
+      background: white;
+      text-align: center;
+      color: #367bf5;
+}
+
+.sumblock {
+      margin: 26px 40px;
+}
+
+.sumRow {
+      border: 1px solid rgba(111, 133, 152, 0.4);
+      border-radius: 2px;
+      display: flex;
+      flex-wrap: wrap;
+}
+
+.item {
+      flex: 0 0 calc(33.33333% - 1px);
+      height: 50px;
+      border-bottom: 1px solid rgba(111, 133, 152, 0.5);
+      cursor: pointer;
+      border-right: 1px solid rgba(111, 133, 152, 0.5);
+      display: flex;
+}
+
+.item:last-child {
+      flex: 2;
+      border-bottom: unset;
+      border-right: unset;
+}
+
+.item:nth-child(7) {
+      border-bottom: unset;
+}
+
+.item:nth-child(3n) {
+      border-right: unset;
+}
+
+.item .amountAndLogo {
+      margin: auto;
+}
+
+.sumRow .amountAndLogo span {
+      font-size: 15px;
+      font-family: "Inter", sans-serif;
+      line-height: 138%;
+      text-transform: uppercase;
+      color: #0b1635;
+}
+
+.item .amountAndLogo img {
+      width: 8px;
+      height: 10px;
+      opacity: 0.85;
+}
+
+.item input {
+      border: unset;
+      text-align: center;
+      cursor: pointer;
+      display: block;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      letter-spacing: 0.005em;
+      font: unset;
+      font-size: 15px;
+      color: #6f8598;
+      opacity: 0.5;
+}
+
+.anothersum {
+      display: flex;
+}
+
+.item:last-child span {
+      display: block;
+      margin: auto;
+}
+
+.continuepay {
+      display: flex;
+      margin: 20px 15px;
+      padding-bottom: 32px;
+      justify-content: center;
+}
+
+.continuepay button {
+      padding: 18px 87.5px;
+      background: #367bf5;
+      color: white;
+      line-height: 138%;
+      font: 500 13px Inter;
+      letter-spacing: 0.005em;
+      border-radius: 6px;
+      border: unset;
+      cursor: pointer;
+      outline: none;
+}
+.help-to-work-marg {
+      margin-top: 0;
+}
+.help-to-work-marg-doc {
+      margin-top: 0px;
+}
+/* */
+
+@media screen and (min-width: 1440px) {
+      .navSection ul {
+            padding: 0px 0 18px 0;
+      }
+      .navSection .logoSection {
+            margin-left: 62px;
+      }
+      .rowToWork {
+            width: 1200px;
+            margin: 0 auto;
+      }
+      .descrToWork {
+            margin-left: initial;
+      }
+      .helpboard {
+            margin: 47px 0px 47px 0;
+      }
+}
+
+@media screen and (max-width: 1280px) {
+      .navSection ul {
+            margin-left: unset;
+      }
+      .navSection .logoSection {
+            margin-left: 80px;
+      }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      .lp-header {
+            width: 100%;
+      }
+      .help-to-work-marg {
+            margin-top: 21px;
+      }
+      .help-to-work-marg-doc {
+            margin-top: 72px;
+      }
+      .navSection {
+            padding: 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: unset;
+            -ms-flex-pack: unset;
+            justify-content: unset;
+            -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+            height: 64px;
+      }
+      .navSection .hamburger {
+            display: block;
+            margin: 5px 20px;
+      }
+      .navSection .hamburger .div1 {
+            width: 22px;
+            height: 2px;
+            background: #173c85;
+      }
+      .navSection .hamburger .div2 {
+            width: 12px;
+            height: 2px;
+            margin-top: 4px;
+            background: #173c85;
+      }
+      .navSection .hamburger .div3 {
+            width: 17px;
+            margin-top: 4px;
+            height: 2px;
+            background: #173c85;
+      }
+      .navSection .logoSection {
+            margin: 0;
+            padding: 0;
+            margin-left: 2px;
+      }
+      .navSection .logoSection img {
+            width: 26px;
+            height: 20px;
+      }
+      .navSection .logoSection span {
+            display: none;
+      }
+      .navSection ul {
+            position: absolute;
+            right: 16px;
+            margin: 0;
+            padding: unset;
+      }
+      .navSection .menuLinks {
+            position: absolute;
+            left: 0;
+            margin: 0;
+            display: none;
+      }
+      .navSection ul .menuButtons {
+            display: inline;
+            border-radius: unset;
+            background: unset;
+            margin: 0 5px;
+            outline: none;
+      }
+      .navSection ul .menuButtons a {
+            margin: 0;
+      }
+      .anyQstnsBlock {
+            margin-top: 12px;
+      }
+      .anyqstnTitle {
+            font-size: 34px;
+            margin: 32px auto 0;
+      }
+      .anyqstnunder {
+            margin: 18px auto 0;
+            font-size: 18px;
+            line-height: 124%;
+      }
+      .anyqstnformblock {
+            display: block;
+            margin: 22px 12px 32px;
+            border-radius: 6px;
+            width: calc(100% - 24px);
+      }
+      .form-inline {
+            width: unset;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+      }
+      .formfields {
+            flex-direction: column;
+      }
+      .formfields input {
+            padding: 20px;
+            margin: 18px 28px 0;
+            border: 1px solid rgba(0, 64, 148, 0.5);
+            box-sizing: border-box;
+            border-radius: 4px;
+            width: initial;
+      }
+      .formfields input:first-child {
+            margin: 28px 28px 0;
+      }
+      .formfields .wantHelpButton {
+            margin: 32px 28px 0;
+            background: #004094;
+            width: unset;
+            border: 1px;
+            padding: 0 30px;
+      }
+      .formfields .wantHelpButtonText {
+            display: none;
+      }
+      .formfields .wantHelpButtonText2 {
+            display: block;
+            background: #004094;
+      }
+      .checkAgreement {
+            padding: 10px 28px 24px;
+            display: flex;
+            flex-wrap: wrap;
+            /* align-items: center; */
+            color: #0b1635;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 136%;
+            font-family: TT Norms;
+      }
+      .socialIconsBlock {
+            position: absolute;
+            margin: 0 48px;
+            left: 0;
+            right: 0;
+            bottom: 41px;
+      }
+      .socialIcons {
+            justify-content: center;
+            padding: 0;
+      }
+      .tellAboutUS {
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 108px;
+            text-align: center;
+      }
+      footer .tellAboutUS {
+            position: unset;
+            font-size: 24px;
+            color: #304b93;
+            margin: 56px 75px 0;
+      }
+      footer .socialIcons {
+            margin-top: 30px;
+      }
+      .botNav {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 50px;
+      }
+      .botNav .logoSection {
+            margin: 45px 0 0 0;
+            display: flex;
+            align-items: center;
+      }
+      .botNav .logoSection img {
+            width: 41.5px;
+            height: 30px;
+      }
+      .botNav .logoSection br {
+            display: none;
+      }
+      .rightbotNav {
+            margin-left: 0;
+      }
+      .rightbotNav ul {
+            padding: 0;
+      }
+      .rightbotNav ul li a {
+            margin-left: 0;
+      }
+      .upbtns {
+            margin: 32px 0 0 0px;
+            order: 1;
+            display: flex;
+            justify-content: flex-start;
+      }
+      .botNav .menuLinks {
+            margin: 19px 0 0 0;
+            flex-direction: column;
+      }
+      .botNav .menuLinks li {
+            margin-top: 24px;
+      }
+      .botNav .menuButtons {
+            list-style: none;
+            display: inline;
+            background: #d6e5ff;
+            border-radius: 4px;
+            padding: 5px;
+            margin: 10px 12px 10px 0px;
+      }
+      .botNav .menuButtons:last-child {
+            margin: 10px 10px 10px 0px;
+      }
+      .botNav .menuButtons span {
+            padding: 10px 12px;
+            margin: 0;
+      }
+      .botNav .menuButtons a {
+            text-align: center;
+            margin: 0 auto;
+      }
+      .helpToWork {
+            position: relative;
+            background-image: url("./img/backgrmob.jpg");
+            width: 100%;
+      }
+      .rightSide {
+            width: 100%;
+            background: #ffffff;
+      }
+      .rowToWork {
+            flex-wrap: wrap;
+            background: #ffffff;
+            width: 100%;
+      }
+      .descrToWork {
+            overflow: hidden;
+            font: 500 16px TT Norms;
+            margin: 0px 11px 11px;
+            line-height: 138%;
+            background: #ffffff;
+            color: initial;
+      }
+      .descrToWork span {
+            width: 100%;
+      }
+      .descrToWork span:first-child {
+            display: block;
+            margin-bottom: 40px;
+      }
+      .descrToWork span:nth-child(3) {
+            display: none;
+      }
+
+      .boardRow {
+            display: none;
+      }
+      .helpTohelp {
+            display: block;
+            font-size: 34px;
+            margin-top: 16px;
+            color: #004094;
+            margin: 0 auto;
+            text-align: center;
+      }
+      .howWeHelpTitle {
+            display: block;
+      }
+      .helpboard {
+            margin: 4px auto 0;
+            display: flex;
+            flex-direction: column;
+            /* margin: 0; */
+            /* margin-bottom: 200px; */
+            /* margin-left: 5%; */
+            padding: 0;
+            box-shadow: 0px 4px 12px rgba(88, 119, 174, 0.24);
+            border-radius: 8px;
+      }
+      .periodblock {
+            margin: 0 34px 0;
+      }
+      .hlpbrdTitle {
+            padding-top: 24px;
+      }
+      .item {
+            flex-basis: 32.9%;
+      }
+      .sumblock {
+            margin: 26px 40px 18px;
+      }
+      .continuepay {
+            display: flex;
+            margin: 0 15px;
+            padding-bottom: 22px;
+            justify-content: center;
+      }
+      .socialIconsBlock {
+            position: absolute;
+            margin: 0 48px;
+            left: 0;
+            right: 0;
+            top: 782px;
+            bottom: 0;
+      }
+      .socialIcons {
+            justify-content: center;
+            padding: 0;
+      }
+      .tellAboutUS {
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 730px;
+            text-align: center;
+            color: #004094;
+      }
+      .partnersWrapper {
+            margin-top: 24px;
+      }
+      .underHelpBoard {
+            display: block;
+            margin: 40px 35px 80px;
+            font-family: TT Norms-Bold;
+            font-size: 18px;
+            line-height: 118%;
+            text-align: center;
+            color: #004094;
+      }
+      .partners-title;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      .lp-header {
+            width: 100%;
+      }
+      .navSection {
+            padding: 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: unset;
+            -ms-flex-pack: unset;
+            justify-content: unset;
+            -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+            height: 64px;
+      }
+      .navSection .hamburger {
+            display: block;
+            margin: 5px 20px;
+      }
+      .navSection .hamburger .div1 {
+            width: 22px;
+            height: 2px;
+            background: #173c85;
+      }
+      .navSection .hamburger .div2 {
+            width: 12px;
+            height: 2px;
+            margin-top: 4px;
+            background: #173c85;
+      }
+      .navSection .hamburger .div3 {
+            width: 17px;
+            margin-top: 4px;
+            height: 2px;
+            background: #173c85;
+      }
+      .navSection .logoSection {
+            margin: 0;
+            padding: 0;
+            margin-left: 2px;
+      }
+      .navSection .logoSection img {
+            width: 26px;
+            height: 20px;
+      }
+      .navSection .logoSection span {
+            display: none;
+      }
+      .navSection ul {
+            position: absolute;
+            right: 16px;
+            margin: 0;
+            padding: unset;
+      }
+      .navSection .menuLinks {
+            position: absolute;
+            left: 0;
+            margin: 0;
+            display: none;
+      }
+      .navSection ul .menuButtons {
+            display: inline;
+            border-radius: unset;
+            background: unset;
+            margin: 0 5px;
+      }
+      .navSection ul .menuButtons a {
+            margin: 0;
+      }
+      .rowToWork {
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+      }
+      .rowToWork .descrToWork {
+            margin: 20px 50px;
+      }
+      .helpboard {
+            width: 50%;
+            margin: 0 auto;
+      }
+      main .partnersWrappeGr {
+            grid-template-columns: auto auto;
+      }
+      .anyQstnsBlock {
+            margin-top: 64px;
+            width: 50%;
+      }
+      .anyqstnTitle {
+            font-size: 34px;
+            margin: 32px auto 0;
+      }
+      .anyqstnunder {
+            margin: 18px auto 0;
+            font-size: 18px;
+            line-height: 124%;
+      }
+      .anyqstnformblock {
+            display: block;
+            margin: 22px 12px 32px;
+            border-radius: 6px;
+            width: calc(100% - 24px);
+      }
+      .form-inline {
+            width: unset;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+      }
+      .formfields {
+            flex-direction: column;
+      }
+      .formfields input {
+            width: initial;
+            padding: 20px;
+            margin: 18px 28px 0;
+            border: 1px solid rgba(0, 64, 148, 0.5);
+            box-sizing: border-box;
+            border-radius: 4px;
+      }
+      .formfields input:first-child {
+            margin: 28px 28px 0;
+      }
+      .formfields .wantHelpButton {
+            margin: 32px 28px 0;
+            background: #004094;
+            width: unset;
+            border: 1px;
+            padding: 0 30px;
+      }
+      .formfields .wantHelpButtonText {
+            display: none;
+      }
+      .formfields .wantHelpButtonText2 {
+            display: block;
+            background: #004094;
+      }
+      .checkAgreement {
+            padding: 10px 28px 24px;
+            display: flex;
+            flex-wrap: wrap;
+            /* align-items: center; */
+            color: #0b1635;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 136%;
+            font-family: TT Norms;
+      }
+      footer .tellAboutUS {
+            position: unset;
+            font-size: 24px;
+            color: #304b93;
+            margin: 56px 75px 0;
+      }
+      footer .socialIcons {
+            margin-top: 30px;
+      }
+      .botNav {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 50px;
+      }
+      .botNav .logoSection {
+            margin: 45px 0 0 0;
+            display: flex;
+            align-items: center;
+      }
+      .botNav .logoSection img {
+            width: 41.5px;
+            height: 30px;
+      }
+      .botNav .logoSection br {
+            display: none;
+      }
+      .rightbotNav {
+            margin-left: 0;
+      }
+      .rightbotNav ul {
+            padding: 0;
+      }
+      .rightbotNav ul li a {
+            margin-left: 0;
+      }
+      .upbtns {
+            margin: 32px 0 0 0px;
+            order: 1;
+            display: flex;
+            justify-content: flex-start;
+      }
+      .botNav .menuLinks {
+            margin: 19px 0 0 0;
+            flex-direction: column;
+      }
+      .botNav .menuLinks li {
+            margin-top: 24px;
+      }
+      .botNav .menuButtons {
+            list-style: none;
+            display: inline;
+            background: #d6e5ff;
+            border-radius: 4px;
+            padding: 5px;
+            margin: 10px 12px 10px 0px;
+      }
+      .botNav .menuButtons:last-child {
+            margin: 10px 10px 10px 12px;
+      }
+      .botNav .menuButtons span {
+            padding: 10px 12px;
+            margin: 0;
+      }
+      .botNav .menuButtons a {
+            text-align: center;
+            margin: 0 auto;
+      }
+}

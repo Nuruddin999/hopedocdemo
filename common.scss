@@ -1,0 +1,348 @@
+@mixin font($font, $fontstyle, $fontweight, $fontsize, $lineheight, $letterspacing) {
+      font-family: $font;
+      font-style: $fontstyle;
+      font-weight: $fontweight;
+      font-size: $fontsize;
+      line-height: $lineheight;
+      letter-spacing: $letterspacing;
+}
+@mixin fontcolor {
+      color: #367bf5;
+}
+%button {
+      background: #367bf5;
+      color: white;
+      border: unset;
+      border-radius: 6px;
+      outline: none;
+}
+@mixin button {
+      background: #367bf5;
+      color: white;
+      border: unset;
+      border-radius: 6px;
+      outline: none;
+}
+@mixin btn {
+      position: relative;
+      padding: 16px 20px;
+      @include font(RT Mono, normal, bold, 18px, 134%, null);
+      margin-top: 32px;
+      @include button;
+}
+@mixin triangle {
+      position: absolute;
+      bottom: 5px;
+      right: 4px;
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-right: 8px solid #f9b53b;
+      border-bottom: 8px solid #f9b53b;
+      border-left: 8px solid transparent;
+      border-radius: 0px 0px 6px 0px;
+}
+@mixin redpoint {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #ffffff;
+      margin: auto;
+}
+@mixin redstar {
+      display: flex;
+      flex: 0 0 16px;
+      height: 16px;
+      background-image: url(./img/redstar.png);
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-attachment: cover;
+      margin: 4px 0 0 16px;
+      .redpoint {
+            @include redpoint();
+      }
+}
+@mixin descr {
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+      .helptitle {
+            @include font(Inter, normal, 500, 20px, 138%, 0.005em);
+      }
+      .helpdescr {
+            @include font(TT Norms, normal, 500, 16px, 134%, 0.005em);
+            margin-top: 6px;
+      }
+}
+@mixin undernumslide {
+      display: flex;
+      align-items: flex-start;
+      .redstar {
+            @include redstar();
+      }
+      .descr {
+            @include descr();
+      }
+}
+@mixin description {
+      margin: unset;
+      li {
+            list-style: none;
+            margin-top: 20px;
+      }
+      li:first-child {
+            margin-top: unset;
+      }
+      .undernumslide {
+            @include undernumslide();
+      }
+}
+@mixin buttons($val) {
+      top: unset;
+      bottom: 25px;
+      left: $val;
+      background: #004094;
+      border-radius: 50%;
+      padding: 0 9px;
+      outline: none;
+}
+@mixin undertitle {
+      display: block;
+      text-align: center;
+      @include font(TT Norms, normal, normal, 26px, 128%, 0.01em);
+      margin-top: 18px;
+
+      color: #202642;
+}
+@mixin title($top) {
+      display: block;
+      text-align: center;
+      @include font(TT Norms-Bold, normal, normal, 48px, 124%, null);
+      @include fontcolor;
+      margin-top: $top;
+}
+@mixin nko-worker($left) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: $left;
+      iframe {
+            border-radius: 12px;
+      }
+      .nko-worker-name {
+            @include font(TT Norms-Bold, normal, bold, 24px, 124%, 0.005em);
+            color: #324883;
+            text-align: center;
+            margin-top: 28px;
+            color: #324883;
+      }
+      .nko-worker-description {
+            @include font(TT Norms, normal, normal, 16px, 134%, 0.005em);
+            color: #324883;
+            text-align: center;
+            margin-top: 28px;
+      }
+}
+@mixin buttonInNKO {
+      @include btn;
+      margin-top: 44px;
+      padding: 15px 57px 15px 40px;
+      span {
+            display: inline;
+            @include font(RT Mono, normal, bold, 20px, 134%, null);
+            color: white;
+            margin-right: 0;
+      }
+      .tri {
+            @include triangle;
+            bottom: 5px;
+            right: 4px;
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-right: 8px solid #f9b53b;
+            border-bottom: 8px solid #f9b53b;
+            border-left: 8px solid transparent;
+            border-radius: 0px 0px 6px 0px;
+      }
+}
+@mixin logos {
+      .partnersWrappeGr {
+            @include partners();
+            .grid-item {
+                  span {
+                        text-align: center;
+                        display: block;
+                        margin: auto;
+                        width: 100px;
+                        font: normal 500 18px/124% TT Norms;
+                        color: #304b93;
+                        margin-top: 10px;
+                  }
+            }
+
+            .logoNadejda,
+            .logoHome,
+            .logoIhsan,
+            .logoKdl,
+            .logoLekki,
+            .logoLife,
+            .logoSirat,
+            .logoZakyat {
+                  background-size: cover;
+                  background-position-x: no-repeat;
+                  background-position: center;
+                  background-color: #fff;
+            }
+
+            .logoNadejda {
+                  background-image: url(./img/fundslogo/nadejda_logo.jpeg);
+            }
+            .logoHome {
+                  background-image: url(./img/fundslogo/home_logo.png);
+            }
+            .logoIhsan {
+                  background-image: url(./img/fundslogo/ihsan_logo.jpg);
+            }
+            .logoKdl {
+                  background-image: url(./img/fundslogo/kdl_logo.jpg);
+            }
+            .logoLekki {
+                  background-image: url(./img/fundslogo/leki_logo.jpg);
+            }
+            .logoLife {
+                  background-image: url(./img/fundslogo/life_logo.jpg);
+            }
+            .logoSirat {
+                  background-image: url(./img/fundslogo/sirat_logo.jpg);
+            }
+            .logoZakyat {
+                  background-image: url(./img/fundslogo/zakyat_logo.png);
+            }
+      }
+}
+@mixin partnersBlock {
+      display: block;
+      margin: 0px 132px 0;
+}
+@mixin partners {
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      gap: 64px 32px;
+      justify-content: center;
+      .partnersItemGr {
+            display: block;
+            width: 270px;
+            height: 230px;
+            background-image: url(./img/fundslogo/nadejda_logo.jpeg);
+            background-size: cover;
+            border-radius: 8px;
+            padding: 0;
+            font-family: TT Norms;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 124%;
+            color: #304b93;
+      }
+}
+@mixin nko {
+      display: flex;
+      margin: 48px 140px 0;
+      .nko-worker {
+            @include nko-worker(40);
+      }
+      .nko-worker:first-child {
+            margin-left: unset;
+      }
+}
+@mixin allanswers {
+      display: block;
+      background: #f5f8fa;
+      overflow: hidden;
+      margin-top: 50px;
+      .title {
+            @include title(48);
+      }
+      .answers {
+            width: 1200px;
+            margin: 32px auto 48px;
+            .answers-list {
+                  background: #ffffff;
+                  overflow: hidden;
+                  .qa {
+                        display: flex;
+                        align-items: center;
+
+                        justify-content: space-between;
+                        .question {
+                              @include font(TT Norms, normal, 500, 18px, 124%, null);
+                              color: #367bf5;
+                              margin-left: 20px;
+                              padding: 18px 0;
+                        }
+                        .plus {
+                              display: flex;
+                              border: 1px solid #304b93;
+                              border-radius: 50%;
+                              padding: 9px;
+                              color: #304b93;
+                              justify-content: center;
+                              align-items: center;
+                              margin-right: 20px;
+                              cursor: pointer;
+                        }
+                  }
+                  .answer-block {
+                        margin: 0 8px 8px;
+                        background: #f5f8fa;
+                        overflow: hidden;
+                        span {
+                              display: block;
+                              @include font(Inter, normal, normal, 14px, 154%, 0.005em);
+                              color: #0b1635;
+                              margin: 16px 80px 12px 10px;
+                        }
+                  }
+            }
+      }
+}
+@mixin mobslider {
+      margin-top: 32px;
+      display: block;
+      height: 390px;
+      .swiper-container {
+            width: 100%;
+            margin-left: 0px;
+            height: auto;
+
+            .swiper-slide {
+                  width: 300px;
+            }
+
+            img {
+                  height: 368px;
+                  width: 300px;
+            }
+            .swiper-pagination {
+                  display: block;
+                  background: white;
+                  bottom: 0;
+            }
+      }
+}
+@mixin after-numbersmob {
+      li {
+            list-style: none;
+            margin-top: 22px;
+            span {
+                  @include font(TT Norms, normal, 500, 20px, 124%, 0.005em);
+            }
+      }
+      li:first-child {
+            margin-top: unset;
+      }
+
+      display: none;
+}

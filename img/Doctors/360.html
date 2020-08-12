@@ -1,0 +1,980 @@
+
+<!-- saved from url=(0030)http://127.0.0.1:5500/nko.html -->
+<html lang="en" data-livestyle-extension="available"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./360_files/normalize.css">
+      <link rel="stylesheet" href="./360_files/nkostyles.css">
+      <link rel="stylesheet" href="./360_files/menu.css">
+      <link rel="stylesheet" href="./360_files/swiper-bundle.css">
+      <link rel="stylesheet" href="./360_files/swiper-bundle.min.css">
+      <script src="./360_files/swiper-bundle.js.Без названия"></script>
+      <script src="./360_files/swiper-bundle.min.js.Без названия"></script>
+      <script src="./360_files/jquery.js.Без названия"></script>
+      <script src="./360_files/select2.min.js.Без названия"></script>
+      <script src="./360_files/jquery.min.js.Без названия"></script>
+      <script src="./360_files/react.production.min.js.Без названия"></script>
+      <script src="./360_files/react-dom.production.min.js.Без названия"></script>
+      <script src="./360_files/babel.min.js.Без названия"></script>
+      <title>Предлагаем экспертную помощь для НКО </title>
+<script>"use strict";
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+var QAs = function QAs(_ref) {
+    var questions = _ref.questions;
+
+    var _React$useState = React.useState({
+        answersAreShown: []
+    });
+
+    var _React$useState2 = _slicedToArray(_React$useState, 2);
+
+    var state = _React$useState2[0];
+    var setstate = _React$useState2[1];
+
+    var showAnswer = function showAnswer(e, index) {
+        var list = state.answersAreShown;
+        list[index] = !list[index];
+        setstate(function (state) {
+            return _extends({}, state, { answerAreShown: list });
+        });
+    };
+    React.useEffect(function () {
+        var listOfOpened = [];
+        setstate(function (state) {
+            return _extends({}, state, { answersAreShown: listOfOpened });
+        });
+    }, []);
+    return React.createElement(
+        React.Fragment,
+        null,
+        questions.map(function (question, index) {
+            return React.createElement(
+                "div",
+                { id: "answers-list", "class": "answers-list" },
+                React.createElement(
+                    "div",
+                    { "class": "qa" },
+                    React.createElement(
+                        "span",
+                        { "class": "question" },
+                        question.q
+                    ),
+                    React.createElement(
+                        "div",
+                        { "class": "plus", onClick: function onClick(e) {
+                                return showAnswer(e, index);
+                            } },
+                        React.createElement("img", { src: "./img/plusqa.png" })
+                    )
+                ),
+                state.answersAreShown[index] ? React.createElement(
+                    "div",
+                    { "class": "answer-block" },
+                    React.createElement(
+                        "span",
+                        null,
+                        question.a
+                    )
+                ) : null
+            );
+        })
+    );
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInFhLmpzIl0sIm5hbWVzIjpbIlFBcyIsInF1ZXN0aW9ucyIsIlJlYWN0IiwidXNlU3RhdGUiLCJhbnN3ZXJzQXJlU2hvd24iLCJzdGF0ZSIsInNldHN0YXRlIiwic2hvd0Fuc3dlciIsImUiLCJpbmRleCIsImxpc3QiLCJhbnN3ZXJBcmVTaG93biIsInVzZUVmZmVjdCIsImxpc3RPZk9wZW5lZCIsIm1hcCIsInF1ZXN0aW9uIiwicSIsImEiXSwibWFwcGluZ3MiOiI7Ozs7OztBQUFBLElBQU1BLE1BQU0sU0FBTkEsR0FBTSxPQUFtQjtBQUFBLFFBQWhCQyxTQUFnQixRQUFoQkEsU0FBZ0I7O0FBQUEsMEJBQ0RDLE1BQU1DLFFBQU4sQ0FBZTtBQUNyQ0MseUJBQWlCO0FBRG9CLEtBQWYsQ0FEQzs7QUFBQTs7QUFBQSxRQUNwQkMsS0FEb0I7QUFBQSxRQUNiQyxRQURhOztBQUkzQixRQUFNQyxhQUFhLFNBQWJBLFVBQWEsQ0FBQ0MsQ0FBRCxFQUFJQyxLQUFKLEVBQWM7QUFDN0IsWUFBSUMsT0FBT0wsTUFBTUQsZUFBakI7QUFDQU0sYUFBS0QsS0FBTCxJQUFjLENBQUNDLEtBQUtELEtBQUwsQ0FBZjtBQUNBSCxpQkFBUztBQUFBLGdDQUFlRCxLQUFmLElBQXNCTSxnQkFBZ0JELElBQXRDO0FBQUEsU0FBVDtBQUNILEtBSkQ7QUFLQVIsVUFBTVUsU0FBTixDQUFnQixZQUFNO0FBQ2xCLFlBQUlDLGVBQWUsRUFBbkI7QUFDQVAsaUJBQVM7QUFBQSxnQ0FBZUQsS0FBZixJQUFzQkQsaUJBQWlCUyxZQUF2QztBQUFBLFNBQVQ7QUFDSCxLQUhELEVBR0csRUFISDtBQUlBLFdBQU87QUFBQyxhQUFELENBQU8sUUFBUDtBQUFBO0FBQ0ZaLGtCQUFVYSxHQUFWLENBQWMsVUFBQ0MsUUFBRCxFQUFXTixLQUFYO0FBQUEsbUJBQXFCO0FBQUE7QUFBQSxrQkFBSyxJQUFHLGNBQVIsRUFBdUIsU0FBTSxjQUE3QjtBQUNoQztBQUFBO0FBQUEsc0JBQUssU0FBTSxJQUFYO0FBQ0k7QUFBQTtBQUFBLDBCQUFNLFNBQU0sVUFBWjtBQUF3Qk0saUNBQVNDO0FBQWpDLHFCQURKO0FBRUk7QUFBQTtBQUFBLDBCQUFLLFNBQU0sTUFBWCxFQUFrQixTQUFTLGlCQUFDUixDQUFEO0FBQUEsdUNBQU9ELFdBQVdDLENBQVgsRUFBY0MsS0FBZCxDQUFQO0FBQUEsNkJBQTNCO0FBQXdELHFEQUFLLEtBQUksa0JBQVQ7QUFBeEQ7QUFGSixpQkFEZ0M7QUFLL0JKLHNCQUFNRCxlQUFOLENBQXNCSyxLQUF0QixJQUErQjtBQUFBO0FBQUEsc0JBQUssU0FBTSxjQUFYO0FBQTBCO0FBQUE7QUFBQTtBQUFPTSxpQ0FBU0U7QUFBaEI7QUFBMUIsaUJBQS9CLEdBQ1E7QUFOdUIsYUFBckI7QUFBQSxTQUFkO0FBREUsS0FBUDtBQVdILENBeEJEIiwiZmlsZSI6InFhLmpzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgUUFzID0gKHsgcXVlc3Rpb25zIH0pID0+IHtcclxuICAgIGNvbnN0IFtzdGF0ZSwgc2V0c3RhdGVdID0gUmVhY3QudXNlU3RhdGUoe1xyXG4gICAgICAgIGFuc3dlcnNBcmVTaG93bjogW11cclxuICAgIH0pXHJcbiAgICBjb25zdCBzaG93QW5zd2VyID0gKGUsIGluZGV4KSA9PiB7XHJcbiAgICAgICAgbGV0IGxpc3QgPSBzdGF0ZS5hbnN3ZXJzQXJlU2hvd25cclxuICAgICAgICBsaXN0W2luZGV4XSA9ICFsaXN0W2luZGV4XVxyXG4gICAgICAgIHNldHN0YXRlKHN0YXRlID0+ICh7IC4uLnN0YXRlLCBhbnN3ZXJBcmVTaG93bjogbGlzdCB9KSlcclxuICAgIH1cclxuICAgIFJlYWN0LnVzZUVmZmVjdCgoKSA9PiB7XHJcbiAgICAgICAgbGV0IGxpc3RPZk9wZW5lZCA9IFtdXHJcbiAgICAgICAgc2V0c3RhdGUoc3RhdGUgPT4gKHsgLi4uc3RhdGUsIGFuc3dlcnNBcmVTaG93bjogbGlzdE9mT3BlbmVkIH0pKVxyXG4gICAgfSwgW10pXHJcbiAgICByZXR1cm4gPFJlYWN0LkZyYWdtZW50PlxyXG4gICAgICAgIHtxdWVzdGlvbnMubWFwKChxdWVzdGlvbiwgaW5kZXgpID0+IDxkaXYgaWQ9XCJhbnN3ZXJzLWxpc3RcIiBjbGFzcz1cImFuc3dlcnMtbGlzdFwiPlxyXG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwicWFcIj5cclxuICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPVwicXVlc3Rpb25cIj57cXVlc3Rpb24ucX08L3NwYW4+XHJcbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwicGx1c1wiIG9uQ2xpY2s9eyhlKSA9PiBzaG93QW5zd2VyKGUsIGluZGV4KX0+PGltZyBzcmM9XCIuL2ltZy9wbHVzcWEucG5nXCIgLz48L2Rpdj5cclxuICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgIHtzdGF0ZS5hbnN3ZXJzQXJlU2hvd25baW5kZXhdID8gPGRpdiBjbGFzcz1cImFuc3dlci1ibG9ja1wiPjxzcGFuPntxdWVzdGlvbi5hfTwvc3Bhbj5cclxuICAgICAgICAgICAgPC9kaXY+IDogbnVsbH1cclxuXHJcbiAgICAgICAgPC9kaXY+KX1cclxuICAgIDwvUmVhY3QuRnJhZ21lbnQ+XHJcbn1cclxuIl19</script><script>'use strict';
+
+$('.hamburger').click(function () {
+    document.body.addEventListener('touchstart', function (e) {
+        e.preventDefault();
+    });
+    document.body.style.overflow = 'hidden';
+    document.querySelector("body > div.navdrawr").style.transform = "translateX(0)";
+});
+$('.navdrawheader, img').click(function () {
+    $('html, body').css('overflowY', 'auto');
+    $('.navdrawr').css('transform', 'translateX(-100%)');
+});
+var mySwiper = new Swiper('.swiper-container', {
+    loop: true,
+    watchOverflow: true,
+
+    pagination: {
+        el: '.swiper-pagination'
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    scrollbar: {
+        el: '.swiper-scrollbar'
+    }
+});
+var ansq = "После обсуждения всех деталей будущего сотрудничества – заключаем официальный договор с Некоммерческой Организацией" + "Затем вводим куратора от НКО в нюансы работы, предоставляем рабочее место (онлайн) и обучаем его работе в нашем приложении Diagnost" + 'Куратор всегда имеет доступ к онлайн платформе: там он в реальном времени получает все данные по пациентам и общается с командой ВН';
+var foo = ["*После обсуждения всех деталей будущего сотрудничества – заключаем официальный договор с Некоммерческой Организацией", React.createElement('br', null), "*Затем вводим куратора от НКО в нюансы работы, предоставляем рабочее место (онлайн) и обучаем его работе в нашем приложении Diagnost", React.createElement('br', null), '*Куратор всегда имеет доступ к онлайн платформе: там он в реальном времени получает все данные по пациентам и общается с командой ВН'];
+var questions = [{
+    q: "Как организовано взаимодействие НКО и Врачей Надежды?", a: foo
+}, {
+    q: "Почему НКО доверяют Врачам Надежды?", a: ["*Все специалисты ВН – это действующие доктора доказательной медицины, работающие в настоящее время в системе здравоохранения РФ", React.createElement('br', null), "*Перед принятием в команду – мы тщательно проверяем репутацию каждого врача, а также все дипломы и сертификаты соответствия.", React.createElement('br', null), "*Мы не только сами работаем безвозмездно, но и стараемся находить БЕСПЛАТНЫЕ решения медицинских вопросов посредством ОМС и Квот", React.createElement('br', null), "*Мы берём на себя ответственность и избавляем НКО от поиска клиник для качественной диагностики и лечения для их пациентов.", React.createElement('br', null), "*Работая с 2017 года – мы помогли уже более чем 2700 пациентов и не получили ни одного негативного отзыва", React.createElement('br', null), "*Врачи Надежды обладают высокими моральными и этическими принципами.", React.createElement('br', null), "*Наша основная задача – найти причину болезни и лучшее лечение"]
+}];
+ReactDOM.render(React.createElement(QAs, { questions: questions }), document.getElementById('answers'));
+ReactDOM.render(helpboard, document.getElementById('board'));
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5rby5qcyJdLCJuYW1lcyI6WyIkIiwiY2xpY2siLCJkb2N1bWVudCIsImJvZHkiLCJhZGRFdmVudExpc3RlbmVyIiwiZSIsInByZXZlbnREZWZhdWx0Iiwic3R5bGUiLCJvdmVyZmxvdyIsInF1ZXJ5U2VsZWN0b3IiLCJ0cmFuc2Zvcm0iLCJjc3MiLCJteVN3aXBlciIsIlN3aXBlciIsImxvb3AiLCJ3YXRjaE92ZXJmbG93IiwicGFnaW5hdGlvbiIsImVsIiwibmF2aWdhdGlvbiIsIm5leHRFbCIsInByZXZFbCIsInNjcm9sbGJhciIsImFuc3EiLCJmb28iLCJxdWVzdGlvbnMiLCJxIiwiYSIsIlJlYWN0RE9NIiwicmVuZGVyIiwiZ2V0RWxlbWVudEJ5SWQiLCJoZWxwYm9hcmQiXSwibWFwcGluZ3MiOiJBQUFBOztBQUNBQSxFQUFFLFlBQUYsRUFBZ0JDLEtBQWhCLENBQXNCLFlBQVk7QUFDOUJDLGFBQVNDLElBQVQsQ0FBY0MsZ0JBQWQsQ0FBK0IsWUFBL0IsRUFBNkMsVUFBVUMsQ0FBVixFQUFhO0FBQUVBLFVBQUVDLGNBQUY7QUFBcUIsS0FBakY7QUFDQUosYUFBU0MsSUFBVCxDQUFjSSxLQUFkLENBQW9CQyxRQUFwQixHQUErQixRQUEvQjtBQUNBTixhQUFTTyxhQUFULENBQXVCLHFCQUF2QixFQUE4Q0YsS0FBOUMsQ0FBb0RHLFNBQXBELEdBQWdFLGVBQWhFO0FBQ0gsQ0FKRDtBQUtBVixFQUFFLHFCQUFGLEVBQXlCQyxLQUF6QixDQUErQixZQUFZO0FBQ3ZDRCxNQUFFLFlBQUYsRUFBZ0JXLEdBQWhCLENBQW9CLFdBQXBCLEVBQWlDLE1BQWpDO0FBQ0FYLE1BQUUsV0FBRixFQUFlVyxHQUFmLENBQW1CLFdBQW5CLEVBQWdDLG1CQUFoQztBQUNILENBSEQ7QUFJQSxJQUFJQyxXQUFXLElBQUlDLE1BQUosQ0FBVyxtQkFBWCxFQUFnQztBQUMzQ0MsVUFBTSxJQURxQztBQUUzQ0MsbUJBQWUsSUFGNEI7O0FBSTNDQyxnQkFBWTtBQUNSQyxZQUFJO0FBREksS0FKK0I7QUFPM0NDLGdCQUFZO0FBQ1JDLGdCQUFRLHFCQURBO0FBRVJDLGdCQUFRO0FBRkEsS0FQK0I7QUFXM0NDLGVBQVc7QUFDUEosWUFBSTtBQURHO0FBWGdDLENBQWhDLENBQWY7QUFlQSxJQUFJSyxPQUFPLHdIQUNQLHFJQURPLHdJQUFYO0FBR0EsSUFBSUMsTUFBTSxDQUFDLHNIQUFELEVBQXlILCtCQUF6SCxFQUFpSSxzSUFBakksRUFBeVEsK0JBQXpRLHlJQUFWO0FBQ0EsSUFBSUMsWUFBWSxDQUFDO0FBQ2JDLE9BQUcsdURBRFUsRUFDK0NDLEdBQUdIO0FBRGxELENBQUQsRUFFYjtBQUNDRSxPQUFHLHFDQURKLEVBQzJDQyxHQUFHLENBQUMsaUlBQUQsRUFBb0ksK0JBQXBJLEVBQ3pDLDhIQUR5QyxFQUN1RiwrQkFEdkYsRUFDK0Ysa0lBRC9GLEVBQ21PLCtCQURuTyxFQUMyTyw2SEFEM08sRUFDMFcsK0JBRDFXLEVBRXpDLDJHQUZ5QyxFQUVvRSwrQkFGcEUsRUFFNEUsc0VBRjVFLEVBRW9KLCtCQUZwSixFQUU0SixnRUFGNUo7QUFEOUMsQ0FGYSxDQUFoQjtBQVFBQyxTQUFTQyxNQUFULENBQWdCLG9CQUFDLEdBQUQsSUFBSyxXQUFXSixTQUFoQixHQUFoQixFQUErQ3RCLFNBQVMyQixjQUFULENBQXdCLFNBQXhCLENBQS9DO0FBQ0FGLFNBQVNDLE1BQVQsQ0FBZ0JFLFNBQWhCLEVBQTJCNUIsU0FBUzJCLGNBQVQsQ0FBd0IsT0FBeEIsQ0FBM0IiLCJmaWxlIjoibmtvLmpzIiwic291cmNlc0NvbnRlbnQiOlsiJ3VzZSBzdHJpY3QnXHJcbiQoJy5oYW1idXJnZXInKS5jbGljayhmdW5jdGlvbiAoKSB7XHJcbiAgICBkb2N1bWVudC5ib2R5LmFkZEV2ZW50TGlzdGVuZXIoJ3RvdWNoc3RhcnQnLCBmdW5jdGlvbiAoZSkgeyBlLnByZXZlbnREZWZhdWx0KCk7IH0pO1xyXG4gICAgZG9jdW1lbnQuYm9keS5zdHlsZS5vdmVyZmxvdyA9ICdoaWRkZW4nO1xyXG4gICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcImJvZHkgPiBkaXYubmF2ZHJhd3JcIikuc3R5bGUudHJhbnNmb3JtID0gXCJ0cmFuc2xhdGVYKDApXCI7XHJcbn0pXHJcbiQoJy5uYXZkcmF3aGVhZGVyLCBpbWcnKS5jbGljayhmdW5jdGlvbiAoKSB7XHJcbiAgICAkKCdodG1sLCBib2R5JykuY3NzKCdvdmVyZmxvd1knLCAnYXV0bycpO1xyXG4gICAgJCgnLm5hdmRyYXdyJykuY3NzKCd0cmFuc2Zvcm0nLCAndHJhbnNsYXRlWCgtMTAwJSknKTtcclxufSk7XHJcbnZhciBteVN3aXBlciA9IG5ldyBTd2lwZXIoJy5zd2lwZXItY29udGFpbmVyJywge1xyXG4gICAgbG9vcDogdHJ1ZSxcclxuICAgIHdhdGNoT3ZlcmZsb3c6IHRydWUsXHJcblxyXG4gICAgcGFnaW5hdGlvbjoge1xyXG4gICAgICAgIGVsOiAnLnN3aXBlci1wYWdpbmF0aW9uJyxcclxuICAgIH0sXHJcbiAgICBuYXZpZ2F0aW9uOiB7XHJcbiAgICAgICAgbmV4dEVsOiAnLnN3aXBlci1idXR0b24tbmV4dCcsXHJcbiAgICAgICAgcHJldkVsOiAnLnN3aXBlci1idXR0b24tcHJldicsXHJcbiAgICB9LFxyXG4gICAgc2Nyb2xsYmFyOiB7XHJcbiAgICAgICAgZWw6ICcuc3dpcGVyLXNjcm9sbGJhcicsXHJcbiAgICB9LFxyXG59KVxyXG5sZXQgYW5zcSA9IFwi0J/QvtGB0LvQtSDQvtCx0YHRg9C20LTQtdC90LjRjyDQstGB0LXRhSDQtNC10YLQsNC70LXQuSDQsdGD0LTRg9GJ0LXQs9C+INGB0L7RgtGA0YPQtNC90LjRh9C10YHRgtCy0LAg4oCTINC30LDQutC70Y7Rh9Cw0LXQvCDQvtGE0LjRhtC40LDQu9GM0L3Ri9C5INC00L7Qs9C+0LLQvtGAINGBINCd0LXQutC+0LzQvNC10YDRh9C10YHQutC+0Lkg0J7RgNCz0LDQvdC40LfQsNGG0LjQtdC5XCIgK1xyXG4gICAgXCLQl9Cw0YLQtdC8INCy0LLQvtC00LjQvCDQutGD0YDQsNGC0L7RgNCwINC+0YIg0J3QmtCeINCyINC90Y7QsNC90YHRiyDRgNCw0LHQvtGC0YssINC/0YDQtdC00L7RgdGC0LDQstC70Y/QtdC8INGA0LDQsdC+0YfQtdC1INC80LXRgdGC0L4gKNC+0L3Qu9Cw0LnQvSkg0Lgg0L7QsdGD0YfQsNC10Lwg0LXQs9C+INGA0LDQsdC+0YLQtSDQsiDQvdCw0YjQtdC8INC/0YDQuNC70L7QttC10L3QuNC4IERpYWdub3N0XCIgK1xyXG4gICAgYNCa0YPRgNCw0YLQvtGAINCy0YHQtdCz0LTQsCDQuNC80LXQtdGCINC00L7RgdGC0YPQvyDQuiDQvtC90LvQsNC50L0g0L/Qu9Cw0YLRhNC+0YDQvNC1OiDRgtCw0Lwg0L7QvSDQsiDRgNC10LDQu9GM0L3QvtC8INCy0YDQtdC80LXQvdC4INC/0L7Qu9GD0YfQsNC10YIg0LLRgdC1INC00LDQvdC90YvQtSDQv9C+INC/0LDRhtC40LXQvdGC0LDQvCDQuCDQvtCx0YnQsNC10YLRgdGPINGBINC60L7QvNCw0L3QtNC+0Lkg0JLQnWBcclxudmFyIGZvbyA9IFtcIirQn9C+0YHQu9C1INC+0LHRgdGD0LbQtNC10L3QuNGPINCy0YHQtdGFINC00LXRgtCw0LvQtdC5INCx0YPQtNGD0YnQtdCz0L4g0YHQvtGC0YDRg9C00L3QuNGH0LXRgdGC0LLQsCDigJMg0LfQsNC60LvRjtGH0LDQtdC8INC+0YTQuNGG0LjQsNC70YzQvdGL0Lkg0LTQvtCz0L7QstC+0YAg0YEg0J3QtdC60L7QvNC80LXRgNGH0LXRgdC60L7QuSDQntGA0LPQsNC90LjQt9Cw0YbQuNC10LlcIiwgPGJyIC8+LCBcIirQl9Cw0YLQtdC8INCy0LLQvtC00LjQvCDQutGD0YDQsNGC0L7RgNCwINC+0YIg0J3QmtCeINCyINC90Y7QsNC90YHRiyDRgNCw0LHQvtGC0YssINC/0YDQtdC00L7RgdGC0LDQstC70Y/QtdC8INGA0LDQsdC+0YfQtdC1INC80LXRgdGC0L4gKNC+0L3Qu9Cw0LnQvSkg0Lgg0L7QsdGD0YfQsNC10Lwg0LXQs9C+INGA0LDQsdC+0YLQtSDQsiDQvdCw0YjQtdC8INC/0YDQuNC70L7QttC10L3QuNC4IERpYWdub3N0XCIsIDxiciAvPiwgYCrQmtGD0YDQsNGC0L7RgCDQstGB0LXQs9C00LAg0LjQvNC10LXRgiDQtNC+0YHRgtGD0L8g0Log0L7QvdC70LDQudC9INC/0LvQsNGC0YTQvtGA0LzQtTog0YLQsNC8INC+0L0g0LIg0YDQtdCw0LvRjNC90L7QvCDQstGA0LXQvNC10L3QuCDQv9C+0LvRg9GH0LDQtdGCINCy0YHQtSDQtNCw0L3QvdGL0LUg0L/QviDQv9Cw0YbQuNC10L3RgtCw0Lwg0Lgg0L7QsdGJ0LDQtdGC0YHRjyDRgSDQutC+0LzQsNC90LTQvtC5INCS0J1gXVxyXG5sZXQgcXVlc3Rpb25zID0gW3tcclxuICAgIHE6IFwi0JrQsNC6INC+0YDQs9Cw0L3QuNC30L7QstCw0L3QviDQstC30LDQuNC80L7QtNC10LnRgdGC0LLQuNC1INCd0JrQniDQuCDQktGA0LDRh9C10Lkg0J3QsNC00LXQttC00Ys/XCIsIGE6IGZvb1xyXG59LCB7XHJcbiAgICBxOiBcItCf0L7Rh9C10LzRgyDQndCa0J4g0LTQvtCy0LXRgNGP0Y7RgiDQktGA0LDRh9Cw0Lwg0J3QsNC00LXQttC00Ys/XCIsIGE6IFtcIirQktGB0LUg0YHQv9C10YbQuNCw0LvQuNGB0YLRiyDQktCdIOKAkyDRjdGC0L4g0LTQtdC50YHRgtCy0YPRjtGJ0LjQtSDQtNC+0LrRgtC+0YDQsCDQtNC+0LrQsNC30LDRgtC10LvRjNC90L7QuSDQvNC10LTQuNGG0LjQvdGLLCDRgNCw0LHQvtGC0LDRjtGJ0LjQtSDQsiDQvdCw0YHRgtC+0Y/RidC10LUg0LLRgNC10LzRjyDQsiDRgdC40YHRgtC10LzQtSDQt9C00YDQsNCy0L7QvtGF0YDQsNC90LXQvdC40Y8g0KDQpFwiLCA8YnIgLz4sXHJcbiAgICAgICAgXCIq0J/QtdGA0LXQtCDQv9GA0LjQvdGP0YLQuNC10Lwg0LIg0LrQvtC80LDQvdC00YMg4oCTINC80Ysg0YLRidCw0YLQtdC70YzQvdC+INC/0YDQvtCy0LXRgNGP0LXQvCDRgNC10L/Rg9GC0LDRhtC40Y4g0LrQsNC20LTQvtCz0L4g0LLRgNCw0YfQsCwg0LAg0YLQsNC60LbQtSDQstGB0LUg0LTQuNC/0LvQvtC80Ysg0Lgg0YHQtdGA0YLQuNGE0LjQutCw0YLRiyDRgdC+0L7RgtCy0LXRgtGB0YLQstC40Y8uXCIsIDxiciAvPiwgXCIq0JzRiyDQvdC1INGC0L7Qu9GM0LrQviDRgdCw0LzQuCDRgNCw0LHQvtGC0LDQtdC8INCx0LXQt9Cy0L7Qt9C80LXQt9C00L3Qviwg0L3QviDQuCDRgdGC0LDRgNCw0LXQvNGB0Y8g0L3QsNGF0L7QtNC40YLRjCDQkdCV0KHQn9Cb0JDQotCd0KvQlSDRgNC10YjQtdC90LjRjyDQvNC10LTQuNGG0LjQvdGB0LrQuNGFINCy0L7Qv9GA0L7RgdC+0LIg0L/QvtGB0YDQtdC00YHRgtCy0L7QvCDQntCc0KEg0Lgg0JrQstC+0YJcIiwgPGJyIC8+LCBcIirQnNGLINCx0LXRgNGR0Lwg0L3QsCDRgdC10LHRjyDQvtGC0LLQtdGC0YHRgtCy0LXQvdC90L7RgdGC0Ywg0Lgg0LjQt9Cx0LDQstC70Y/QtdC8INCd0JrQniDQvtGCINC/0L7QuNGB0LrQsCDQutC70LjQvdC40Log0LTQu9GPINC60LDRh9C10YHRgtCy0LXQvdC90L7QuSDQtNC40LDQs9C90L7RgdGC0LjQutC4INC4INC70LXRh9C10L3QuNGPINC00LvRjyDQuNGFINC/0LDRhtC40LXQvdGC0L7Qsi5cIiwgPGJyIC8+LFxyXG4gICAgICAgIFwiKtCg0LDQsdC+0YLQsNGPINGBIDIwMTcg0LPQvtC00LAg4oCTINC80Ysg0L/QvtC80L7Qs9C70Lgg0YPQttC1INCx0L7Qu9C10LUg0YfQtdC8IDI3MDAg0L/QsNGG0LjQtdC90YLQvtCyINC4INC90LUg0L/QvtC70YPRh9C40LvQuCDQvdC4INC+0LTQvdC+0LPQviDQvdC10LPQsNGC0LjQstC90L7Qs9C+INC+0YLQt9GL0LLQsFwiLCA8YnIgLz4sIFwiKtCS0YDQsNGH0Lgg0J3QsNC00LXQttC00Ysg0L7QsdC70LDQtNCw0Y7RgiDQstGL0YHQvtC60LjQvNC4INC80L7RgNCw0LvRjNC90YvQvNC4INC4INGN0YLQuNGH0LXRgdC60LjQvNC4INC/0YDQuNC90YbQuNC/0LDQvNC4LlwiLCA8YnIgLz4sIFwiKtCd0LDRiNCwINC+0YHQvdC+0LLQvdCw0Y8g0LfQsNC00LDRh9CwIOKAkyDQvdCw0LnRgtC4INC/0YDQuNGH0LjQvdGDINCx0L7Qu9C10LfQvdC4INC4INC70YPRh9GI0LXQtSDQu9C10YfQtdC90LjQtVwiXHJcbiAgICBdXHJcbn1dXHJcblJlYWN0RE9NLnJlbmRlcig8UUFzIHF1ZXN0aW9ucz17cXVlc3Rpb25zfSAvPiwgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2Fuc3dlcnMnKSlcclxuUmVhY3RET00ucmVuZGVyKGhlbHBib2FyZCwgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2JvYXJkJykpIl19</script></head>
+
+<body>
+      <div class="navdrawr">
+
+            <div class="navdrawheader">
+                  <span>Врачи надежды</span>
+
+                  <img src="./360_files/close.png" alt="close">
+            </div>
+            <div class="drawerlinks">
+                  <a href="http://127.0.0.1:5500/nko.html#">Главная</a>
+                  <a href="http://127.0.0.1:5500/nko.html#">Как это работает</a>
+                  <a href="http://127.0.0.1:5500/nko.html#">Инструкции</a>
+                  <a href="http://127.0.0.1:5500/nko.html#">Наша работа</a>
+                  <a href="http://127.0.0.1:5500/nko.html#">О нас</a>
+                  <a href="http://127.0.0.1:5500/nko.html#">Контакты</a>
+                  <div><span>Помочь проекту</span></div>
+            </div>
+            <div class="drwrSocIcons">
+                  <span>Следите за нами в социальных сетях</span>
+                  <div class="icns">
+                        <img src="./360_files/facebookDr.png" alt="facebook">
+                        <img src="./360_files/instagramDr.png" alt="instagram">
+                        <img src="./360_files/youtubrDr.png" alt="youtube">
+                        <img src="./360_files/odnokl.png" alt="">
+                  </div>
+            </div>
+      </div>
+      <div class="bg_main">
+            <header class="lp-header">
+
+                  <nav class="navSection">
+
+                        <div class="hamburger">
+                              <div class="div1"></div>
+                              <div class="div2"></div>
+                              <div class="div3"></div>
+                        </div>
+
+                        <div class="logoSection">
+                              <a href="http://127.0.0.1:5500/index.html"> <img src="./360_files/logo.png"></a>
+
+                              <span>Врачи <br>
+                                    надежды</span>
+                        </div>
+                        <ul>
+                              <div class="menuLinks">
+                                    <li><a class="menu__links-item" href="http://127.0.0.1:5500/nko.html#" onclick="$(&#39;html, body&#39;).animate({scrollTop: $(`.underNavBlock`).offset().top-100}, 500);">О
+                                                нас</a></li>
+                                    <li><a class="menu__links-item" href="http://127.0.0.1:5500/nko.html#" onclick="$(&#39;html, body&#39;).animate({scrollTop: $(`.how-we-work`).offset().top-100}, 500);">Как
+                                                мы работаем</a></li>
+                                    <li><a class="menu__links-item" href="http://127.0.0.1:5500/nko.html#" onclick="$(&#39;html, body&#39;).animate({scrollTop: $(`.results`).offset().top-100}, 500);">Результаты</a>
+                                    </li>
+                                    <li><a class="menu__links-item" href="http://127.0.0.1:5500/nko.html#" onclick="$(&#39;html, body&#39;).animate({scrollTop: $(`.all-answers`).offset().top-100}, 500);">FAQ</a>
+                                    </li>
+                                    <li><a class="menu__links-item" href="http://127.0.0.1:5500/nko.html#" onclick="$(&#39;html, body&#39;).animate({scrollTop: $(`.how-become-title`).offset().top-100}, 500);">Благотворители</a>
+                                    </li>
+                                    <li><a class="menu__links-item" href="http://127.0.0.1:5500/vrachi.html">Врачи</a>
+                                    </li>
+                              </div>
+                              <div>
+                                    <li class="menuButtons">
+                                          <a href="http://127.0.0.1:5500/nko.html#"><span>НКО</span></a>
+                                    </li>
+                              </div>
+                              <div>
+                                    <li class="menuButtons">
+                                          <a href="http://127.0.0.1:5500/vrachi.html"><span>Врачи</span></a>
+                                    </li>
+                              </div>
+                        </ul>
+
+                  </nav>
+            </header>
+      </div>
+      <main>
+            <div class="offer-help">
+                  <section>
+                        <h1>Предлагаем экспертную помощь для НКО</h1>
+                        <span class="span-marg">
+                              Закроем все медицинские вопросы по вашим подопечным и сотрудникам
+                        </span>
+                        <span class="span-sec-marg">
+                              Изучаем каждый клинический случай, составляем маршрутную карту и смету лечения, находим
+                              клинику.
+                        </span>
+                        <span class="span-sec-marg">
+                              Грамотно применяем <span class="free">БЕСПЛАТНЫЕ</span> возможности диагностики и лечения
+                              с
+                              использованием <span class="free">ОМС и
+                                    КВОТ.</span>
+                        </span>
+                        <button onclick="$(&#39;html, body&#39;).animate({scrollTop: $(`.how-we-work`).offset().top-100}, 500);">
+                              <span>Узнать подробнее</span>
+                              <div class="tri"></div>
+                        </button>
+                  </section>
+                  <img src="./360_files/НКО.png">
+            </div>
+            <div class="who-we-are">
+                  <h1>Кто мы такие</h1>
+                  <div class="container">
+                        <section>
+                              <span><span class="doctors">Врачи Надежды</span> – это благотворительное сообщество
+                                    врачей волонтёров со всей России</span>
+                              <span>Это Врачи с Живыми сердцами, которые готовы помогать людям находить кратчайший
+                                    путь к Здоровью.</span>
+                              <span>Это большая и сплочённая команда проверенных специалистов с
+                                    высочайшей
+                                    ответственностью за каждое решение.</span>
+                              <button>
+                                    <span>Присоединяйтесь к нам</span>
+                                    <div class="tri"></div>
+                              </button>
+
+                        </section>
+                        <div class="right">
+                              <span>В нашей команде уже 87 врачей</span>
+                              <div class="row hide">
+                                    <div class="card">
+                                          <div class="img asiyat"></div>
+                                          <span class="name">
+                                                Далгатова Асият
+                                          </span>
+                                          <span class="position">Врач инфекционист</span>
+                                    </div>
+                                    <div class="card">
+                                          <div class="img hiderlezov"></div>
+
+                                          <span class="name">Хидерлезов Магомед</span>
+                                          <span class="position">Врач эндоскопист</span>
+                                    </div>
+                              </div>
+                              <div class="row hide">
+                                    <div class="card">
+                                          <div class="img emirbekov"> </div>
+                                          <span class="name">Эмирбеков Эмирбек</span>
+                                          <span class="position">Детский челюстно-лицевой хирург</span>
+                                    </div>
+                                    <div class="card">
+                                          <div class="img abdullaeva"></div>
+                                          <span class="name">Абдулаева Хамис</span>
+                                          <span class="position">Фельдшер</span>
+                                    </div>
+                              </div>
+                              <div class="row hide">
+                                    <div class="card">
+                                          <div class="img  dzarulla"></div>
+                                          <span class="name">Джаруллаев Джарулла</span>
+                                          <span class="position">Врач офтальмолог</span>
+                                    </div>
+                                    <div class="card">
+                                          <div class="img gorin"></div>
+                                          <span class="name">Горин Дмитрий</span>
+                                          <span class="position">Врач оториноларинголог</span>
+                                    </div>
+                              </div>
+                              <div class="tagrow row-marg">
+                                    <span class="chirurg">Хирурги</span>
+                                    <span>Логопеды</span>
+                                    <span>Психологи</span>
+                              </div>
+                              <div class="tagrow sec-rowmarg">
+                                    <span>Невропатологи</span>
+                                    <span>Отоларингологи</span>
+                              </div>
+                              <div class="tagrow third-rowmarg"> <span>Нейрохирурги</span>
+                                    <span>Травматологи</span>
+                                    <span>Урологи</span>
+                              </div>
+                              <div class="tagrow fourth-rowmarg "><span>Рентгенологи</span> </div>
+                        </div>
+                  </div>
+            </div>
+            <div class="how-we-work">
+                  <h1>Как мы работаем ?</h1>
+                  <span class="undertitle">Предоставляем благотворительную экспертную помощь для Некоммерческих
+                        Организаций:
+                        организованно выполняем все работы по закрытию всех медицинских вопросов
+                        для подопечных и сотрудников НКО.</span>
+                  <div class="howhelp">
+                        <div class="video">
+                              <iframe src="./360_files/Dw-RIuz3_X8.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="516px" height="328px"></iframe>
+
+
+                              <span class="undervideo">
+                                    Грамотно применяем <span class="free">БЕСПЛАТНЫЕ</span> возможности диагностики и
+                                    лечения
+                                    с
+                                    использованием <span class="free">ОМС и
+                                          КВОТ.</span>
+                              </span>
+                        </div>
+                        <div class="right-list">
+                              <h4>Мы оказываем онлайн помощь: (иногда оффлайн)</h4>
+                              <ul id="helplist" class="description">
+                                    <li>
+                                          <div class="undernumslide">
+                                                <div class="redstar">
+                                                      <div class="redpoint"></div>
+                                                </div>
+                                                <div class="descr">
+                                                      <span class="helptitle">
+                                                            Глубоко изучаем каждый клинический случай
+                                                      </span>
+                                                      <span class="helpdescr">"Наша цель найти главную причину
+                                                            заболевания."</span>
+                                                </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="undernumslide">
+                                                <div class="redstar">
+                                                      <div class="redpoint"></div>
+                                                </div>
+                                                <div class="descr">
+                                                      <span class="helptitle">
+                                                            Составляем план обследования </span>
+                                                      <span class="helpdescr">С применением самых точных методов
+                                                            диагностики.</span>
+                                                </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="undernumslide">
+                                                <div class="redstar">
+                                                      <div class="redpoint"></div>
+                                                </div>
+                                                <div class="descr">
+                                                      <span class="helptitle">
+                                                            Созываем консилиум для постановки диагноза
+                                                      </span>
+                                                      <span class="helpdescr">и оценки состояния пациента.</span>
+                                                </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="undernumslide">
+                                                <div class="redstar">
+                                                      <div class="redpoint"></div>
+                                                </div>
+                                                <div class="descr">
+                                                      <span class="helptitle">
+                                                            Выдаём подробную карту лечения и смету
+                                                      </span>
+                                                      <span class="helpdescr">Установленной причины заболевания.</span>
+                                                </div>
+                                          </div>
+                                    </li>
+
+                                    <li>
+                                          <div class="undernumslide">
+                                                <div class="redstar">
+                                                      <div class="redpoint"></div>
+                                                </div>
+                                                <div class="descr">
+                                                      <span class="helptitle">
+                                                            Находим медицинский центр
+                                                      </span>
+                                                      <span class="helpdescr">С опытом излечения этой болезни – в России
+                                                            или за границей.</span>
+                                                </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="undernumslide">
+                                                <div class="redstar">
+                                                      <div class="redpoint"></div>
+                                                </div>
+                                                <div class="descr">
+                                                      <span class="helptitle">
+                                                            Отправляем пациента лечиться </span>
+                                                      <span class="helpdescr">В клинику, в которой его уже ждут и где
+                                                            ему действительно помогут.</span>
+                                                </div>
+                                          </div>
+                                    </li>
+                              </ul>
+                              <button>
+                                    <span>Присоединяйтесь к нам</span>
+                                    <div class="tri"></div>
+                              </button>
+                        </div>
+                  </div>
+            </div>
+            <div class="results">
+                  <h1>Чего добились за 3 года</h1>
+                  <span class="undertitle">Но мы не только оказываем экспертную помощь – а вселяем даже в самых тяжёлых
+                        пациентов – Надежду. И это даёт им силы на борьбу с недугом! </span>
+                  <span class="since">С 2017 года <span>«Врачи Надежды»</span></span>
+                  <div class="years">
+                        <div>
+                              <img src="./360_files/3years.png">
+                        </div>
+                        <div>
+                              <img src="./360_files/2750.png">
+                        </div>
+                        <div>
+                              <img src="./360_files/7funds.png">
+                        </div>
+                        <div>
+                              <img src="./360_files/89doctors.png">
+                        </div>
+                  </div>
+                  <div class="numbs">
+                        <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+                              <div class="swiper-wrapper" style="transition: all 0ms ease 0s;"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3"><img src="./360_files/89doctors.png"></div>
+                                    <div class="swiper-slide" data-swiper-slide-index="0"> <img src="./360_files/3years.png"></div>
+                                    <div class="swiper-slide" data-swiper-slide-index="1"> <img src="./360_files/2750.png"></div>
+                                    <div class="swiper-slide" data-swiper-slide-index="2"><img src="./360_files/7funds.png"></div>
+                                    <div class="swiper-slide" data-swiper-slide-index="3"><img src="./360_files/89doctors.png"></div>
+                              <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0"> <img src="./360_files/3years.png"></div></div>
+                              <div class="swiper-pagination swiper-pagination-bullets"></div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                  </div>
+                  <ul class="after-numbersmob">
+                        <li>
+                              <span>3 Года помогаем</span>
+                        </li>
+                        <li>
+                              <span>2750 Человек получили медицинскую помощь</span>
+                        </li>
+                        <li>
+                              <span>89 Врачей с <span class="life-hearts">живыми сердцами</span> по всей стране</span>
+                        </li>
+                        <li>
+                              <span>В Росии 7 фондов работают с нами</span>
+                        </li>
+                  </ul>
+            </div>
+            <div class="offer-sec">
+                  <h1>Что предлагаем для Вас</h1>
+                  <span class="undertitle">Мы берём на себя все проблемы НКО по медицинским вопросам пациентов:
+                        подопечных и сотрудников.</span>
+                  <span class="benefits">
+                        От сотрудничества с «Врачами Надежды» НКО получают:
+                  </span>
+                  <div class="stars-row">
+                        <div class="redstar">
+                              <div class="redpoint"></div>
+                        </div>
+                        <div class="redstar">
+                              <div class="redpoint"></div>
+                        </div>
+                        <div class="redstar">
+                              <div class="redpoint"></div>
+                        </div>
+                  </div>
+                  <div class="offer-row">
+                        <div class="item-offer">
+                              <span>Тщательное изучение медицинской заявки и состояния пациента: внимательно
+                                    рассматриваем каждый клинический случай.</span>
+                        </div>
+                        <div class="stars-row">
+                              <div class="redstar">
+                                    <div class="redpoint"></div>
+                              </div>
+                              <div class="redstar">
+                                    <div class="redpoint"></div>
+                              </div>
+                              <div class="redstar">
+                                    <div class="redpoint"></div>
+                              </div>
+                        </div>
+                        <div class="item-offer">
+                              <span>Создание Маршрутной Карты пациента с детальным хронологическим маршрутом
+                                    прохождения всего пути от «Боли» к «Здоровью».</span>
+                        </div>
+                  </div>
+                  <div class="stars-row">
+                        <div class="redstar">
+                              <div class="redpoint"></div>
+                        </div>
+                        <div class="redstar">
+                              <div class="redpoint"></div>
+                        </div>
+                        <div class="redstar">
+                              <div class="redpoint"></div>
+                        </div>
+                  </div>
+                  <div class="offer-row">
+                        <div class="item-offer">
+                              <span>Анализ полученных данных: мы проводим онлайн-консилиумы и определяем наилучший
+                                    курс и клиники для обследования/лечения.</span>
+                        </div>
+                        <div class="stars-row">
+                              <div class="redstar">
+                                    <div class="redpoint"></div>
+                              </div>
+                              <div class="redstar">
+                                    <div class="redpoint"></div>
+                              </div>
+                              <div class="redstar">
+                                    <div class="redpoint"></div>
+                              </div>
+                        </div>
+                        <div class="item-offer">
+                              <span>Расчёт полной сметы обследования и лечения с подробным описанием всех статей
+                                    расходов для их пациентов или сотрудников.</span>
+                        </div>
+                  </div>
+                  <div class="stars-row">
+                        <div class="redstar">
+                              <div class="redpoint"></div>
+                        </div>
+                        <div class="redstar">
+                              <div class="redpoint"></div>
+                        </div>
+                        <div class="redstar">
+                              <div class="redpoint"></div>
+                        </div>
+                  </div>
+                  <div class="offer-row">
+                        <div class="item-offer">
+                              <span>Формулирование качественного и полноценного медицинского заключения по каждому
+                                    клиническому случаю.</span>
+                        </div>
+                        <div class="stars-row">
+                              <div class="redstar">
+                                    <div class="redpoint"></div>
+                              </div>
+                              <div class="redstar">
+                                    <div class="redpoint"></div>
+                              </div>
+                              <div class="redstar">
+                                    <div class="redpoint"></div>
+                              </div>
+                        </div>
+                        <div class="item-offer">
+                              <span>Уверенность в получении искренней заботы
+                                    о здоровье ваших пациентов или сотрудников.</span>
+                        </div>
+                  </div>
+                  <div class="stars-row">
+                        <div class="redstar">
+                              <div class="redpoint"></div>
+                        </div>
+                        <div class="redstar">
+                              <div class="redpoint"></div>
+                        </div>
+                        <div class="redstar">
+                              <div class="redpoint"></div>
+                        </div>
+                  </div>
+                  <div class="offer-row">
+                        <div class="item-offer">
+                              <span>Поиск БЕСПЛАТНЫХ возможностей с использованием ОМС и Квот, а также проверенных
+                                    платных клиник для обследования и лечения.</span>
+                        </div>
+                        <div class="stars-row">
+                              <div class="redstar">
+                                    <div class="redpoint"></div>
+                              </div>
+                              <div class="redstar">
+                                    <div class="redpoint"></div>
+                              </div>
+                              <div class="redstar">
+                                    <div class="redpoint"></div>
+                              </div>
+                        </div>
+                        <div class="item-offer">
+                              <span>Удобный рабочий кабинет для куратора от НКО на онлайн платформе Diagnost (с
+                                    предварительным обучением)</span>
+                        </div>
+                  </div>
+                  <button>
+                        Присоединяйтесь к нам
+                        <div class="tri"></div>
+                  </button>
+            </div>
+            <div class="helpToWork">
+                  <div class="rowToWork">
+                        <div class="descrToWork">
+                              <span>Волонтёрская организация Врачи Надежды бесплатно помогает подопечным
+                                    Благотворительных
+                                    Фондов. Мы содействуем пациентам в диагностике изначальной причины заболевания и
+                                    поиске
+                                    адекватного лечебного учреждения.</span>
+                              <p></p> <span>Ваша помощь пойдёт на текущие затраты по подопечным, а также на рост
+                                    проекта:
+                                    мы постоянно увеличиваем штат врачей-волонтёров, развиваем мобильную платформу
+                                    HopeDoc
+                                    для оперативного обмена информацией и проведения онлайн-консилиумов.</span> <span class="helpTohelp">Помогите нам помогать! </span>
+                              <span class="tellAboutUS"> Расскажите о нас своим друзьям</span>
+                              <div class="socialIconsBlock">
+
+                                    <div class="socialIcons">
+                                          <div class="whatsapp"> <img src="./360_files/whatsapp.png" width="20px" heigth="20px">
+                                          </div>
+                                          <div class="telegram"> <img src="./360_files/tlgr.png" width="35px" heigth="35px">
+                                          </div>
+                                          <div class="facebook"> <img src="./360_files/f.png" width="15px" heigth="20px"></div>
+                                          <div> <img src="./360_files/instagramIc.png" width="36px" heigth="36px"></div>
+                                    </div>
+
+                              </div>
+
+
+                        </div>
+                        <div class="rightSide">
+                              <div id="helpboard" class="helpboard">
+                                    <span class="hlpbrdTitle">Сделать пожертвование</span>
+                                    <div class="board">
+                                          <div class="boardRow">
+                                                <div class="numberCol">
+                                                      <span class="numbCol">1</span>
+                                                      <span class="amountCol">СУММА</span>
+                                                </div>
+                                                <div class="boardGap"></div>
+                                                <div class="numberCol">
+                                                      <span class="numbCol">2</span>
+                                                      <span class="amountCol">КОНТАКТЫ</span>
+                                                </div>
+                                                <div class="boardGap"></div>
+                                                <div class="numberCol">
+                                                      <span class="numbCol">3</span>
+                                                      <span class="amountCol">ОПЛАТА</span>
+                                                </div>
+                                          </div>
+                                          <div class="periodblock">
+                                                <button id="monthly">ЕЖЕМЕСЯНОЕ</button>
+                                                <button id="onetime">РАЗОВОЕ</button>
+                                          </div>
+                                          <div class="sumblock">
+                                                <div class="sumRow">
+                                                      <div class="item">
+
+                                                            <div class="amountAndLogo"> <span> 100</span>
+                                                                  <img src="./360_files/RubleIcon.png" width="14px" heigth="21px">
+
+                                                            </div>
+                                                      </div>
+                                                      <div class="item">
+
+                                                            <div class="amountAndLogo"> <span> 200</span>
+                                                                  <img src="./360_files/RubleIcon.png" width="14px" heigth="21px">
+
+                                                            </div>
+                                                      </div>
+                                                      <div class="item">
+
+                                                            <div class="amountAndLogo"> <span> 500</span>
+                                                                  <img src="./360_files/RubleIcon.png" width="14px" heigth="21px">
+
+                                                            </div>
+                                                      </div>
+                                                      <div class="item">
+
+                                                            <div class="amountAndLogo"> <span> 1500</span>
+                                                                  <img src="./360_files/RubleIcon.png" width="14px" heigth="21px">
+
+                                                            </div>
+                                                      </div>
+                                                      <div class="item">
+
+                                                            <div class="amountAndLogo"> <span> 2000</span>
+                                                                  <img src="./360_files/RubleIcon.png" width="14px" heigth="21px">
+
+                                                            </div>
+                                                      </div>
+                                                      <div class="item">
+
+                                                            <div class="amountAndLogo"> <span> 10000</span>
+                                                                  <img src="./360_files/RubleIcon.png" width="14px" heigth="21px">
+
+                                                            </div>
+                                                      </div>
+                                                      <div class="item">
+
+                                                            <div class="amountAndLogo"> <span> 150000</span>
+                                                                  <img src="./360_files/RubleIcon.png" width="14px" heigth="21px">
+
+                                                            </div>
+                                                      </div>
+
+                                                      <div class="item">
+                                                            <input type="text" id="anothersumm" placeholder="Другая сумма" name="anothersumm">
+
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="continuepay"> <button>ПРОДОЛЖИТЬ</button></div>
+                                    </div>
+
+                              </div>
+                              <span class="underHelpBoard">Информационаая поддержка тоже очень важна!</span>
+                        </div>
+                  </div>
+            </div>
+            <div class="partners-title">
+                  <h1>Какие благотворитльные фонды с сотрудничают с проектом Врачи Надежды? </h1>
+                  <h1>С нами сотрудничают </h1>
+            </div>
+            <div class="partnersWrappeGr">
+                  <div class="partnersItemGr logoNadejda">
+                        <span> Надежда махачкала </span>
+                  </div>
+                  <div class="partnersItemGr logoHome">
+                        <span> Фонд Дом доброты</span>
+                  </div>
+                  <div class="partnersItemGr logoSirat">
+                        <span> Сират махачкала </span>
+                  </div>
+                  <div class="partnersItemGr logoLekki">
+                        <span> Лекки ЮЖДАГ </span>
+                  </div>
+                  <div class="partnersItemGr logoZakyat">
+                        <span> Закят - Москва</span>
+                  </div>
+                  <div class="partnersItemGr logoIhsan">
+                        <span> Фонд Ихсан </span>
+                  </div>
+                  <div class="partnersItemGr logoKdl">
+                        <span> КДЛ - Ингушетия </span>
+                  </div>
+                  <div class="partnersItemGr logoLife">
+                        <span> Жизнь как чудо Москва </span>
+                  </div>
+            </div>
+            <h1 class="nko-title"> Руководители НКО о сотрудничестве с нами</h1>
+            <div class="nko">
+                  <div class="nko-worker">
+                        <iframe src="./360_files/Dw-RIuz3_X8(1).html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="360px" height="242px"></iframe>
+                        <span class="nko-worker-name">Гашимов Заур</span>
+                        <span class="nko-worker-description">Я являюсь волонтером “Врачей Надежды” уже два года, и рад
+                              быть полезным обществу и иметь возможность помогать</span>
+                  </div>
+                  <div class="nko-worker">
+                        <iframe src="./360_files/Dw-RIuz3_X8(2).html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="360px" height="242px"></iframe>
+                        <span class="nko-worker-name">Кибирова Диана</span>
+                        <span class="nko-worker-description">Я являюсь волонтером “Врачей Надежды” уже два года, и рад
+                              быть полезным обществу и иметь возможность помогать</span>
+                  </div>
+                  <div class="nko-worker">
+                        <iframe src="./360_files/Dw-RIuz3_X8(3).html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="360px" height="242px"></iframe>
+                        <span class="nko-worker-name">Османов Тамерлан</span>
+                        <span class="nko-worker-description">Я являюсь волонтером “Врачей Надежды” уже два года, и рад
+                              быть полезным обществу и иметь возможность помогать</span>
+                  </div>
+            </div>
+            <div class="nko-slides">
+                  <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+                        <div id="nko-slide" class="swiper-wrapper" style="transition: all 0ms ease 0s;"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2">
+                                    <div class="nko-worker">
+                                          <iframe src="./360_files/Dw-RIuz3_X8(4).html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="360px" height="242px"></iframe>
+                                          <span class="nko-worker-name">Османов Тамерлан</span>
+                                          <span class="nko-worker-description">Я являюсь волонтером “Врачей Надежды” уже
+                                                два года, и рад быть полезным обществу и иметь возможность
+                                                помогать</span>
+                                    </div>
+                              </div>
+                              <div class="swiper-slide" data-swiper-slide-index="0">
+                                    <div class="nko-worker">
+                                          <iframe src="./360_files/Dw-RIuz3_X8(5).html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="360px" height="242px"></iframe>
+                                          <span class="nko-worker-name">Гашимов Заур</span>
+                                          <span class="nko-worker-description">Я являюсь волонтером “Врачей Надежды” уже
+                                                два года, и рад быть полезным обществу и иметь возможность
+                                                помогать</span>
+                                    </div>
+                              </div>
+                              <div class="swiper-slide" data-swiper-slide-index="1">
+                                    <div class="nko-worker">
+                                          <iframe src="./360_files/Dw-RIuz3_X8(6).html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="360px" height="242px"></iframe>
+                                          <span class="nko-worker-name">Кибирова Диана</span>
+                                          <span class="nko-worker-description">Я являюсь волонтером “Врачей Надежды” уже
+                                                два года, и рад быть полезным обществу и иметь возможность
+                                                помогать</span>
+                                    </div>
+                              </div>
+                              <div class="swiper-slide" data-swiper-slide-index="2">
+                                    <div class="nko-worker">
+                                          <iframe src="./360_files/Dw-RIuz3_X8(7).html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="360px" height="242px"></iframe>
+                                          <span class="nko-worker-name">Османов Тамерлан</span>
+                                          <span class="nko-worker-description">Я являюсь волонтером “Врачей Надежды” уже
+                                                два года, и рад быть полезным обществу и иметь возможность
+                                                помогать</span>
+                                    </div>
+                              </div>
+                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0">
+                                    <div class="nko-worker">
+                                          <iframe src="./360_files/Dw-RIuz3_X8(8).html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="360px" height="242px"></iframe>
+                                          <span class="nko-worker-name">Гашимов Заур</span>
+                                          <span class="nko-worker-description">Я являюсь волонтером “Врачей Надежды” уже
+                                                два года, и рад быть полезным обществу и иметь возможность
+                                                помогать</span>
+                                    </div>
+                              </div></div>
+                        <div class="swiper-pagination swiper-pagination-bullets"></div>
+                  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+            </div>
+            <div class="become-sec">
+                  <h1 class="how-become-title">
+                        Как присоединиться к нам ?
+                  </h1>
+                  <span class="under-become">
+                        Заполните эту форму обратной связи, и мы с Вами свяжемся
+                  </span>
+                  <div class="become-container">
+                        <img src="./360_files/7funds.png" alt="7 фондов">
+                        <div class="form-container">
+                              <div class="form-row">
+                                    <input type="text" placeholder="ФИО*">
+                                    <input type="text" placeholder="Наименование НКО*">
+                              </div>
+                              <div class="form-row">
+                                    <input type="text" placeholder="Телефон для связи*">
+                                    <input type="text" placeholder="Электронная почта">
+                              </div>
+                              <button>
+                                    <span>Оставить заявку</span>
+                                    <div class="tri"></div>
+                              </button>
+                              <div class="agreement">
+                                    <input type="checkbox">
+                                    <span class="agreement-text">
+                                          Я согласен с условиями <span>обработки персональных данных</span>
+                                    </span>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <div class="all-answers">
+                  <span class="title">Все ответы о «Врачах Надежды»</span>
+                  <span class="title">Вопросы - ответы о «Врачах Надежды»</span>
+                  <div id="answers" class="answers"><div id="answers-list" class="answers-list"><div class="qa"><span class="question">Как организовано взаимодействие НКО и Врачей Надежды?</span><div class="plus"><img src="./360_files/plusqa.png"></div></div></div><div id="answers-list" class="answers-list"><div class="qa"><span class="question">Почему НКО доверяют Врачам Надежды?</span><div class="plus"><img src="./360_files/plusqa.png"></div></div></div></div>
+            </div>
+            <div class="anyQstnsBlock">
+                  <span class="anyqstnTitle"> Остались вопросы? </span>
+                  <span class="anyqstnunder">Оставьте ваш номер телефона и мы вам перезвоним, чтобы дать подробную
+                        информацию </span>
+                  <div class="anyqstnformblock">
+                        <!-- <form action="/i_doctor" class="anyqstnform" method="post">
+              {{ csrf_field() }}
+              <input type="text" name="i_fio" placeholder="Введите имя">
+              <input type="text" name="i_phone" placeholder="+7___ ___ __ __">
+              <input type="text" name="i_email" placeholder="Ваш Email">
+              <input type="submit" value="Позвоните мне">
+        </form> -->
+                        <form action="http://127.0.0.1:5500/i_doctor" class="form-inline" method="post">
+                              <div class="formfields">
+                                    <input type="text" id="name" placeholder="Имя" name="name">
+                                    <input type="text" id="phone" placeholder="Телефон" name="phone">
+                                    <input type="email" id="eml" placeholder="Email" name="eml">
+                                    <button type="Submit" class="wantHelpButton">
+                                          <span class="wantHelpButtonText">Получить консультацию</span>
+                                          <span class="wantHelpButtonText2">Отправить</span>
+                                          <div class="triangle"></div>
+                                    </button>
+                              </div>
+                              <div class="checkAgreement">
+                                    <input type="checkbox" id="agree">
+                                    <span>Я согласен с условиями обработки </span> <span>персональных данных</span>
+                              </div>
+
+                        </form>
+                  </div>
+            </div>
+
+
+      </main>
+      <script type="text/babel" src="./360_files/qa.js.Без названия"></script>
+      <script src="./360_files/pay.js.Без названия"></script>
+      <script type="text/babel" src="./360_files/nko.js.Без названия"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<footer>
+      <span class="tellAboutUS"> Расскажите о нас своим друзьям</span>
+      <div class="socialIcons">
+            <div class="whatsapp"> <img src="./360_files/whatsapp.png" width="20px" heigth="20px"></div>
+            <div class="telegram"> <img src="./360_files/tlgr.png" width="35px" heigth="350px"></div>
+            <div class="facebook"> <img src="./360_files/f.png" width="15px" heigth="20px"></div>
+            <div> <img src="./360_files/instagramIc.png" width="36px" heigth="36px"></div>
+      </div>
+      <div class="botNav">
+            <div class="logoSection">
+                  <img src="./360_files/logo.png">
+                  <span>Врачи <br>
+                        надежды</span>
+            </div>
+            <div class="rightbotNav">
+                  <div class="upbtns">
+                        <li class="menuButtons">
+                              <a href="http://127.0.0.1:5500/nko.html#"><span>НКО</span></a>
+                        </li>
+                        <li class="menuButtons">
+                              <a href="http://127.0.0.1:5500/vrachi.html"><span>Врачи</span></a>
+                        </li>
+                  </div>
+                  <ul>
+                        <div class="menuLinks">
+                              <li><a class="menu__links-item" href="http://127.0.0.1:5500/nko.html#" onclick="$(&#39;html, body&#39;).animate({scrollTop: $(`.underNavBlock`).offset().top-100}, 500);">О
+                                          нас</a></li>
+                              <li><a class="menu__links-item" href="http://127.0.0.1:5500/nko.html#" onclick="$(&#39;html, body&#39;).animate({scrollTop: $(`.how-we-work`).offset().top-100}, 500);">Как
+                                          мы работаем</a></li>
+                              <li><a class="menu__links-item" href="http://127.0.0.1:5500/nko.html#" onclick="$(&#39;html, body&#39;).animate({scrollTop: $(`.results`).offset().top-100}, 500);">Результаты</a>
+                              </li>
+                              <li><a class="menu__links-item" href="http://127.0.0.1:5500/nko.html#" onclick="$(&#39;html, body&#39;).animate({scrollTop: $(`.all-answers`).offset().top-100}, 500);">FAQ</a>
+                              </li>
+                              <li><a class="menu__links-item" href="http://127.0.0.1:5500/nko.html#" onclick="$(&#39;html, body&#39;).animate({scrollTop: $(`.nko-title`).offset().top-100}, 500);">НКО</a>
+                              </li>
+                              <li><a class="menu__links-item" href="http://127.0.0.1:5500/vrachi.html">Врачи</a>
+                              </li>
+                              <li><a class="menu__links-item" href="http://127.0.0.1:5500/nko.html#" onclick="$(&#39;html, body&#39;).animate({scrollTop: $(`.how-become-title`).offset().top-100}, 500);">Благотворители</a>
+                              </li>
+
+                        </div>
+
+
+
+                  </ul>
+
+            </div>
+      </div>
+
+</footer>
+
+</body></html>
