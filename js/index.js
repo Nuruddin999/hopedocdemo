@@ -12,7 +12,7 @@ var mySwiper = new Swiper('.swiper-container', {
 })
 var btn = document.querySelector(".hamburger")
 btn.addEventListener('click', () => {
-      document.body.addEventListener('touchstart', function (e) { e.preventDefault(); });
+
       $('html, body').css('overflowY', 'hidden');
       document.querySelector("body > div.navdrawr").style.transform = "translateX(0)";
 })
@@ -36,19 +36,16 @@ $("#whoweBtn").click(function (event) {
       scrollTo(".underNavBlock")
 })
 $("#howhelpBtn").click(function (event) {
-      event.preventDefault();
       scrollTo("#howhelpsec")
 })
 $("#contactsBtn").click(function (event) {
-      event.preventDefault()
       scrollTo(".anyQstnsBlock")
 })
 $("#resultsBtn").click(function (event) {
-      event.preventDefault();
       scrollTo(".numbs")
 })
 $("#charityBtn").click(function (event) {
-      event.preventDefault()
+
       scrollTo(".whyHelpBlock")
 })
 
