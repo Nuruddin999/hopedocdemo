@@ -12,6 +12,8 @@ main {
       padding-bottom: 48px;
 }
 .invitation {
+      display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -ms-flexbox; /* TWEENER - IE 10 */
       display: -webkit-flex;
       display: flex;
       margin: 0 120px 0;
