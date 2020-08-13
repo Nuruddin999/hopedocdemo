@@ -465,11 +465,46 @@ main {
     /* or 24px */
     letter-spacing: 0.01em;
     padding-bottom: 32px;
-    color: #f9b53b;
+    list-style: none;
 }
-
+.howWeHelp .howWeHelpList li .undernumslide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.howWeHelp .howWeHelpList li .undernumslide .redstar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 16px;
+    flex: 0 0 16px;
+    height: 16px;
+    background-image: url(./img/redstar.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: cover;
+    margin: 4px 0 0 16px;
+}
+.howWeHelp .howWeHelpList li .undernumslide .redstar .redpoint {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin: auto;
+}
 .howWeHelp .howWeHelpList li span {
     /* Black */
+    color: #0b1635;
+}
+.howWeHelp .howWeHelpList li .descr {
+    margin-left: 14px;
+}
+.howWeHelp .howWeHelpList li .descr span {
+    font: normal 700 20px/138% TT Norms;
     color: #0b1635;
 }
 
@@ -2260,7 +2295,8 @@ textarea {
         margin: 62px 0 0 0;
     }
     .howWeHelpBlock {
-        margin: 0 163px;
+        width: 1100px;
+        margin: 0 auto 0;
     }
     .howWeHelp {
         flex-wrap: nowrap;
@@ -2279,7 +2315,7 @@ textarea {
         margin-left: 12px;
     }
     .numbs .howWeHelpTitle {
-        margin-top: 72px;
+        margin-top: 90px;
     }
     .yearsBlock {
         display: table;
@@ -2568,13 +2604,13 @@ textarea {
         display: block;
         text-align: center;
         color: #004094;
-        padding-top: 31px;
+        padding-top: 40px;
     }
     .underNavBlock .mobileDescr {
         display: block;
         text-align: center;
         margin-top: 17px;
-        margin-bottom: 12px;
+        margin-bottom: 20px;
     }
     .underNavBlock .row {
         -webkit-box-orient: vertical;
@@ -2586,7 +2622,7 @@ textarea {
         -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
         order: 1;
-        margin-top: 18px;
+        margin-top: 24px;
         margin-left: 20px;
         margin-right: 16px;
         font: 600 16px TT Norms;
@@ -2596,11 +2632,11 @@ textarea {
     }
     .underNavBlock .row .underTitle p {
         color: #242f65;
-        margin: 8px 0 0;
+        margin: 18px 0 0;
         font: normal 16px TT Norms;
     }
     .underNavBlock .row .underTitle .wantHelpButton {
-        margin-top: 30px;
+        margin-top: 20px;
         margin-bottom: 0;
         width: 186px;
         height: 48px;
@@ -2627,18 +2663,12 @@ textarea {
         height: 196px;
         margin: 0 10px 0;
     }
-    .howWeHelp {
-        margin: 0;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    }
+
     .workInNum .howWeHelpTitle {
         font-size: 28px;
+    }
+    .howWeHelpBlock {
+        width: 100%;
     }
     .howHelp .howWeHelpTitle {
         font-size: 34px;
@@ -2658,7 +2688,7 @@ textarea {
     }
     .howWeHelp {
         width: 100%;
-        margin-top: 28px;
+        margin: 32px 0 0 0;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2670,9 +2700,10 @@ textarea {
     .howWeHelp .howWeHelpList {
         width: 100%;
     }
-    .howWeHelp .howWeHelpList ol {
-        padding-left: 25px;
-        margin-top: 58px;
+    .howWeHelp .howWeHelpList ul {
+        margin-left: 22px;
+        margin-top: 48px;
+        padding: 0;
     }
     .howWeHelp .howWeHelpList li:last-child {
         padding-bottom: 0;
@@ -2682,16 +2713,19 @@ textarea {
         line-height: 128%;
         /* or 24px */
         letter-spacing: 0.01em;
-        padding-bottom: 25px;
+        padding-bottom: 14px;
     }
-    .howWeHelp .howWeHelpList li span {
-        /* Black */
-        color: #0b1635;
-        display: block;
-        margin-left: 13px;
+    .howWeHelp .howWeHelpList li .undernumslide .redstar {
+        margin-left: 0;
+    }
+    .howWeHelp .howWeHelpList li .descr span {
+        font-size: 16px;
+    }
+    .howWeHelp .howWeHelpList li .descr {
+        margin-left: 0px;
     }
     .numbs {
-        margin-top: 33px;
+        margin-top: 23px;
     }
     .numbs img {
         width: 100%;
@@ -2704,7 +2738,7 @@ textarea {
     }
     .undernumslide span {
         display: block;
-        width: 75%;
+        width: 90%;
         margin-left: 16px;
         font: 500 20px TT Norms;
         color: #242f65;
