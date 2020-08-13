@@ -402,7 +402,7 @@ main {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 620px;
           flex: 0 0 620px;
-  min-height: 332px;
+  height: 332px;
   background: #f5f8fa;
   border-radius: 12px;
 }
