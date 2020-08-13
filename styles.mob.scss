@@ -9,8 +9,11 @@
       }
       .invitation {
             -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
             flex-wrap: wrap;
             margin: 0 18px 0;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
             justify-content: center;
             .text {
                   order: 1;
