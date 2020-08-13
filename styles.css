@@ -742,6 +742,10 @@ main {
   margin-left: 64px;
 }
 
+.results .years div img {
+  height: 472px;
+}
+
 .results .years div:first-child {
   margin-left: unset;
 }

@@ -243,6 +243,10 @@ main {
                   margin: 38px 120px 0;
                   div {
                         margin-left: 64px;
+                        img {
+                              width: 250px;
+                              height: 368px;
+                        }
                   }
                   div:first-child {
                         margin-left: unset;
@@ -739,7 +743,7 @@ main {
                   h1 {
                         @include title(0);
                         font: normal bold 34px/124% TT Norms-Bold;
-                        width: 50%;
+
                         margin: 0 auto 20px;
                   }
                   .undertitle {

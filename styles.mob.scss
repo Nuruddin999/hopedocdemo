@@ -376,7 +376,7 @@
             }
             .nko-title:nth-child(2) {
                   display: block;
-                  font-size: 34px;
+                  font-size: 30px;
                   line-height: 124%;
                   margin: 72px 7px 0;
             }
@@ -419,10 +419,11 @@
                   display: block;
                   @include font(TT Norms, normal, normal, 15px, 148%, 0.01em);
                   color: #202642;
-
+                  width: 90%;
                   text-align: center;
                   .diplom {
                         color: #304b93;
+                        font-size: 10px;
                   }
             }
             .container {

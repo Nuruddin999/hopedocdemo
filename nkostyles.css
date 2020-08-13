@@ -600,6 +600,11 @@ main .results .years div {
   margin-left: 64px;
 }
 
+main .results .years div img {
+  width: 250px;
+  height: 368px;
+}
+
 main .results .years div:first-child {
   margin-left: unset;
 }
@@ -1915,7 +1920,6 @@ main .all-answers .title:last-of-type {
     color: #367bf5;
     margin-top: 0;
     font: normal bold 34px/124% TT Norms-Bold;
-    width: 50%;
     margin: 0 auto 20px;
   }
   main .offer-sec .undertitle {
