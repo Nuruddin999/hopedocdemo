@@ -2,6 +2,8 @@ var mySwiper = new Swiper('.swiper-container', {
       // Optional parameters
       direction: 'horizontal',
       loop: true,
+      watchOverflow: true,
+      slidesPerView: "auto",
 
       // If we need pagination
       pagination: {
@@ -11,7 +13,7 @@ var mySwiper = new Swiper('.swiper-container', {
 var btn = document.querySelector(".hamburger")
 btn.addEventListener('click', () => {
       document.body.addEventListener('touchstart', function (e) { e.preventDefault(); });
-      document.body.style.overflow = 'hidden';
+      $('html, body').css('overflowY', 'hidden');
       document.querySelector("body > div.navdrawr").style.transform = "translateX(0)";
 })
 
@@ -19,6 +21,38 @@ $('.navdrawheader, img').click(function () {
       $('html, body').css('overflowY', 'auto');
       $('.navdrawr').css('transform', 'translateX(-100%)');
 });
+function scrollTo(name) {
+      $('html, body').css('overflowY', 'auto');
+      $('.navdrawr').css('transform', 'translateX(-100%)');
+      document.querySelector("body").scrollTo(0, document.querySelector(name).offsetTop - 100)
+}
+
+$("#helpNavBtn").click(function (event) {
+      $('html, body').css('overflowY', 'auto');
+      $('.navdrawr').css('transform', 'translateX(-100%)');
+      document.querySelector("#calculator").scrollIntoView({ block: "center" })
+})
+$("#whoweBtn").click(function (event) {
+      scrollTo(".underNavBlock")
+})
+$("#howhelpBtn").click(function (event) {
+      event.preventDefault();
+      scrollTo("#howhelpsec")
+})
+$("#contactsBtn").click(function (event) {
+      event.preventDefault()
+      scrollTo(".anyQstnsBlock")
+})
+$("#resultsBtn").click(function (event) {
+      event.preventDefault();
+      scrollTo(".numbs")
+})
+$("#charityBtn").click(function (event) {
+      event.preventDefault()
+      scrollTo(".whyHelpBlock")
+})
+
+
 var summ = 0;
 $('.item').click(function () {
       $('.item').css({ "background": "white" });
