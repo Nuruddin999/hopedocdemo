@@ -678,6 +678,10 @@ main .offer-sec h1 {
   margin-bottom: 20px;
 }
 
+main .offer-sec h1 br {
+  display: none;
+}
+
 main .offer-sec .undertitle {
   font: normal normal 18px/166% TT Norms;
   display: block;
@@ -974,6 +978,10 @@ main .nko-title {
   margin: 0 361px 48px;
 }
 
+main .nko-title br {
+  display: none;
+}
+
 main .nko {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1106,6 +1114,10 @@ main .become-sec .how-become-title {
   color: #367bf5;
   margin-top: 0;
   margin: 74px 350px 20px;
+}
+
+main .become-sec .how-become-title br {
+  display: none;
 }
 
 main .become-sec .under-become {
@@ -1922,6 +1934,9 @@ main .all-answers .title:last-of-type {
     font: normal bold 34px/124% TT Norms-Bold;
     margin: 0 auto 20px;
   }
+  main .offer-sec h1 br {
+    display: initial;
+  }
   main .offer-sec .undertitle {
     font: normal normal 16px/134% TT Norms;
     display: block;
@@ -2036,6 +2051,9 @@ main .all-answers .title:last-of-type {
     padding-top: 72px;
     margin: 0 12px 32px;
   }
+  main .nko-title br {
+    display: initial;
+  }
   main .nko {
     display: none;
   }
@@ -2059,6 +2077,9 @@ main .all-answers .title:last-of-type {
     margin-top: 0;
     font: normal bold 34px/132% TT Norms-Bold;
     margin: 48px auto 0;
+  }
+  main .become-sec .how-become-title br {
+    display: initial;
   }
   main .become-sec .under-become {
     font-size: 20px;

@@ -190,6 +190,9 @@ main {
             line-height: 114%;
             text-align: unset;
             margin: unset;
+            br {
+                  display: none;
+            }
       }
       .undertitle {
             display: block;
@@ -237,6 +240,9 @@ main {
             @include undertitle();
             span {
                   font-weight: 800;
+                  br {
+                        display: none;
+                  }
             }
       }
       .we-need-list {
@@ -445,6 +451,9 @@ main {
             margin: 18px auto 0;
             width: 60%;
             text-align: center;
+            br {
+                  display: none;
+            }
       }
       .container {
             display: flex;

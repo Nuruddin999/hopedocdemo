@@ -427,6 +427,9 @@ main {
     text-align: center;
     margin-top: 96px;
 }
+.howWeHelpTitle br {
+    display: none;
+}
 
 .underHowWeTitle {
     font-family: "TT Norms";
@@ -2642,6 +2645,10 @@ textarea {
         line-height: 118%;
         margin-top: 66px;
     }
+    .howWeHelpTitle br {
+        display: initial;
+    }
+
     .howHelp .underHowWeTitle {
         display: none;
     }

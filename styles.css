@@ -515,6 +515,10 @@ main {
   margin: unset;
 }
 
+.inourteam .title br {
+  display: none;
+}
+
 .inourteam .undertitle {
   display: block;
   width: 45%;
@@ -618,6 +622,10 @@ main {
 
 .who-we-need .undertitle span {
   font-weight: 800;
+}
+
+.who-we-need .undertitle span br {
+  display: none;
 }
 
 .who-we-need .we-need-list {
@@ -1248,6 +1256,10 @@ main {
   margin: 18px auto 0;
   width: 60%;
   text-align: center;
+}
+
+.how-become .undertitle br {
+  display: none;
 }
 
 .how-become .container {

@@ -267,6 +267,9 @@ main {
                   @include title(0);
                   padding-top: 112px;
                   margin-bottom: 20px;
+                  br {
+                        display: none;
+                  }
             }
             .undertitle {
                   font: normal normal 18px/166% TT Norms;
@@ -373,6 +376,9 @@ main {
             @include title(0);
             padding-top: 90px;
             margin: 0 361px 48px;
+            br {
+                  display: none;
+            }
       }
       .nko {
             @include nko();
@@ -403,6 +409,9 @@ main {
             .how-become-title {
                   @include title(0);
                   margin: 74px 350px 20px;
+                  br {
+                        display: none;
+                  }
             }
             .under-become {
                   font: normal normal 22px/124% TT Norms;
@@ -745,6 +754,9 @@ main {
                         font: normal bold 34px/124% TT Norms-Bold;
 
                         margin: 0 auto 20px;
+                        br {
+                              display: initial;
+                        }
                   }
                   .undertitle {
                         font: normal normal 16px/134% TT Norms;
@@ -829,6 +841,9 @@ main {
                   font: normal bold 34px/132% TT Norms-Bold;
                   padding-top: 72px;
                   margin: 0 12px 32px;
+                  br {
+                        display: initial;
+                  }
             }
             .nko {
                   display: none;
@@ -845,6 +860,9 @@ main {
                         @include title(0);
                         font: normal bold 34px/132% TT Norms-Bold;
                         margin: 48px auto 0;
+                        br {
+                              display: initial;
+                        }
                   }
                   .under-become {
                         font-size: 20px;
