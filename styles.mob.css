@@ -7,9 +7,9 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0 18px 0;
-    -ms-flex-pack: center;
     -webkit-box-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .invitation .text {
     order: 1;
