@@ -598,7 +598,7 @@ main {
 }
 
 .whyHelpBlock {
-    width: 1144px;
+    width: 1200px;
     margin: 30px auto;
     position: relative;
 }
@@ -709,6 +709,42 @@ main {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+}
+.spends-container {
+    width: 1200px;
+    background: #f5f8fa;
+    display: flex;
+    border-bottom: 2px solid rgba(47, 73, 140, 0.17);
+}
+.spends-container .spendImage {
+    margin: 30px 0 0 50px;
+}
+.spends-container .spend-text {
+    width: 697px;
+    margin-top: 24px;
+    margin-left: 26px;
+}
+.spends-container .spend-text span {
+    display: block;
+    font: normal 500 24px/124% TT Norms;
+}
+.spends-container .spend-text span:last-child {
+    display: block;
+    margin-top: 14px;
+    font: normal normal 18px/124% TT Norms;
+}
+.spends-container .sum-ruble {
+    margin: 32px 0 32px 53px;
+    height: 80px;
+    width: 230px;
+    border-left: 2px solid rgba(47, 73, 140, 0.17);
+}
+.spends-container .sum-ruble .amountAndLogo {
+    margin: 21px 0 21px 62px;
+}
+.spends-container .sum-ruble .amountAndLogo span {
+    color: #202642;
+    text-align: center;
 }
 .spendsTables {
     display: block;
@@ -2301,11 +2337,15 @@ textarea {
     .howWeHelp {
         flex-wrap: nowrap;
     }
+    .howWeHelp img {
+        width: 514px;
+    }
     .howHelp .underHowWeTitle {
         margin: 8px 0 0 0;
     }
     .howWeHelpList {
         margin-top: 22px;
+        width: 60%;
     }
     .howWeHelpList li:last-child {
         padding-bottom: unset;
@@ -2463,6 +2503,7 @@ textarea {
         -ms-flex-wrap: wrap;
         flex-wrap: nowrap;
     }
+
     .years {
         max-width: 1200px;
         margin: 0 auto;
@@ -2472,6 +2513,10 @@ textarea {
     }
     .years div {
         margin: 0 20px;
+    }
+    .years div img {
+        width: 250px;
+        height: 345px;
     }
     .whyHelpBlock {
         max-width: 1000px;
@@ -2695,6 +2740,9 @@ textarea {
         flex-direction: column;
     }
     .howWeHelp .howWeHelpImg {
+        width: 100%;
+    }
+    .howWeHelp .howWeHelpImg img {
         width: 100%;
     }
     .howWeHelp .howWeHelpList {
@@ -2967,6 +3015,52 @@ textarea {
     .spendsTitle {
         font-weight: 500;
         font-size: 16px;
+    }
+    .spends-container {
+        position: relative;
+        width: 100%;
+        height: 150px;
+        background: #f5f8fa;
+        display: flex;
+        border-bottom: initial;
+        margin-top: 12px;
+    }
+    .spends-container:first-child {
+        margin-top: 0;
+    }
+    .spends-container .spendImage {
+        margin: 36px 0 0 16px;
+    }
+    .spends-container .spend-text {
+        width: 304px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .spends-container .spend-text span {
+        display: block;
+        width: 60%;
+        font: normal 500 16px/136% TT Norms;
+    }
+    .spends-container .spend-text span:last-child {
+        display: block;
+        margin-top: 14px;
+        width: 100%;
+        font: normal normal 15px/124% TT Norms;
+    }
+    .spends-container .sum-ruble {
+        position: absolute;
+        margin: 0;
+        top: 20px;
+        right: 16px;
+        height: 24px;
+        width: 90px;
+        border-left: initial;
+    }
+    .spends-container .sum-ruble .amountAndLogo {
+        margin: 0;
+    }
+    .spends-container .sum-ruble .amountAndLogo span {
+        color: #202642;
     }
     .spendsContainer {
         width: 100%;
@@ -3556,6 +3650,22 @@ label[for="tab_1"] {
     }
     .spendsTables {
         width: 100%;
+    }
+    .spends-container {
+        width: 100%;
+    }
+    .spends-container .spendImage {
+        margin: 15px 0 0 25px;
+    }
+    .spends-container .spend-text {
+        width: 400px;
+        margin: 10px 0 0 15px;
+    }
+    .spends-container .spend-text span {
+        font-size: 20px;
+    }
+    .spends-container .spend-text span:last-child {
+        font-size: 18px;
     }
     .spendsContainer {
         width: 700px;

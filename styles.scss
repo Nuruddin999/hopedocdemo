@@ -546,6 +546,135 @@ main {
 .all-answers {
       @include allanswers();
 }
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+      .invitation {
+            margin: 0;
+            flex-wrap: wrap;
+            -webkit-flex-wrap: wrap;
+            justify-content: center;
+            img {
+                  order: 0;
+                  -webkit-box-ordinal-group: 0;
+            }
+            .text {
+                  order: 1;
+                  -webkit-box-ordinal-group: 1;
+                  margin-right: 0;
+                  width: 70%;
+            }
+      }
+      .undertitle2 {
+            width: 90%;
+            margin: 20px auto 0;
+      }
+      .howhelp {
+            flex-wrap: wrap;
+            margin: 36px 0 0 0;
+            .description {
+                  margin-top: 20px;
+            }
+      }
+      .selection {
+            flex-wrap: wrap;
+            margin: 88px auto 182px;
+            justify-content: center;
+            .leftselection {
+                  width: 70%;
+                  .title {
+                        text-align: center;
+                  }
+            }
+            .swiper-container {
+                  margin: 0;
+            }
+      }
+      .inourteam {
+            margin: 50px auto 182px;
+            .title {
+                  text-align: center;
+            }
+            .undertitle {
+                  width: 70%;
+                  text-align: center;
+                  margin: 14px auto 0;
+            }
+            .container {
+                  justify-content: center;
+            }
+      }
+      .who-we-need {
+            .we-need-list {
+                  flex-wrap: wrap;
+                  margin: 0;
+                  .undernumslide {
+                        .helptitle {
+                              font-size: 20px;
+                        }
+                  }
+            }
+      }
+      .results {
+            .undertitle {
+                  margin: 0;
+            }
+            .years {
+                  flex-wrap: wrap;
+                  margin: 38px 0 0 0;
+                  div {
+                        margin-left: 0;
+                        flex: 0 0 300px;
+                        img {
+                              width: 100%;
+                        }
+                  }
+            }
+      }
+      .partnersBlockGr {
+            display: block;
+            margin: 0;
+            .partnersWrappeGr {
+                  margin-top: 54px;
+                  grid-template-columns: auto auto;
+            }
+      }
+      .nko-titles {
+            .nko-title {
+                  margin: 90px 0 0 0;
+            }
+      }
+      .nko {
+            margin: 48px 0 0 0;
+            flex-wrap: wrap;
+            .nko-worker {
+                  flex: 0 0 180px;
+            }
+            .nko-worker:last-child {
+                  margin-left: 0;
+            }
+      }
+      .how-become {
+            .undertitle {
+                  width: initial;
+            }
+            .container {
+                  margin: 0;
+                  flex-wrap: wrap;
+                  .form {
+                        flex: initial;
+                  }
+                  .become-list {
+                        flex: initial;
+                        width: 70%;
+                        margin: 0 auto 0;
+                  }
+            }
+      }
+      .all-answers {
+            .answers {
+                  width: 100%;
+            }
+      }
+}
 @media screen and(min-width:1280px) and (max-width: 1619px) {
       body {
             width: 100%;
