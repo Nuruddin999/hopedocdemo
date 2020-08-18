@@ -305,6 +305,7 @@ main {
                   margin-left: 64px;
                   img {
                         height: 472px;
+                        width: 100%;
                   }
             }
             div:first-child {
@@ -675,7 +676,13 @@ main {
             }
       }
 }
-@media screen and(min-width:1280px) and (max-width: 1619px) {
+@media screen and(min-width:1280px) and (max-width: 1439px) {
+      .nko {
+            width: 100%;
+            margin: 48px auto 0;
+      }
+}
+@media screen and(min-width:1440px) and (max-width: 1619px) {
       body {
             width: 100%;
             margin: 0 auto 0;
