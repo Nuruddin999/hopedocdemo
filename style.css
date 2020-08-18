@@ -1446,7 +1446,7 @@ footer .socialIcons {
     margin: 16px 0 20px 32px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .botNav .menuButtons {

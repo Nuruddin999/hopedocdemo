@@ -527,7 +527,7 @@ footer .socialIcons {
       line-height: 136%;
       color: #304b93;
       text-decoration: none;
-      margin-left: 0px;
+      margin-left: 24px;
 }
 
 .botNav ul {
@@ -1132,7 +1132,9 @@ footer .socialIcons {
             text-align: center;
             color: #004094;
       }
-      .partners-title;
+      .botNav a {
+            margin-left: 0;
+      }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
       .lp-header {
