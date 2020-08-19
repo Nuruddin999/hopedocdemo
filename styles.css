@@ -747,12 +747,13 @@ main {
 }
 
 .results .years div {
+  width: 250px;
   margin-left: 64px;
 }
 
 .results .years div img {
-  height: 472px;
   width: 100%;
+  height: 368px;
 }
 
 .results .years div:first-child {
